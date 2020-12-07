@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, sans-serif;
+}
+.home-c{
+    position: relative;
+}
+.post-img{
+    background-image: url('../img/circle/complete_outside.jpg');
+}
+.greet{
+    height: 45vw;
+    width: 100%;
+}
+.greet>.img{
+    background-image: url('../img/circle/esqueleton.jpg');
+    background-size: cover;
+    width: 80vw;
+    height: 50vw;
+    position: absolute;
+    top:0%;
+    border-radius: 20px 20px 0px 0px;
+}
+.greet>.msg{
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    z-index: 1;
+    color: whitesmoke;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

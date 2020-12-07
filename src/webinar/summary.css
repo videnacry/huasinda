@@ -1,0 +1,20 @@
+.summary-c{
+    position: relative;
+}
+.summary-c>.text{
+    background-color: #363636;
+    border-radius: 10px;
+    padding: 20px;
+    color: #c8c8c8;
+    font-size: 24px;
+    text-align: start;
+    width: 35%;
+    position: absolute;
+    right: 1vw;
+    top: -20%;
+}
+.summary-c>.img{
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+}

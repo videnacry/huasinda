@@ -1,31 +1,23 @@
+
+@font-face{
+  font-family: 'Lethal Slime';
+  src: url("./font/Lethal\ Slime.ttf");
+  font-family: 'Get Schwifty';
+  src: url("./font/get_schwifty.ttf");
+  font-family: 'Punkrockshow';
+  src: url("./font/PunkrockshowRegular-xP4m.ttf");
+  font-family: 'DigitaltsPlum';
+  src: url("./font/DigitaltsPlum-1Gj32.ttf");
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  width: 80vw;
+  margin: 2vw 10vw;
+  border-radius: 20px;
+  box-shadow: 8px 10px 20px rgba(128, 128, 128, 0.808), -8px 10px 20px rgba(128, 128, 128, 0.808);
+  position: relative;
+  background-color: white;
 }
 
 @keyframes App-logo-spin {
