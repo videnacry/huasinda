@@ -3,11 +3,11 @@
     position: relative;
 }
 .webinars-s>.white{
-    height: 50vh;
+    height: 30vw;
     background-color: white;
 }
 .webinars-s>.gray{
-    height: 70vh;
+    height: 40vw;
     background-color: #c4c4c4;
 }
 .webinars-s>.article>.top-divisor, .webinars-s>.article>.bottom-divisor{
@@ -20,7 +20,7 @@
 }
 .webinars-s>.article>.bottom-divisor{
     top: 45%;
-    height: 55vh;
+    height: 50%;
     background-color: #C4C4C4;
 }
 .webinars-s>.article{
@@ -33,7 +33,7 @@
 .webinars-s>.article>.img{
     background-image: url('../img/circle/complete_inside.jpg');
     background-size: cover;
-    height: 80vh;
+    height: 45vw;
     width: 90%;
     margin: 2% 5% 0 5%;
     border-radius: 20px;
