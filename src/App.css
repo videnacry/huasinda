@@ -12,8 +12,8 @@
 
 .App {
   text-align: center;
-  width: 80vw;
-  margin: 2vw 10vw;
+  width: 90vw;
+  margin: 2vw 5vw;
   border-radius: 20px;
   box-shadow: 8px 10px 20px rgba(128, 128, 128, 0.808), -8px 10px 20px rgba(128, 128, 128, 0.808);
   position: relative;
