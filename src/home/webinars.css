@@ -4,6 +4,7 @@
 .webinars-s, .webinars-s>.white, .webinars-s>.gray{
     width: 100%;
     position: relative;
+    height: 70vw;
 }
 .webinars-s>.white{
     height: 30vw;
@@ -15,25 +16,28 @@
 }
 .webinars-s>.article>.title{
     color: black;
-
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    right: 5%; 
 }
 .webinars-s>.article>.top-divisor, .webinars-s>.article>.bottom-divisor{
     position: absolute;
     width: 40px;
-    height: 45%;
+    height: 30vw;
     right: 25%;
     top: 0%;
     background-color: white;
 }
 .webinars-s>.article>.bottom-divisor{
-    top: 38%;
-    height: 50%;
+    top: 30vw;
+    height: 40vw;
     background-color: #C4C4C4;
 }
 .webinars-s>.article{
     width: 100%;
     position: absolute;
-    top: 5%;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -42,11 +46,17 @@
     background-size: cover;
     height: 45vw;
     width: 90%;
-    margin: 2% 5% 0 5%;
+    margin: 15% 5% 0 5%;
     border-radius: 20px;
 }
 .webinars-s>.article>.link{
-    padding: 1vw 3vw 0 3vw;
     color: black;
     text-align: end;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 2%;
+}
+.webinars-s>.article>.link *{
+    margin: 0;
 }
