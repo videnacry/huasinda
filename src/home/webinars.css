@@ -1,0 +1,52 @@
+.webinars-s{
+    font-size: 32px;
+}
+.webinars-s, .webinars-s>.white, .webinars-s>.gray{
+    width: 100%;
+    position: relative;
+}
+.webinars-s>.white{
+    height: 30vw;
+    background-color: white;
+}
+.webinars-s>.gray{
+    height: 40vw;
+    background-color: #c4c4c4;
+}
+.webinars-s>.article>.title{
+    color: black;
+
+}
+.webinars-s>.article>.top-divisor, .webinars-s>.article>.bottom-divisor{
+    position: absolute;
+    width: 40px;
+    height: 45%;
+    right: 25%;
+    top: 0%;
+    background-color: white;
+}
+.webinars-s>.article>.bottom-divisor{
+    top: 38%;
+    height: 50%;
+    background-color: #C4C4C4;
+}
+.webinars-s>.article{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.webinars-s>.article>.img{
+    background-image: url('../img/circle/complete_inside.jpg');
+    background-size: cover;
+    height: 45vw;
+    width: 90%;
+    margin: 2% 5% 0 5%;
+    border-radius: 20px;
+}
+.webinars-s>.article>.link{
+    padding: 1vw 3vw 0 3vw;
+    color: black;
+    text-align: end;
+}

@@ -1,0 +1,22 @@
+.greeting-c{
+    text-align: start;
+    margin: 0 20px;
+}
+.greeting-c>.brand{
+    margin: 40px 0;
+    margin-bottom: 120px;
+}
+.greeting-c>.brand>.time-range{
+    font-size: 20px;
+    text-align: end;
+}
+.greeting-c>.brand>.title{
+    margin-block-start: 10px;
+    font-family: DigitaltsPlum, Punkrockshow;
+    font-size: 62px;
+    width: 70%;
+}
+.greeting-c>.msg{
+    font-size: 20px;
+    color: #484848;
+}

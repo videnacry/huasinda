@@ -1,0 +1,25 @@
+.webinar-p{
+    position: relative;
+}
+.webinar-p>.header-space{
+    height: 80px;
+}
+.webinar-p>.schedule{
+    font-size: 40px;
+}
+.webinar-p>.schedule *{
+    color: #363636;
+}
+.webinar-p>.img{
+    width: 100%;
+    height: 50vw;
+    background-position: left;
+}
+.webinar-p>.leave-comment{
+    position: absolute;
+    bottom: 3%;
+}
+.webinar-p>.footer-space{
+    height: 20vw;
+    width: 100%;
+}

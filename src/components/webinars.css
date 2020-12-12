@@ -1,0 +1,23 @@
+.webinars-c{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #363636;
+    padding: 10px 10vw;
+    padding-top: 20px;
+}
+.webinars-c>.webinar{
+    color: whitesmoke;
+    font-size: 14px;
+    filter: brightness(100%);
+}
+.webinars-c>.webinar:hover{
+    filter: brightness(130%);
+    transform: scale(1.3, 1.3);
+}
+.webinars-c>.webinar>.img{
+    width: 60px;
+    height: 70px;
+    margin: auto;
+    border-radius: 10px;
+    background-size: cover;
+}
