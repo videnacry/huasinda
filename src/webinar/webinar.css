@@ -12,12 +12,12 @@
 }
 .webinar-p>.img{
     width: 100%;
-    height: 50vw;
+    height: 55vw;
     background-position: left;
 }
 .webinar-p>.leave-comment{
     position: absolute;
-    bottom: 75px;
+    bottom: 50px;
 }
 .webinar-p>.footer-space{
     height: 20vw;
