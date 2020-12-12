@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import './Home.css'
 import Header from '../components/header'
 import Webinars from './webinars'
+import BlackBox from '../components/blackBox'
 import Footer from '../components/footer'
 import LeaveComment from '../components/leaveComment'
 
@@ -19,6 +20,7 @@ const Home = () => {
                 <div className='img'></div>
             </div>
             <Webinars/>
+            <BlackBox title="¡Una gran experiencia!" lines={[]} style={{color: 'white', bottom: '10vw', left: '10vw'}}/>
             <LeaveComment/>
             <Footer/>
         </div>
