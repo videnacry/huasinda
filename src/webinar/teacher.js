@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './teacher.css'
 
 const Teacher = (props) => {
@@ -11,7 +12,7 @@ const Teacher = (props) => {
                     <p>{teacher}</p>
                 ))}
             </article>
-            <button className='btn'>Comprar</button>
+            <Link to="/checkout" className="btn">Comprar</Link>
         </section>
     )
 }

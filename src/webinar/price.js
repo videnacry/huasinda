@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 import Spheres from './spheres'
 import './price.css'
 
@@ -16,7 +18,7 @@ const Price = () => {
             <div className='mid'><Spheres text={mid}/></div>
             <div className='min'><Spheres text={min}/></div>
             <img className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
-            <button className='btn'>Comprar</button>
+            <Link to="/checkout" className="btn">Comprar</Link>
             <div className='space'></div>
         </section>
     )
