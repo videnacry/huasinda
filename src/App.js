@@ -3,13 +3,14 @@ import './App.css';
 import Home from './home/Home'
 import Webinar from './webinar/Webinar'
 import Prototype from './webinar/Prototype'
+import Checkout from './checkout/Checkout'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import flood from './img/pixabay/flood.jpg'
 import bamboo_village from './img/pixabay/bamboo-village.jpg'
 
 function App() {
-  const routes = [{
+  const webinars = [{
     date: '22-12-2020',
     title: 'La trama que nos une, una visión desde la Permacultura',
     summery: [
@@ -96,10 +97,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Route exact path='/'><Home /></Route>
-        <Route exact path='/webinars'><Webinar webinars={routes} /></Route>
-        {routes.map(webinar => (
+        <Route exact path='/webinars'><Webinar webinars={webinars} /></Route>
+        {webinars.map(webinar => (
           <Route exact path={'/' + webinar.date}><Prototype webinar={webinar}/></Route>
         ))}
+        <Route exact path='/checkout'><Checkout webinars={webinars}/></Route>
       </BrowserRouter>
     </div>
   );
