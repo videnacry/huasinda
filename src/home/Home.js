@@ -3,8 +3,9 @@ import './Home.css'
 import Header from '../components/header'
 import Webinars from './webinars'
 import BlackBox from '../components/blackBox'
-import Footer from '../components/footer'
 import LeaveComment from '../components/leaveComment'
+import Links from '../components/links'
+import Footer from '../components/footer'
 
 const Home = () => {
     
@@ -22,6 +23,7 @@ const Home = () => {
             <Webinars/>
             <BlackBox title="¡Una gran experiencia!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
             <LeaveComment/>
+            <Links/>
             <Footer/>
         </div>
     )
