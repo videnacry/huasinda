@@ -39,6 +39,7 @@
     width: 100%;
     height: 23vw;
     background-position: center;
+    background-size: cover;
     margin: 0;
 }
 .links-c>.space {
