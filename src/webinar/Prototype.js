@@ -3,14 +3,10 @@ import Header from '../components/header'
 import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
-import Teaher from './teacher'
+import Teacher from './teacher'
 import LeaveComment from '../components/leaveComment'
 import Footer from '../components/footer'
 import './webinar.css'
-
-import complete_outsie from '../img/rectangle/complete_outside.jpg'
-import wall_ceiling_window from '../img/rectangle/wall_ceiling_window.jpg'
-import Teacher from './teacher'
 
 const Prototype = (props) => {
 
