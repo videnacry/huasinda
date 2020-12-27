@@ -1,7 +1,9 @@
 const puppeteer = require('puppeteer');
  
 exports.show = async (url) => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox']
+  });
   const page = await browser.newPage();
   await page.goto(url);
   const [img] = await page.$$eval('article img[src]', imgs => imgs.map(img => img.getAttribute('src')));
