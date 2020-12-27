@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import './links.css'
 
 const Links = () => {
@@ -43,11 +42,11 @@ const Links = () => {
             <ul className="links">
                 {pageLinks.map(link => (
                     <li>
-                        <Link className="link" to={link.url}>
+                        <a className="link" href={link.url}>
                             <img style={{backgroundImage: 'url("' + link.img_path + '")'}}/>
                             <h3>{link.name[0].toUpperCase() + link.name.substr(1)}</h3>
                             <p>{link.content.substr(0, 45) + '...'}</p>
-                        </Link>
+                        </a>
                     </li>
                 ))}
             </ul>
