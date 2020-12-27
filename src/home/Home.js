@@ -20,6 +20,7 @@ const Home = () => {
                 <h1 className='msg'></h1>
                 <div className='img'></div>
             </div>
+            <div className='space'></div>
             <Webinars/>
             <BlackBox title="¡Una gran experiencia!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
             <div className='space'></div>
