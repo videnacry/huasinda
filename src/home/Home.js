@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react'
 import './Home.css'
 import Header from '../components/header'
-import Webinars from './webinars'
+import Section from './section'
 import BlackBox from '../components/blackBox'
 import LeaveComment from '../components/leaveComment'
 import Links from '../components/links'
 import Footer from '../components/footer'
+import modulesImgSrc from '../img/circle/complete_inside.jpg'
+import projectsImgSrc from '../img/circle/complete_outside.jpg'
 
 const Home = () => {
     
@@ -21,8 +23,11 @@ const Home = () => {
                 <div className='img'></div>
             </div>
             <div className='space'></div>
-            <Webinars/>
-            <BlackBox title="¡Una gran experiencia!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
+            <Section title='Webinars' link='/webinars' imgSrc={modulesImgSrc}/>
+            <BlackBox title="¡Un estudio por el medioambiente!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
+            <div className='space'></div>
+            <Section title='Proyectos' link='/projects' imgSrc={projectsImgSrc}/>
+            <BlackBox title="¡Línea temporal de proyectos!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
             <div className='space'></div>
             <LeaveComment/>
             <Links/>
