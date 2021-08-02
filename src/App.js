@@ -3,6 +3,7 @@ import './App.css';
 import Home from './home/Home'
 import AboutUs from './about-us'
 import Webinar from './webinar/Webinar'
+import Projects from './projects';
 import Prototype from './webinar/Prototype'
 import Checkout from './checkout/Checkout'
 import { BrowserRouter, Route } from 'react-router-dom'
@@ -104,6 +105,7 @@ function App() {
         ))}
         <Route exact path='/checkout'><Checkout webinars={webinars}/></Route>
         <Route exact path='/about-us'><AboutUs/></Route>
+        <Route exact path='/projects'><Projects/></Route>
       </BrowserRouter>
     </div>
   );

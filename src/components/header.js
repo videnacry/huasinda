@@ -8,9 +8,10 @@ const Header = () => {
         <nav className="header-c">
             <h2>Aquaterra</h2>
             <div>
-                <Link to='/'><button className='btn'>Home</button></Link>
+                <Link to='/'><button className='btn'>Inicio</button></Link>
                 <Link to='/webinars'><button className='btn'>Webinars</button></Link>
-                <Link to='/about-us'><button className='btn'>About Us</button></Link>
+                <Link to='/projects'><button className='btn'>Proyectos</button></Link>
+                <Link to='/about-us'><button className='btn'>Acerca de</button></Link>
             </div>
         </nav>
     )

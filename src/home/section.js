@@ -14,7 +14,7 @@ const Section = ({title, link, imgSrc}) => {
                 <div className='img' style={{backgroundImage: `url(${imgSrc})`}}></div>
                 <div className='top-divisor'></div>
                 <div className='bottom-divisor'></div>
-                <Link to={link} className='link'><h2>más información!</h2></Link>
+                {link ? <Link to={link} className='link'><h2>más información!</h2></Link> : ''}
             </div>
         </div>
     )
