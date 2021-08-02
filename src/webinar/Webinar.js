@@ -6,7 +6,7 @@ import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
 import Price from './price'
-import LeaveComment from '../components/leaveComment'
+// import LeaveComment from '../components/leaveComment'
 import Footer from '../components/footer'
 import './webinar.css'
 
@@ -49,8 +49,8 @@ const Webinar = (props) => {
                 ))}
             </section>
             <img className='img' src={wall_ceiling_window}/>
-            <div className='leave-comment'><LeaveComment/></div>
-            <div className='footer-space'></div>
+            {/* <div className='leave-comment'><LeaveComment/></div> */}
+            {/* <div className='footer-space'></div> */}
             <Footer/>
         </div>
     )

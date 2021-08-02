@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import Header from '../components/header'
 import Jumbotron from '../components/jumbotron'
 import jumbotronImgSrc from './jumbotron.jpg'
@@ -31,7 +32,7 @@ const vision = {
         '',
         '¿Te unes a la causa?',
         '',
-        'Información del curso',
+        <Link to='/webinars'>Información del curso</Link>
     ]
 }
 const About = () => {
