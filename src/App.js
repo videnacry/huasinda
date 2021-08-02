@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './home/Home'
+import AboutUs from './about-us'
 import Webinar from './webinar/Webinar'
 import Prototype from './webinar/Prototype'
 import Checkout from './checkout/Checkout'
@@ -102,6 +103,7 @@ function App() {
           <Route exact path={'/' + webinar.date}><Prototype webinar={webinar}/></Route>
         ))}
         <Route exact path='/checkout'><Checkout webinars={webinars}/></Route>
+        <Route exact path='/about-us'><AboutUs/></Route>
       </BrowserRouter>
     </div>
   );
