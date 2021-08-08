@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import bgSrc from './background.jpg'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className='index' style={{backgroundImage: `url(${bgSrc})`}}>
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
