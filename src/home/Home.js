@@ -7,7 +7,7 @@ import BlackBox from '../components/blackBox'
 // import LeaveComment from '../components/leaveComment'
 import Links from '../components/links'
 import Footer from '../components/footer'
-import jumbotronImgSrc from '../img/circle/esqueleton.jpg'
+import jumbotronImgSrc from './jumbotron.jpg'
 import modulesImgSrc from '../img/circle/complete_inside.jpg'
 import projectsImgSrc from '../img/circle/complete_outside.jpg'
 
