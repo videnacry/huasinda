@@ -4,7 +4,7 @@ import './spheres.css'
 const Spheres = (props) => {
 
     return(
-      <div className='spheres'>
+      <div className='spheres-s'>
         <h4 className='sphere-md'>
             <p>{props.text}</p>
         </h4>

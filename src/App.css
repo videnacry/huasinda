@@ -1,10 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: rgb(135, 246, 250);
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
 
 @font-face{
   font-family: 'Lethal Slime';
@@ -15,13 +14,30 @@ a {
   src: url("./font/PunkrockshowRegular-xP4m.ttf");
   font-family: 'DigitaltsPlum';
   src: url("./font/DigitaltsPlum-1Gj32.ttf");
+  font-family: 'Roboto';
+  src: url("./font/Roboto-Regular.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+a {
+  color: rgb(135, 246, 250);
 }
 
 .App {
   overflow: hidden;
   position: relative;
   background-color: white;
-  box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
+  -webkit-box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
+          box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
 }
 
 @media screen and (max-aspect-ratio: 1/1) {

@@ -1,19 +1,19 @@
-.spheres{
+.spheres-s{
     position: absolute;
     color: whitesmoke;
 }
-.sphere-sm, .sphere-md{
+.spheres-s >.sphere-sm, .spheres-s >.sphere-md{
     background-color: #363636;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.sphere-md{
+.spheres-s >.sphere-md{
     width: 300px;
     height: 300px;
 }
-.sphere-sm{
+.spheres-s >.sphere-sm{
     width: 50px;
     height: 50px;
     position: absolute;
