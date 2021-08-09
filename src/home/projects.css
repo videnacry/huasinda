@@ -4,7 +4,7 @@
     color: #363636;
 }
 .projects-s > p {
-    padding: 0 10%;
+    padding: 3% 10%;
     text-align: center;
 }
 .projects-s > div {
@@ -16,18 +16,18 @@
     z-index: 1;
 }
 .projects-s > div > a > .title{
-    color: #363636;
-    font-weight: 500;
-    font-size: 1.5em;
     text-decoration: underline;
     text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #363636;
 }
 .projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right {
     margin: 0;
     display: inline-block;
 }
 .projects-s > div >.pharagraph-left {
-    width: 50%;
+    width: 45%;
     padding: 0 4% 2% 4%;
     text-align: start;
 }
@@ -37,7 +37,7 @@
     text-align: end;
 }
 .projects-s > div >  .frame-right {
-    width: 50%;
+    width: 55%;
     float: right;
 }
 .projects-s > div > .frame-left {
@@ -54,7 +54,7 @@
 .projects-s > div > .frame-right > .img-right {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding-top: 45%;
+    padding-top: 40%;
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
 } 
 .projects-s > div > .frame-left > .img-left {
