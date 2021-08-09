@@ -6,7 +6,6 @@ import Section from './section'
 import Box from '../components/box'
 import firstProjectImgSrc from '../img/rectangle/complete_outside.jpg'
 import secondProjectImgSrc from '../about-us/jumbotron.jpg'
-import Links from '../components/links'
 import Footer from '../components/footer'
 
 const Projects = () => {
@@ -31,7 +30,6 @@ const Projects = () => {
             <div style={{position: 'relative'}}>
                 <Box lines={['Hibernadero con un área de  20m2  y 3m de altura ubicada en carapungo']} dark style={boxStyle}/>
             </div>
-            <Links/>
             <Footer/>
         </div>
     )
