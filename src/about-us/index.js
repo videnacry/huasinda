@@ -7,7 +7,6 @@ import Summary from '../webinar/summary'
 import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'
 import Description from './description'
-import Links from '../components/links'
 import Footer from '../components/footer'
 
 const mission = {
@@ -21,7 +20,7 @@ const mission = {
         '',
         '¡Escríbenos, por favor!',
         '',
-        'adrii@gmail.com',
+        <a href='mailto:geahabitat@gmail.com'>geahabitat@gmail.com</a>,
     ]
 }
 const vision = {
@@ -50,7 +49,6 @@ const About = () => {
             <Description title={vision.title} description={vision.description}/>
             <Summary img={visionImgSrc} lines={vision.lines}/>
             <div className='space'></div>
-            <Links/>
             <Footer/>
         </div>
     )

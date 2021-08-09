@@ -21,3 +21,11 @@
     width: 50%;
     color: #484848;
 }
+@media screen and (max-aspect-ratio: 6/10) {
+    .greeting-c>.msg{
+        font-size: 30px;
+    }
+    .greeting-c>.brand>.time-range{
+        font-size: 30px;
+    }
+}
