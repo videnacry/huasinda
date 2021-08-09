@@ -1,0 +1,61 @@
+.footer-c{
+    overflow: hidden;
+    margin-top: 10%;
+    padding-bottom: 3%;
+    position: relative;
+    font-size: 36px;
+}
+.footer-c > .spheres {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-c > .spheres > .sphere-big {
+    width: 15%;
+    margin: 15px;
+}
+.footer-c > .spheres > .sphere-small {
+    width: 5%;
+    margin: 5px;
+    margin-bottom: 4%;
+}
+.footer-c > .spheres > .sphere-big > .image, .footer-c > .spheres > .sphere-small > .image {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.74);
+}
+.footer-c > .spheres > .sphere-big > .image > img, .footer-c > .spheres > .sphere-small > .image > img {
+    width: 105%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-c > .spheres > .sphere-big > .image > img {
+    width: 110%;
+}
+.footer-c > .contact {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-c > .contact > a{
+    color: inherit;
+}
+@media screen and (max-aspect-ratio: 6/10) {
+    .footer-c > .spheres > .sphere-big {
+        width: 24%;
+        margin: 15px;
+    }
+    .footer-c > .spheres > .sphere-small {
+        width: 8%;
+        margin: 5px;
+        margin-bottom: 4%;
+    }
+}
