@@ -6,16 +6,16 @@
 */
 
 @font-face{
-  font-family: 'Lethal Slime';
-  src: url("./font/Lethal\ Slime.ttf");
-  font-family: 'Get Schwifty';
-  src: url("./font/get_schwifty.ttf");
-  font-family: 'Punkrockshow';
-  src: url("./font/PunkrockshowRegular-xP4m.ttf");
-  font-family: 'DigitaltsPlum';
-  src: url("./font/DigitaltsPlum-1Gj32.ttf");
   font-family: 'Roboto';
   src: url("./font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: 'DigitaltsPlum';
+  src: url("./font/DigitaltsPlum-1Gj32.ttf");
+}
+@font-face {
+  font-family: 'Punkrockshow';
+  src: url("./font/PunkrockshowRegular-xP4m.ttf");
 }
 
 * {
