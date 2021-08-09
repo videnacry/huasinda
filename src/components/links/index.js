@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import './links.css'
+import Box from '../box'
+import './index.css'
 
 const Links = () => {
 
@@ -38,19 +39,19 @@ const Links = () => {
 
     return(
         <div className="links-c">
-            <h1>**Enlaces recomendados**</h1>
+            <Box style={{width: '85%', height: '50%', borderRadius: '0', top: '0', right: '0'}}/>
+            <h1>Links</h1>
             <ul className="links">
                 {pageLinks.map(link => (
                     <li>
                         <a className="link" href={link.url}>
-                            <img style={{backgroundImage: 'url("' + link.img_path + '")'}}/>
+                            <div className='img' style={{backgroundImage: 'url("' + link.img_path + '")'}}/>
                             <h3>{link.name[0].toUpperCase() + link.name.substr(1)}</h3>
                             <p>{link.content.substr(0, 45) + '...'}</p>
                         </a>
                     </li>
                 ))}
             </ul>
-            <div className="space"></div>
         </div>
     )
 }
