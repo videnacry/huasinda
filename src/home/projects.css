@@ -1,0 +1,85 @@
+.projects-s {
+    width: 100%;
+    font-size: 34px;
+    color: #363636;
+}
+.projects-s > p {
+    padding: 0 10%;
+    text-align: center;
+}
+.projects-s > div {
+    position: relative;
+    padding-top: 1px;
+}
+.projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right, .projects-s > div > .frame-right, .projects-s > div > .frame-left, .projects-s > div > a {
+    position: relative;
+    z-index: 1;
+}
+.projects-s > div > a > .title{
+    color: #363636;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+}
+.projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right {
+    margin: 0;
+    display: inline-block;
+}
+.projects-s > div >.pharagraph-left {
+    width: 50%;
+    padding: 0 4% 2% 4%;
+    text-align: start;
+}
+.projects-s > div >.pharagraph-right {
+    width: 70%;
+    padding: 2% 4%;
+    text-align: end;
+}
+.projects-s > div >  .frame-right {
+    width: 50%;
+    float: right;
+}
+.projects-s > div > .frame-left {
+    width: 30%;
+    float: left;
+}
+.projects-s > div > .frame-right > .img-right, .projects-s > div > .frame-left > .img-left {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+.projects-s > div > .frame-right > .img-right {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 45%;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
+} 
+.projects-s > div > .frame-left > .img-left {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 90%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
+}
+.projects-s > div > .link {
+    width: 50%;
+    margin-left: auto;
+    display: block;
+    color: #0075FF;
+    text-align: center;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .projects-s > div > .frame-right > .img-right {
+        padding-top: 55%;
+    } .projects-s > div > .frame-left > .img-left {
+        margin-top: 20px;
+        padding-top: 110%;
+    }
+}
+@media screen and (max-aspect-ratio: 6/10) {
+    .projects-s > p {
+        font-size: 1em;
+    }
+}

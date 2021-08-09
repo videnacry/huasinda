@@ -2,8 +2,9 @@ import React, {useEffect} from 'react'
 import './Home.css'
 import Header from '../components/header'
 import Jumbotron from '../components/jumbotron'
+import Proyects from './projects'
 import Section from './section'
-import BlackBox from '../components/blackBox'
+import Box from '../components/box'
 // import LeaveComment from '../components/leaveComment'
 import Links from '../components/links'
 import Footer from '../components/footer'
@@ -21,12 +22,10 @@ const Home = () => {
         <div className='home-c'>
             <Header/>
             <Jumbotron title="¿Te unes al camino verde?" imgSrc={jumbotronImgSrc}/>
-            <div className='space'></div>
             <Section title='Webinars' link='/webinars' imgSrc={modulesImgSrc}/>
-            <BlackBox title="¡Un estudio por el medioambiente!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
+            <Box title="¡Un estudio por el medioambiente!" lines={[]} style={{bottom: '6vw', left: '10vw'}}/>
             <div className='space'></div>
-            <Section title='Proyectos' link='/projects' imgSrc={projectsImgSrc}/>
-            <BlackBox title="¡Línea temporal de proyectos!" lines={[]} style={{color: 'white', bottom: '6vw', left: '10vw'}}/>
+            <Proyects/>
             <div className='space'></div>
             {/* <LeaveComment/> */}
             <Links/>
