@@ -1,0 +1,61 @@
+.section-s{
+    font-size: 24px;
+}
+.section-s, .section-s>.white, .section-s>.gray{
+    width: 100%;
+    position: relative;
+    height: 70vw;
+}
+.section-s>.white{
+    height: 30vw;
+    background-color: white;
+}
+.section-s>.gray{
+    height: 40vw;
+    background-color: #c4c4c4;
+}
+.section-s>.article>.title{
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    right: 5%; 
+}
+.section-s>.article>.top-divisor, .section-s>.article>.bottom-divisor{
+    position: absolute;
+    width: 40px;
+    height: 30vw;
+    right: 25%;
+    top: 0%;
+    background-color: white;
+}
+.section-s>.article>.bottom-divisor{
+    top: 30vw;
+    height: 40vw;
+    background-color: #C4C4C4;
+}
+.section-s>.article{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-s>.article>.img{
+    background-size: cover;
+    height: 45vw;
+    width: 90%;
+    margin: 15% 5% 0 5%;
+    border-radius: 20px;
+}
+.section-s>.article>.link{
+    color: black;
+    text-align: end;
+    z-index: 1;
+    position: absolute;
+    bottom: -12vw;
+    right: 2%;
+}
+.section-s>.article>.link *{
+    margin: 0;
+}
