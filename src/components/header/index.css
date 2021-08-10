@@ -11,9 +11,10 @@
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 3;
 }
-.header-c h2{
+.header-c svg{
+    width: auto;
+    height: 2em;
     margin: 0.5em 0;
-    font-weight: 500;
 }
 .header-c > div {
     width: 100%;
@@ -52,9 +53,5 @@
     }
     .header-c > div {
         max-width: 650px;
-    }
-    .header-c h2{
-        font-size: 1.2em;
-        font-weight: revert;
     }
 }

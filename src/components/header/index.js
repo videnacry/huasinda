@@ -1,12 +1,12 @@
-import React from 'react'
 import './index.css'
 import { Link } from 'react-router-dom'
+import {ReactComponent as LogoSvg} from './logo.svg'
 
 const Header = () => {
 
     return(
         <nav className="header-c">
-            <h2>GeaHabitat</h2>
+            <LogoSvg fill="#363636"/>
             <div>
                 <Link to='/'>Inicio</Link>
                 <Link to='/webinars'>Webinars</Link>

@@ -2,7 +2,7 @@
     position: relative;
 }
 .webinar-p>.header-space{
-    height: 110px;
+    height: 60px;
 }
 .webinar-p>.schedule{
     font-size: 40px;
@@ -22,4 +22,14 @@
 .webinar-p>.footer-space{
     height: 20vw;
     width: 100%;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .webinar-p>.header-space{
+        height: 78px;
+    }
+}
+@media screen and (max-aspect-ratio: 6/10) {
+    .webinar-p>.header-space{
+        height: 110px;
+    }
 }
