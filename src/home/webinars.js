@@ -25,7 +25,7 @@ const Webinars = () => {
                     </div>
                 </div>
                 <p className='pharagraph-left'>...con quien estés !!</p>
-                <Link to='./webinars' className='link'>más info</Link>
+                <div className='link'><Link to='./webinars' className='btn-green'>más info</Link></div>
             </div>
         </div>
     )

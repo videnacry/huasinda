@@ -20,7 +20,7 @@ const mission = {
         '',
         '¡Escríbenos, por favor!',
         '',
-        <a href='mailto:aquaterra@gmail.com'>aquaterra@gmail.com</a>,
+        <a href='mailto:aquaterra@gmail.com' className='btn-green'>aquaterra@gmail.com</a>,
     ]
 }
 const vision = {
@@ -31,7 +31,7 @@ const vision = {
         '',
         '¿Te unes a la causa?',
         '',
-        <Link to='/webinars'>Información del curso</Link>
+        <Link to='/webinars' className='btn-green'>Información del curso</Link>
     ]
 }
 const About = () => {
