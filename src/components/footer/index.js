@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className='sphere-big'>
                     <div className='image'>
-                        <img src={logoSrc} alt='geahabitat logo of a panda'/>
+                        <img src={logoSrc} alt='aquaterra logo of a panda'/>
                     </div>
                 </div>
                 <div className='sphere-small'>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='contact'>
-                <a href='mailto:geahabitat@gmail.com'>geahabitat@gmail.com</a>
+                <a href='mailto:aquaterra@gmail.com'>aquaterra@gmail.com</a>
                 <a href='tel:+592 98 456 1233'>TEL: +592 98 456 1233</a>
             </div>
         </div>

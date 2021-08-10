@@ -15,7 +15,7 @@ const Payment = (props) => {
             </div>
             <article className="msg">
                 <h1>**Precio total**</h1>
-                <h1>U$S <span className="price">{props.price}</span></h1>
+                <h1>USD <span className="price">{props.price}</span></h1>
                 <button className="btn">Enviar datos</button>
             </article>
             <img className="img" style={{backgroundImage: 'url("' + materials + '")'}}/>

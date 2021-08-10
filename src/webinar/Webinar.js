@@ -19,7 +19,7 @@ const Webinar = (props) => {
         window.scrollTo(0, 0)
       }, [])
 
-    const lines = ['HUASINDA los invita a participar del programa:',
+    const lines = ['Aquaterra los invita a participar del programa:',
     '¨Creación de entornos Bio Regenerativos: Una visión desde la Permacultura y la Bioconstrucción¨',
     'Compuesto por 14 webinars.',
     'Duración: 3hs cada webinar.']

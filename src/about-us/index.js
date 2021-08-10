@@ -20,7 +20,7 @@ const mission = {
         '',
         '¡Escríbenos, por favor!',
         '',
-        <a href='mailto:geahabitat@gmail.com'>geahabitat@gmail.com</a>,
+        <a href='mailto:aquaterra@gmail.com'>aquaterra@gmail.com</a>,
     ]
 }
 const vision = {

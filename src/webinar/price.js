@@ -7,9 +7,9 @@ import './price.css'
 import img from '../img/rectangle/wall_window_cealing_plant.jpg'
 
 const Price = () => {
-    const max = <div style={{margin:'0 30px'}}><p><span>14</span> webinars</p><p>Total U$S 238</p></div>
-    const mid = <div style={{margin:'0 30px'}}><p><span>3</span> webinars or more</p><p>- U$S 18 c/u -</p></div>
-    const min = <div style={{margin:'0 30px'}}><p><span>1</span> or <span>2</span> webinars</p><p>- U$S 20 c/u -</p></div>
+    const max = <div style={{margin:'0 30px'}}><p><span>14</span> webinars</p><p>Total USD 238</p></div>
+    const mid = <div style={{margin:'0 30px'}}><p><span>3</span> webinars or more</p><p>- USD 18 c/u -</p></div>
+    const min = <div style={{margin:'0 30px'}}><p><span>1</span> or <span>2</span> webinars</p><p>- USD 20 c/u -</p></div>
 
     return(
         <section className='price-c'>
