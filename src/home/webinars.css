@@ -14,13 +14,15 @@
     position: relative;
     background-color: #EFEFEF;
 }
-.webinars-s>.article>.title>h1{
+.webinars-s>.article>.title>h1 {
     margin-bottom: 0;
-    text-decoration: underline;
     text-align: center;
     font-weight: 500;
     font-size: 1.5em;
     color: #363636;
+}
+.webinars-s>.article>.title>h1:hover {
+    text-decoration: underline;
 }
 .webinars-s > .article >.pharagraph-left, .webinars-s > div >.pharagraph-right {
     margin: 0;
@@ -87,7 +89,6 @@
     width: 50%;
     margin-left: auto;
     display: block;
-    color: #0075FF;
     text-align: center;
 }
 @media screen and (max-aspect-ratio: 1/1) {

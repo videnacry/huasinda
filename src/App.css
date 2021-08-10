@@ -29,7 +29,11 @@
 }
 
 a {
-  color: rgb(135, 246, 250);
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .App {
