@@ -1,10 +1,13 @@
 .box-c{
     position: relative;
-    font-size: 24px;
     text-align: start;
     position: absolute;
+}
+.box-c.absolute {
+    position: absolute;
+}
+.box-c.border-radius {
     border-radius: 10px;
-    padding: 20px;
 }
 .box-c.dark{
     background-color: #252525;

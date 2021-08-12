@@ -1,6 +1,5 @@
 .contact-form-s{
     position: relative;
-    font-size: 24px;
 }
 .contact-form-s>.space, .contact-form-s>.img{
     width: 100%;
@@ -22,7 +21,6 @@
 }
 .contact-form-s>.form>h1{
     color: #fefefe;
-    font-size: 36px;
     text-align: center;
 }
 .contact-form-s>.form>.fieldset{
@@ -37,5 +35,4 @@
     color: #363636;
     width: 90%;
     height: 45px;
-    font-size: 26px;
 }

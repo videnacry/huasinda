@@ -7,7 +7,6 @@
 }
 .webinars-c>.webinar{
     color: whitesmoke;
-    font-size: 14px;
     filter: brightness(100%);
 }
 .webinars-c>.webinar:hover{

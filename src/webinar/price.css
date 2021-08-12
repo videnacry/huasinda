@@ -9,10 +9,8 @@
 }
 .price-c{
     text-align: start;
-    font-size: 35px;
 }
 .price-c span{
-    font-size: 50px;
 }
 .price-c>.title{
     text-align: end;
@@ -41,7 +39,6 @@
     position: absolute;
     right: 100px;
     bottom: 13%;
-    font-size: 40px;
     text-decoration: none;
     padding: 10px 40px;
     background-color: white;

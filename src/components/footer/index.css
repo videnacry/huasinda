@@ -3,7 +3,6 @@
     margin-top: 10%;
     padding-bottom: 3%;
     position: relative;
-    font-size: 36px;
 }
 .footer-c > .spheres {
     width: 100%;
@@ -48,7 +47,7 @@
 .footer-c > .contact > a{
     color: inherit;
 }
-@media screen and (max-aspect-ratio: 6/10) {
+@media screen and (max-aspect-ratio: 7/10) {
     .footer-c > .spheres > .sphere-big {
         width: 24%;
         margin: 15px;

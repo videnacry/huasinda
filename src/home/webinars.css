@@ -1,6 +1,5 @@
 .webinars-s{
     width: 100%;
-    font-size: 34px;
     color: #363636;
 }
 .webinars-s > p {
@@ -18,7 +17,6 @@
     margin-bottom: 0;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5em;
     color: #363636;
 }
 .webinars-s>.article>.title>h1:hover {
@@ -117,8 +115,7 @@
         padding-top: 50%;
     }
 }
-@media screen and (max-aspect-ratio: 6/10) {
+@media screen and (max-aspect-ratio: 7/10) {
     .projects-s > p {
-        font-size: 1em;
     }
 }

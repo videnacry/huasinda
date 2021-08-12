@@ -1,5 +1,4 @@
 .projects-p {
-    font-size: 32px;
 }
 .projects-p > .title {
     margin-top: 60px;
@@ -17,7 +16,7 @@
         margin-top: 78px;
     }
 }
-@media screen and (max-aspect-ratio: 6/10) {
+@media screen and (max-aspect-ratio: 7/10) {
     .projects-p > .title {
         margin-top: 110px;
     }

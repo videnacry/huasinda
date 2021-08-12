@@ -6,8 +6,7 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 3;
 }
@@ -37,7 +36,6 @@
 @media screen and (max-aspect-ratio: 1/1) {
     .header-c {
         border-radius: 20px 20px 0px 0px;
-        font-size: 26px;
     }
     .header-c h2{
         margin: revert;
@@ -47,9 +45,9 @@
         max-width: 550px;
     }
 }
-@media screen and (max-aspect-ratio: 6/10) {
+@media screen and (max-aspect-ratio: 7/10) {
     .header-c {
-        font-size: 32px;
+        font-size: 28px
     }
     .header-c > div {
         max-width: 650px;

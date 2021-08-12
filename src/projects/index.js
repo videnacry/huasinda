@@ -20,7 +20,7 @@ const Projects = () => {
         <div className='projects-p'>
             <Header/>
             <div className='title'>
-                <Box dark style={{width: '100%', height: '100%', borderRadius: 0}}/>
+                <Box dark absolute style={{width: '100%', height: '100%'}}/>
                 <h1>Proyectos Destacados</h1>
             </div>
             <Project project={projectFirst}/>

@@ -6,7 +6,7 @@ const Links = () => {
     const pageLinks = links.slice(0, 4)
     return(
         <div className="links-c">
-            <Box style={{width: '85%', height: '65%', borderRadius: '0', top: '0', right: '0'}}/>
+            <Box absolute style={{width: '85%', height: '65%', top: '0', right: '0'}}/>
             <h1>Links</h1>
             <ul className="links">
                 {pageLinks.map((link, idx) => (

@@ -8,8 +8,8 @@ const Footer = () => {
 
     return(
         <div className="footer-c">
-            <Box style={{width: '100%', borderRadius: '0', height: '100%', top: '15%'}}/>
-            <Box dark style={{width: '100%', borderRadius: '0', height: '40px', top: '15%'}}/>
+            <Box absolute style={{width: '100%', height: '100%', top: '15%'}}/>
+            <Box dark absolute style={{width: '100%', height: '40px', top: '15%'}}/>
             <div className='spheres'>
                 <div className='sphere-small'>
                     <div className='image'>

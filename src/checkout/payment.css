@@ -1,7 +1,6 @@
 .payment-s{
     width: 100%;
     position: relative;
-    font-size: 28px;
 }
 .payment-s>.space{
     width: 100%;
@@ -11,7 +10,6 @@
     position: absolute;
     right: 3%;
     top: 0;
-    font-size: 36px;
 }
 .payment-s>.blackbox{
     background-color: #363636;
@@ -25,7 +23,6 @@
     text-align: start;
 }
 .payment-s>.msg .price{
-    font-size: 64px;
 }
 .payment-s>.img{
     background-size: cover;
@@ -35,7 +32,6 @@
 .payment-s>.msg>.btn{
     right: 100px;
     bottom: 13%;
-    font-size: 40px;
     padding: 10px 40px;
     background-color: white;
     border: solid 0.5px rgb(160, 160, 160);

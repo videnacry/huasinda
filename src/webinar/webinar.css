@@ -2,10 +2,9 @@
     position: relative;
 }
 .webinar-p>.header-space{
-    height: 60px;
+    height: 70px;
 }
 .webinar-p>.schedule{
-    font-size: 40px;
 }
 .webinar-p>.schedule *{
     color: #363636;
@@ -28,7 +27,7 @@
         height: 78px;
     }
 }
-@media screen and (max-aspect-ratio: 6/10) {
+@media screen and (max-aspect-ratio: 7/10) {
     .webinar-p>.header-space{
         height: 110px;
     }

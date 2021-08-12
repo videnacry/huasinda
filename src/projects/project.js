@@ -25,8 +25,8 @@ const Project = (props) => {
             return val
         })
     }
-    const lightBoxStyle = {width: '85%', height: '100%', top: 0, borderRadius: 0}
-    const darkBoxStyle = {width: '85%', height: '60px', position: 'relative', borderRadius: 0}
+    const lightBoxStyle = {width: '85%', height: '100%', top: 0}
+    const darkBoxStyle = {width: '85%', height: '20px'}
     if (props.left) {
         darkBoxStyle.marginRight = 'auto'
         lightBoxStyle.left = 0
@@ -41,7 +41,7 @@ const Project = (props) => {
             <h1>{props.project.title}</h1>
             <div className='carrousel'>
                 <div className='light-bg'>
-                    <Box style={lightBoxStyle}/>
+                    <Box absolute style={lightBoxStyle}/>
                 </div>
                 <Box dark style={darkBoxStyle}/>
                 <div className='components'>

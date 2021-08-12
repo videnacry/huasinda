@@ -20,12 +20,10 @@
 .jumbotron-c>.brand>.title{
     max-width: 700px;
     margin-block-start: 10px;
-    font-size: 72px;
     color: white;
     text-shadow: 1px 4px black, -1px -4px black, 1px -4px black, -1px 4px black;
 }
 .jumbotron-c>.brand>.msg{
-    font-size: 20px;
     width: 50%;
     color: #484848;
 }

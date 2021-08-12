@@ -1,14 +1,11 @@
 .cart-s{
-    font-size: 30px;
     text-align: start;
 }
 .cart-s>.title, .cart-s>.msg{
     margin: 40px 120px;
-    font-size: 44px;
 }
 .cart-s>.msg{
     text-align: end;
-    font-size: 26px;
     color: #363636;
 }
 .cart-s>.product{
