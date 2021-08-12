@@ -1,0 +1,102 @@
+.project-s {
+    font-size: 24px;
+}
+.project-s > h1 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.project-s > .carrousel {
+    position: relative;
+}
+.project-s > .carrousel > .light-bg {
+    width: 100%;
+    padding-top: 40%;
+    position: relative;
+}
+.project-s > .carrousel > .components {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.project-s > .carrousel > .components > .controls {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project-s > .carrousel > .components > .imgs {
+    width: 100%;
+    padding-top: 30%;
+    position: relative;
+}
+.project-s > .carrousel > .components > .imgs > .white, .project-s > .carrousel > .components > .imgs > .prev, .project-s > .carrousel > .components > .imgs > .next, .project-s > .carrousel > .components > .imgs > .curr {
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.768);
+}
+.project-s > .carrousel > .components > .imgs > .white {
+    width: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.567);
+}
+.project-s > .carrousel > .components > .imgs > .prev {
+    width: 40%;
+    left: 5%;
+}
+.project-s > .carrousel > .components > .imgs > .next {
+    width: 40%;
+    right: 5%;
+}
+.project-s > .carrousel > .components > .imgs > .curr {
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.project-s > .carrousel > .components > .imgs > .white > .img, .project-s > .carrousel > .components > .imgs > .prev > .img, .project-s > .carrousel > .components > .imgs > .next > .img, .project-s > .carrousel > .components > .imgs > .curr > .img {
+    background-size: cover;
+    background-position: center;
+}
+.project-s > .carrousel > .components > .imgs > .white > .img {
+    padding-top: 35%;
+}
+.project-s > .carrousel > .components > .imgs > .prev > .img {
+    padding-top: 50%;
+}
+.project-s > .carrousel > .components > .imgs > .next > .img {
+    padding-top: 50%;
+}
+.project-s > .carrousel > .components > .imgs > .curr > .img {
+    padding-top: 50%;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .project-s > h1 {
+        margin-top: 110px;
+        margin-bottom: 60px;
+    }
+    .project-s > .carrousel > .light-bg{
+        padding-top: 55%;
+    }
+    .project-s > .carrousel > .components > .imgs {
+        padding-top: 40%;
+    }
+    .project-s > .carrousel > .components > .imgs > .white > .img {
+        padding-top: 45%;
+    }
+    .project-s > .carrousel > .components > .imgs > .prev > .img {
+        padding-top: 60%;
+    }
+    .project-s > .carrousel > .components > .imgs > .next > .img {
+        padding-top: 60%;
+    }
+    .project-s > .carrousel > .components > .imgs > .curr > .img {
+        padding-top: 60%;
+    }
+}

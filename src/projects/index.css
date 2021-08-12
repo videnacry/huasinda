@@ -1,0 +1,24 @@
+.projects-p {
+    font-size: 32px;
+}
+.projects-p > .title {
+    margin-top: 60px;
+    padding: 1px 0;
+    position: relative;
+}
+.projects-p > .title > h1 {
+    margin: 5% 10%;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .projects-p > .title {
+        margin-top: 78px;
+    }
+}
+@media screen and (max-aspect-ratio: 6/10) {
+    .projects-p > .title {
+        margin-top: 110px;
+    }
+}
