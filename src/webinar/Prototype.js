@@ -19,10 +19,9 @@ const Prototype = (props) => {
             <Greeting start={props.module.date} title={props.module.title}/>
             <Summary img={props.module.img[0]} lines={props.module.summery} title='**Temario**'/>
             <section className='schedule'>
-                <h1>**FECHA**</h1>
-                {props.module.long_date.map(date => (
-                    <p>{date}</p>
-                ))}
+                <h1>**Info**</h1>
+                <p>El tiempo estimado de duración es de 8 horas.</p>
+                <br/>
             </section>
             <Teacher teachers={props.module.teachers}/>
             <img className='img' src={props.module.img[1]}/>
