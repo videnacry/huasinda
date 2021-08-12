@@ -17,7 +17,7 @@ const Prototype = (props) => {
             <div className='header-space'></div>
             <Webinars modules={props.modules}/>
             <Greeting start={props.module.date} title={props.module.title}/>
-            <Summary img={props.module.img[0]} lines={props.module.summery}/>
+            <Summary img={props.module.img[0]} lines={props.module.summery} title='**Temario**'/>
             <section className='schedule'>
                 <h1>**FECHA**</h1>
                 {props.module.long_date.map(date => (

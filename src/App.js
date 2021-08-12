@@ -21,7 +21,7 @@ function App() {
         {modules.map(module => (
           <Route exact path={'/' + module.topic}><Prototype module={module} modules={modules}/></Route>
         ))}
-        <Route exact path='/checkout'><Checkout webinars={modules}/></Route>
+        <Route exact path='/checkout'><Checkout modules={modules}/></Route>
         <Route exact path='/about-us'><AboutUs/></Route>
         <Route exact path='/projects'><Projects/></Route>
       <Footer/>

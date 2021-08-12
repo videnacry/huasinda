@@ -31,3 +31,8 @@
     background-color: #363636;
     color: white;
 }
+@media screen and (max-aspect-ratio: 1/1) {
+    .teacher-c>.text {
+        width: 50%;
+    }
+}

@@ -5,6 +5,8 @@ import moduleFourthSrc from './module-4.jpg'
 import moduleFifthSrc from './module-5.jpg'
 import moduleSixthSrc from './module-6.jpg'
 import moduleSeventhSrc from './module-7.jpg'
+import moduleEightSrc from './module-8.jpg'
+import moduleNinethSrc from './module-9.jpg'
 import flood from '../img/pixabay/flood.jpg'
 import bamboo_village from '../img/pixabay/bamboo-village.jpg'
 
@@ -15,7 +17,7 @@ const modules = [
     icon: moduleFirstSrc,
     title: 'Prospección Telúrica',
     summery: [
-        '**TEMARIO**',
+        
         'Determinación de líneas HARMANN',
         'Determinación de Líneas CURRY',
         'Determinación de chimeneas telúricas',
@@ -39,7 +41,7 @@ const modules = [
     icon: moduleSecondSrc,
     title: 'Replanteo de Obra',
     summery: [
-        '**TEMARIO**',
+        
         'Zanjas para levantamiento estructural y de mamposterñia.', 
         'Medición y alineamiento de los módulos estructurales.',
         'Zanjas para desvío de aguas servida.s',
@@ -64,7 +66,7 @@ const modules = [
     icon: moduleThirdSrc,
     title: 'Replanteo eléctrico e hidráulico',
     summery: [
-        '**TEMARIO**',
+        
         'Calculo de cargas eléctricas para instalación de caja térmica',
         'Mediciones e instalaciones hidráulicas',
         'Mediciones e instalaciones eléctricas'
@@ -87,7 +89,7 @@ const modules = [
     icon: moduleFourthSrc,
     title: 'Levantamiento estructural y mampostería',
     summery: [
-      '**TEMARIO**',
+      
       'Drenado fluvial',
       'Levantamiento de bases estructurales',
       'Amarre de bases estructurales',
@@ -110,7 +112,7 @@ const modules = [
     icon: moduleFifthSrc,
     title: 'Techado',
     summery: [
-      '**TEMARIO**',
+      
       'Armado y tramado de techo',
       'Fijación de techos',
       'Direccionamiento de canaleta para cosecha de Agua'
@@ -132,7 +134,7 @@ const modules = [
     icon: moduleSixthSrc,
     title: 'Piso',
     summery: [
-      '**TEMARIO**',
+      
       'Aislamiento y nivelación de piso',
       'Mortero base para piso',
       'Fijación y pegado de piso'
@@ -154,7 +156,7 @@ const modules = [
     icon: moduleSeventhSrc,
     title: 'Revoques',
     summery: [
-      '**TEMARIO**',
+      
       'Relleno en conectores estructurales',
       'Bases de mortero para interior y exterior',
       'Estructuración hidráulica para mampostería NO estructural',
@@ -175,10 +177,10 @@ const modules = [
   }, {
     date: '28-12-2020',
     topic: 'Módulo 8',
-    icon: moduleFourthSrc,
+    icon: moduleEightSrc,
     title: 'Ecodomos',
     summery: [
-      '**TEMARIO**',
+      
       'Prospección telúrica',
       'Ubicación geomagnética',
       'Replanteo de obra',
@@ -198,10 +200,10 @@ const modules = [
   }, {
     date: '28-12-2020',
     topic: 'Módulo 9',
-    icon: moduleFourthSrc,
+    icon: moduleNinethSrc,
     title: 'Levantamiento Geomonolítico4 (Monolitico y Geodesico)',
     summery: [
-      '**TEMARIO**',
+      
       'Impermeabilización del terreno',
       'Formulación telúrica para levantamiento monolítico',
       'Instalaciones hidráulicas',

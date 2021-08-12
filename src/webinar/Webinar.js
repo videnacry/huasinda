@@ -30,20 +30,14 @@ const Webinar = (props) => {
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg='Desde el 19 de Octubre al 2 de Diciembre todos los lunes y miercoles.'/>
             <Summary img={complete_outsie} lines={lines}/>
             <section className='schedule'>
-                <h1>**HORARIOS**</h1>
-                <p>URU | ARG | CHI | BRA : 18 hs.</p>
-                <p>BOL |PAR | VEN |DOM : 17 hs.</p>
-                <p>ECU |PER | COL | PAN | MEX : 16 hs.</p>
-                <p>CENTROAMERICA: 15 hs</p>
+                <h1>**Talleres los fines de semana**</h1>
+                <p>URU | ARG | CHI | BRA : 10 - 14hs {'&'} 16 - 20hs. </p>
+                <p>BOL |PAR | VEN |DOM : 9 - 13hs {'&'} 15 - 19hs. </p>
+                <p>ECU |PER | COL | PAN | MEX : 8 - 12hs. {'&'} 14 - 18hs. </p>
+                <p>CENTROAMERICA: 7 - 11hs {'&'} 13 - 17hs. </p>
             </section>
             <Price/>
-            <section className='schedule'>
-                <h1>**WEBINARS**</h1>
-                {props.modules.map(webinar => (
-                    <Link to={webinar.date}><p>{webinar.title}</p></Link>
-                ))}
-            </section>
-            <img className='img' src={wall_ceiling_window}/>
+            <Summary img={wall_ceiling_window} lines={props.modules.map(webinar => <Link className='btn-green' to={`/${webinar.topic}`}>{webinar.title}</Link>)} title='**Módulos**'/>
             {/* <div className='leave-comment'><LeaveComment/></div> */}
         </div>
     )

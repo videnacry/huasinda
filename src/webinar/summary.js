@@ -5,11 +5,12 @@ const Summary = (props) => {
 
     return(
         <section className='summary-c'>
-            <p className='text'>
+            <div className='text'>
+                <h3>{props.title}</h3>
                 {props.lines.map((text, index) => (
-                    <div><div key={index}>{text}</div><br/></div>
+                    <p className='line' key={index}>{text}</p>
                 ))}
-            </p>
+            </div>
             <img className='img' style={{backgroundImage: 'url(' + props.img + ')'}}/>
         </section>
     )

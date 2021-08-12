@@ -14,25 +14,17 @@ const Checkout = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-
-    const lines = ['HUASINDA los invita a participar del programa:',
-    '¨Creación de entornos Bio Regenerativos: Una visión desde la Permacultura y la Bioconstrucción¨',
-    'Compuesto por 14 webinars.',
-    'Duración: 3hs cada webinar.']
-
-    
-    const dates = ['22-12-2020', '24-12-2020', '26-12-2020', '28-12-2020']
-    
+console.log(props.modules)
     return(
         <article class="checkout-p">
             <div className='header-space'></div>
-            <Webinars dates={dates}/>
+            <Webinars modules={props.modules}/>
             <header class="header">
                 <h1 class="title">CHECKOUT</h1>
                 <p class="msg">Con tus datos de compra te informaremos sobre el estado del webinar que compres</p>
             </header>
             <ContactForm />
-            <Cart webinars={props.webinars} setCart={setCart} cart={cart} setPrice={setPrice}/>
+            <Cart modules={props.modules} setCart={setCart} cart={cart} setPrice={setPrice}/>
             <Payment price={price} />
         </article>
     )

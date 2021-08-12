@@ -15,24 +15,18 @@ const Cart = (props) => {
     }
     const setPrice = () => {
         const cartCount = props.cart.length
-        if (cartCount >= 3) {
-            props.setPrice(cartCount * 18)
-        } else if (cartCount < 3) {
-            props.setPrice(cartCount * 20)
-        } else {
-            props.setPrice(238)
-        }
+        props.setPrice(cartCount * 60)
     }
     
     return(
         <section className="cart-s">
             <h1 className="title">**Bolsa**</h1>
-            <p className="msg">¡Agrega los webinars con un clic sobre su título!</p>
-            {props.webinars.map(webinar => (
+            <p className="msg">¡Agrega los módulos con un clic sobre su título!</p>
+            {props.modules.map(module => (
                 <fieldset className="product">
-                    <input id={'cart_'+webinar.title} type="checkbox" className="checkbox" onChange={updateCart}/>
-                    <label>{webinar.title}</label>
-                    <label for={'cart_'+webinar.title} className="container">
+                    <input id={'cart_'+module.title} type="checkbox" className="checkbox" onChange={updateCart}/>
+                    <label>{module.title}</label>
+                    <label for={'cart_'+module.title} className="container">
                         <div style={{width: '100%',height: '100%'}}></div>
                     </label>
                 </fieldset>

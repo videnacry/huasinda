@@ -43,6 +43,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button {
+  font-size: inherit;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -52,6 +55,7 @@ a.btn-green, button.btn-green {
   background-color: #56BB33;
   color: white;
   box-shadow: 1px 2px 2px #000000c2;
+  white-space: nowrap;
 }
 button.btn-green {
   border: none;

@@ -7,7 +7,7 @@ const Teacher = (props) => {
     return(
         <section class="teacher-c">
             <article class="text">
-                <h1>**TALLERISTA**</h1>
+                <h3>**Tallerista**</h3>
                 {props.teachers.map(teacher => (
                     <p>{teacher}</p>
                 ))}

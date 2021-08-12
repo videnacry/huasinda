@@ -1,18 +1,31 @@
-.summary-c{
+.summary-c {
     position: relative;
 }
-.summary-c>.text{
+.summary-c>.text {
     background-color: #363636;
     border-radius: 10px;
     padding: 20px;
     color: #c8c8c8;
     text-align: start;
-    width: 35%;
+    width: 50%;
     position: absolute;
-    right: 1vw;
-    top: -20%;
+    right: 2vw;
+    top: -100px;
 }
-.summary-c>.img{
+.summary-c>.text>.line {
+    overflow: hidden;
+    margin: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.summary-c>.text:hover {
+    max-width: 80%;
+    width: fit-content;
+}
+.summary-c>.text:hover>.line {
+    white-space: initial;
+}
+.summary-c>.img {
     background-size: cover;
     width: 100%;
     height: 50vw;
