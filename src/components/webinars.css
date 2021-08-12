@@ -1,9 +1,9 @@
 .webinars-c{
+    padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
     background-color: #363636;
-    padding: 10px 10vw;
-    padding-top: 20px;
+    font-size: 18px;
 }
 .webinars-c>.webinar{
     color: whitesmoke;

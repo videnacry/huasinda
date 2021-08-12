@@ -23,12 +23,10 @@ const Webinar = (props) => {
     'Duración: 3hs cada webinar.']
 
     
-    const dates = ['22-12-2020', '24-12-2020', '26-12-2020', '28-12-2020']
-    
     return(
         <div className='webinar-p'>
             <div className='header-space'></div>
-            <Webinars dates={dates}/>
+            <Webinars modules={props.modules}/>
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg='Desde el 19 de Octubre al 2 de Diciembre todos los lunes y miercoles.'/>
             <Summary img={complete_outsie} lines={lines}/>
             <section className='schedule'>
@@ -41,7 +39,7 @@ const Webinar = (props) => {
             <Price/>
             <section className='schedule'>
                 <h1>**WEBINARS**</h1>
-                {props.webinars.map(webinar => (
+                {props.modules.map(webinar => (
                     <Link to={webinar.date}><p>{webinar.title}</p></Link>
                 ))}
             </section>

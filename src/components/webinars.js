@@ -7,11 +7,11 @@ import cover_wall from '../img/rectangle/cover_wall.jpg'
 import half_wall_ceiling from '../img/rectangle/half_wall_ceiling.jpg'
 import wall_ceiling_window from '../img/rectangle/wall_ceiling_window.jpg'
 
-const Webinars = (props) => {
-
+const Webinars = (props) => { 
+    console.log(props.modules)
     return(
         <nav className='webinars-c'>
-            <Link to={'/' + props.dates[0]} className='webinar'>
+            {/* <Link to={'/' + props.dates[0]} className='webinar'>
                 <div className='img' style={{backgroundImage: 'url(' + materials + ')'}}></div>
                 <time className='date'>{props.dates[0]}</time>
             </Link>
@@ -26,7 +26,13 @@ const Webinars = (props) => {
             <Link to={'/' + props.dates[3]} className='webinar'>
                 <div className='img' style={{backgroundImage: 'url(' + wall_ceiling_window + ')'}}></div>
                 <time className='date'>{props.dates[3]}</time>
-            </Link>
+            </Link> */}
+            {props.modules.map(module => (
+                <Link to={'/' + module.topic} className='webinar'>
+                    <div className='img' style={{backgroundImage: 'url(' + module.icon + ')'}}></div>
+                    <span>{module.topic}</span>
+                </Link>         
+            ))}
         </nav>
     )
 }

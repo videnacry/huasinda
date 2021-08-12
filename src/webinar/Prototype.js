@@ -12,22 +12,20 @@ const Prototype = (props) => {
         window.scrollTo(0, 0)
       }, [])
     
-    const dates = ['22-12-2020', '24-12-2020', '26-12-2020', '28-12-2020']
-    
     return(
         <div className='webinar-p'>
             <div className='header-space'></div>
-            <Webinars dates={dates}/>
-            <Greeting start={props.webinar.date} title={props.webinar.title}/>
-            <Summary img={props.webinar.img[0]} lines={props.webinar.summery}/>
+            <Webinars modules={props.modules}/>
+            <Greeting start={props.module.date} title={props.module.title}/>
+            <Summary img={props.module.img[0]} lines={props.module.summery}/>
             <section className='schedule'>
                 <h1>**FECHA**</h1>
-                {props.webinar.long_date.map(date => (
+                {props.module.long_date.map(date => (
                     <p>{date}</p>
                 ))}
             </section>
-            <Teacher teachers={props.webinar.teachers}/>
-            <img className='img' src={props.webinar.img[1]}/>
+            <Teacher teachers={props.module.teachers}/>
+            <img className='img' src={props.module.img[1]}/>
             {/* <div className='leave-comment'><LeaveComment/></div> */}
             <div className='footer-space'></div>
         </div>
