@@ -1,13 +1,11 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import Header from '../components/header'
 import Jumbotron from '../components/jumbotron'
 import jumbotronImgSrc from './jumbotron.jpg'
 import Summary from '../webinar/summary'
 import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'
 import Description from './description'
-import Footer from '../components/footer'
 
 const mission = {
     title: 'Misión',
@@ -42,14 +40,12 @@ const About = () => {
 
     return(
         <div className='home-c'>
-            <Header/>
             <Jumbotron title="Acerca de nosotros" message="" imgSrc={jumbotronImgSrc}/>
             <Description title={mission.title} description={mission.description}/>
             <Summary img={missionImgSrc} lines={mission.lines}/>
             <Description title={vision.title} description={vision.description}/>
             <Summary img={visionImgSrc} lines={vision.lines}/>
             <div className='space'></div>
-            <Footer/>
         </div>
     )
 }

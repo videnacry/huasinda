@@ -5,6 +5,8 @@ import Webinar from './webinar/Webinar'
 import Projects from './projects';
 import Prototype from './webinar/Prototype'
 import Checkout from './checkout/Checkout'
+import Header from './components/header';
+import Footer from './components/footer'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 import flood from './img/pixabay/flood.jpg'
@@ -97,6 +99,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Header/>
         <Route exact path='/'><Home /></Route>
         <Route exact path='/webinars'><Webinar webinars={webinars} /></Route>
         {webinars.map(webinar => (
@@ -105,6 +108,7 @@ function App() {
         <Route exact path='/checkout'><Checkout webinars={webinars}/></Route>
         <Route exact path='/about-us'><AboutUs/></Route>
         <Route exact path='/projects'><Projects/></Route>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

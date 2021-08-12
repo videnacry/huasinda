@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react'
-import Header from '../components/header'
 import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
 import Teacher from './teacher'
-import LeaveComment from '../components/leaveComment'
-import Footer from '../components/footer'
+// import LeaveComment from '../components/leaveComment'
 import './webinar.css'
 
 const Prototype = (props) => {
@@ -18,7 +16,6 @@ const Prototype = (props) => {
     
     return(
         <div className='webinar-p'>
-            <Header/>
             <div className='header-space'></div>
             <Webinars dates={dates}/>
             <Greeting start={props.webinar.date} title={props.webinar.title}/>
@@ -31,9 +28,8 @@ const Prototype = (props) => {
             </section>
             <Teacher teachers={props.webinar.teachers}/>
             <img className='img' src={props.webinar.img[1]}/>
-            <div className='leave-comment'><LeaveComment/></div>
+            {/* <div className='leave-comment'><LeaveComment/></div> */}
             <div className='footer-space'></div>
-            <Footer/>
         </div>
     )
 }

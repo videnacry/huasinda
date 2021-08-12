@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import './Checkout.css'
 
-import Header from '../components/header'
 import Webinars from '../components/webinars'
 import ContactForm from './contactForm'
 import Cart from './cart'
 import Payment from './payment'
-import Footer from '../components/footer'
 
 const Checkout = (props) => {
 
@@ -27,7 +25,6 @@ const Checkout = (props) => {
     
     return(
         <article class="checkout-p">
-            <Header />
             <div className='header-space'></div>
             <Webinars dates={dates}/>
             <header class="header">
@@ -37,7 +34,6 @@ const Checkout = (props) => {
             <ContactForm />
             <Cart webinars={props.webinars} setCart={setCart} cart={cart} setPrice={setPrice}/>
             <Payment price={price} />
-            <Footer />
         </article>
     )
 }

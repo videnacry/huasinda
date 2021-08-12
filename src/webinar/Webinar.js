@@ -1,13 +1,11 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-import Header from '../components/header'
 import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
 import Price from './price'
 // import LeaveComment from '../components/leaveComment'
-import Footer from '../components/footer'
 import './webinar.css'
 
 import complete_outsie from '../img/rectangle/complete_outside.jpg'
@@ -29,7 +27,6 @@ const Webinar = (props) => {
     
     return(
         <div className='webinar-p'>
-            <Header/>
             <div className='header-space'></div>
             <Webinars dates={dates}/>
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg='Desde el 19 de Octubre al 2 de Diciembre todos los lunes y miercoles.'/>
@@ -50,8 +47,6 @@ const Webinar = (props) => {
             </section>
             <img className='img' src={wall_ceiling_window}/>
             {/* <div className='leave-comment'><LeaveComment/></div> */}
-            {/* <div className='footer-space'></div> */}
-            <Footer/>
         </div>
     )
 }
