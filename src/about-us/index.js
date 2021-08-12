@@ -29,7 +29,7 @@ const vision = {
         '',
         '¿Te unes a la causa?',
         '',
-        <Link to='/webinars' className='btn-green'>Información del curso</Link>
+        <Link to='/modules' className='btn-green'>Información del curso</Link>
     ]
 }
 const About = () => {

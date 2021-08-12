@@ -19,15 +19,14 @@ const Webinar = (props) => {
 
     const lines = ['Aquaterra los invita a participar del programa:',
     '¨Creación de entornos Bio Regenerativos: Una visión desde la Permacultura y la Bioconstrucción¨',
-    'Compuesto por 14 webinars.',
-    'Duración: 3hs cada webinar.']
+    'Compuesto por 9 módulos.']
 
     
     return(
         <div className='webinar-p'>
             <div className='header-space'></div>
             <Webinars modules={props.modules}/>
-            <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg='Desde el 19 de Octubre al 2 de Diciembre todos los lunes y miercoles.'/>
+            <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg='Accede a nuestro contenido para Fomentar y promover el aprendizaje de técnicas de bioconstrucción '/>
             <Summary img={complete_outsie} lines={lines}/>
             <section className='schedule'>
                 <h1>**Talleres los fines de semana**</h1>

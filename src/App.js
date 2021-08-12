@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
       <Header/>
         <Route exact path='/'><Home /></Route>
-        <Route exact path='/webinars'><Webinar modules={modules} /></Route>
+        <Route exact path='/modules'><Webinar modules={modules} /></Route>
         {modules.map(module => (
           <Route exact path={'/' + module.topic}><Prototype module={module} modules={modules}/></Route>
         ))}

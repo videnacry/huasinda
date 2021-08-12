@@ -11,7 +11,7 @@ const Webinars = () => {
         <div className='webinars-s'>
             <p>Aquaterra se especializa en la formación de profesionales en el ámbito de la edificación responsable a base del bambú.</p>
             <div className='article'>
-                <Link to='./webinars' className='title'><h1>Webinars</h1></Link>
+                <Link to='./webinars' className='title'><h1>Módulos</h1></Link>
                 <p className='pharagraph-right'>Donde estés...</p>
                 <div className='black-line'>
                     <div className='frame-left'>

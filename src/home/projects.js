@@ -20,7 +20,7 @@ const Posts = () => {
                 <div className='frame-left'>
                     <div style={{backgroundImage: `url(${projectSecondSrc})`}} className='img-left'/>
                 </div>
-                <p className='pharagraph-right'>Construcciones con diversas funciones, desde viviendas hasta hibernaderos</p>
+                <p className='pharagraph-right'>Construcciones con diversas funciones, desde viviendas hasta invernaderos</p>
                 <div className='link'><Link to='/projects' className='btn-green'>más info</Link></div>
             </div>
         </div>

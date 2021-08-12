@@ -4,7 +4,7 @@ import photoThirdSrc from '../img/greenhouse/coating.jpg'
 import photoFourthSrc from '../img/greenhouse/columns.jpg'
 
 const project = {
-    title: 'Hibernadero',
+    title: 'Invernadero',
     photosSrc: [
         photoFirstSrc,
         photoSecondSrc,
