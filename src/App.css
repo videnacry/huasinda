@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @font-face{
   font-family: 'Roboto';
   src: url("./font/Roboto-Regular.ttf");
@@ -54,7 +61,8 @@ a.btn-green, button.btn-green {
   padding: 0 3%;
   background-color: #56BB33;
   color: white;
-  box-shadow: 1px 2px 2px #000000c2;
+  -webkit-box-shadow: 1px 2px 2px #000000c2;
+          box-shadow: 1px 2px 2px #000000c2;
   white-space: nowrap;
 }
 button.btn-green {
@@ -89,5 +97,97 @@ button.btn-green:focus-visible {
   }
   h3 {
     font-size: 40px;
+  }
+}
+
+
+
+@-webkit-keyframes satellite {
+  
+  0% { -webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  100% { -webkit-filter: hue-rotate(360deg) ; filter: hue-rotate(360deg) ; -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+
+
+@keyframes satellite {
+  
+  0% { -webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+  100% { -webkit-filter: hue-rotate(360deg) ; filter: hue-rotate(360deg) ; -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+.with-satellites::before, .with-satellites::after, .App>.top-left-leaf, .App>.bottom-right-leaf {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://image.flaticon.com/icons/png/512/2917/2917995.png);
+  -webkit-animation-name: satellite;
+          animation-name: satellite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.App>.top-left-leaf, .App>.bottom-right-leaf {
+  position: fixed;
+  top: unset;
+  left: unset;
+  opacity: 0.2;
+}
+.App>.top-left-leaf {
+  width: 30%;
+  height: 50px;
+  top: 0%;
+  left: 10%;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+.App>.bottom-right-leaf {
+  width: 40%;
+  height: 50px;
+  bottom: 0%;
+  right: 10%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  animation-direction: reverse;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  .App>.top-left-leaf {
+    top: 30%;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+  }
+  .App>.bottom-right-leaf {
+    bottom: 20%;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+  }
+}
+.with-satellites::before {
+  height: 1em;
+  background-position: 20%;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+.with-satellites::after {
+  height: 0.5em;
+  opacity: 1;
+  background-position: 40%;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  animation-direction: reverse;
+}
+@media screen and (max-aspect-ratio: 7/10) {
+  .with-satellites::before {
+    opacity: 1;
   }
 }

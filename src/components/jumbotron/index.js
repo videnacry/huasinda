@@ -6,7 +6,7 @@ const Greeting = (props) => {
     return(
         <header className='jumbotron-c'>
             <div className='brand' style={{backgroundImage: `url(${props.imgSrc})`}}>
-                <h1 className='title'>{props.title}</h1>
+                <h1 className='title with-satellites'>{props.title}</h1>
                 {props.msg ? <p className='msg'>{props.msg}</p>:''}
             </div>
         </header>

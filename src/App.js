@@ -14,6 +14,8 @@ function App() {
     
   return (
     <div className="App">
+      <div className='top-left-leaf'/>
+      <div className='bottom-right-leaf'/>
       <BrowserRouter>
       <Header/>
         <Route exact path='/'><Home /></Route>
