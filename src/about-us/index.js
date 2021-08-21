@@ -42,9 +42,9 @@ const About = () => {
         <div className='home-c'>
             <Jumbotron title="Acerca de nosotros" message="" imgSrc={jumbotronImgSrc}/>
             <Description title={mission.title} description={mission.description}/>
-            <Summary img={missionImgSrc} lines={mission.lines}/>
+            <Summary img={missionImgSrc} boxes={{dark: {elmts: mission.lines}}}/>
             <Description title={vision.title} description={vision.description}/>
-            <Summary img={visionImgSrc} lines={vision.lines}/>
+            <Summary img={visionImgSrc} boxes={{dark: {elmts: vision.lines}}}/>
             <div className='space'></div>
         </div>
     )

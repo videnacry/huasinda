@@ -1,6 +1,33 @@
 .summary-c {
     position: relative;
+    margin-top: 20%;
 }
+.summary-c > .frame {
+    position: relative;
+}
+.summary-c>.frame>.img {
+    margin: auto;
+    background-size: cover;
+    width: 70%;
+    padding-top: 30%;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .summary-c>.frame>.img {
+        width: 100%;
+        padding-top: 50%;
+    }
+}
+@media screen and (max-aspect-ratio: 7/10) {
+    .summary-c>.frame>.img {
+        padding-top: 60%;
+    }
+}
+.summary-c>.frame>.space {
+    width: 100%;
+    margin-bottom: 30%;
+}
+/*
+
 .summary-c>.text {
     background-color: #363636;
     border-radius: 10px;
@@ -12,6 +39,7 @@
     right: 2vw;
     top: -100px;
 }
+
 .summary-c>.text>.line {
     overflow: hidden;
     margin: 12px;
@@ -25,8 +53,5 @@
 .summary-c>.text:hover>.line {
     white-space: initial;
 }
-.summary-c>.img {
-    background-size: cover;
-    width: 100%;
-    height: 50vw;
-}
+
+*/

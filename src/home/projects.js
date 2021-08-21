@@ -11,7 +11,7 @@ const Posts = () => {
             <p>A favor de la reducción de la huella de carbono y la economía circular, construimos estructuras amigables con el medio ambiente.</p>
             <div>
                 <Box absolute style={{width: '80%', height: '55%', top: '0', left: '0'}}/>
-                <Box radius dark style={{width: '100%', height: '30px', top: 'calc(55%)', left: '0'}}/>
+                <Box absolute radius dark style={{width: '100%', height: '30px', top: 'calc(55%)', left: '0'}}/>
                 <Link to='/projects'><h1 className='title'>Proyectos</h1></Link>
                 <p className='pharagraph-left'>Esqueleto de bambú y relleno de tierra</p>
                 <div className='frame-right'>

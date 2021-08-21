@@ -1,7 +1,6 @@
-.box-c{
+.box-c {
+    padding: 2vmin;
     position: relative;
-    text-align: start;
-    position: absolute;
 }
 .box-c.absolute {
     position: absolute;
@@ -16,4 +15,50 @@
 .box-c.light{
     background-color: #EFEFEF;
     color: #000000;
+}
+.box-c.dark.shadow-top-left {
+    box-shadow: -3px -3px 5px white;
+}
+.box-c.dark.shadow-bottom-left {
+    box-shadow: 3px -3px 5px white;
+}
+.box-c.dark.shadow-top-right {
+    box-shadow: -3px 3px 5px white;    
+}
+.box-c.dark.shadow-bottom-right {
+    box-shadow: 3px 3px 5px white;    
+}
+.box-c.light.shadow-top-left {
+    box-shadow: -3px -3px 5px rgb(0, 0, 0, 0.6);
+}
+.box-c.light.shadow-bottom-left {
+    box-shadow: 3px -3px 5px rgb(0, 0, 0, 0.6);
+}
+.box-c.light.shadow-top-right {
+    box-shadow: -3px 3px 5px rgb(0, 0, 0, 0.6);    
+}
+.box-c.light.shadow-bottom-right {
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.6);    
+}
+.box-c>.elmt *{
+    margin-top: 0.4em;
+}
+.box-c.wrap>.elmt{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.box-c.wrap:hover>.elmt {
+    white-space: normal;
+}
+.box-c.wrap>.elmt *{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.box-c.wrap:hover {
+    width: fit-content !important;
+}
+.box-c.wrap:hover>.elmt * {
+    white-space: normal;
 }
