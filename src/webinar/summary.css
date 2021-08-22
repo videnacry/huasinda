@@ -1,21 +1,87 @@
 .summary-c {
     position: relative;
-    margin-top: 20%;
 }
 .summary-c > .frame {
     position: relative;
 }
-.summary-c>.frame>.img {
-    margin: auto;
-    background-size: cover;
-    width: 70%;
-    padding-top: 30%;
+.summary-c > .frame > .box-light {
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    top: -18%;
+    right: 0;
 }
-@media screen and (max-aspect-ratio: 1/1) {
+.summary-c > .frame > .box-dark {
+    max-width: 50%; 
+    min-height: 50%;
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+    top: -10%;
+    right: 1%;
+}
+.summary-c > .frame > .box-white {
+    width: 33%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 6%;
+}
+.summary-c > .frame > .line-dark {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: 20%;
+    left: 0;
+}
+.summary-c>.frame>.img {
+    width: 70%;
+    margin-left: 10%;
+    padding-top: 32%;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+@media screen and (min-aspect-ratio: 85/100) {
+    .summary-c>.frame>.img {
+        width: 80%;
+        margin-left: 5%;
+        padding-top: 40%;
+    }
+}
+@media screen and (min-aspect-ratio: 10/6) {
+    .summary-c>.frame>.img {
+        width: 62%;
+        margin-left: 12%;
+        padding-top: 30%;
+    }
+}
+@media screen and (max-aspect-ratio: 85/100) {
+    .summary-c {
+        margin-top: 20%;
+    }
+    .summary-c > .frame > .box-light {
+        width: 54%;
+        height: 36%;
+        top: -42%;
+    }
+    .summary-c > .frame > .box-dark {
+        width: 45%;
+        top: -35%;
+    }
+    .summary-c > .frame > .box-white {
+        width: 70%;
+        top: 70%;
+        left: 1%;
+    }
+    .summary-c > .frame > .line-dark {
+        bottom: -15%;
+    }
     .summary-c>.frame>.img {
         width: 100%;
+        margin: auto;
         padding-top: 50%;
-    }
+    }    
 }
 @media screen and (max-aspect-ratio: 7/10) {
     .summary-c>.frame>.img {
