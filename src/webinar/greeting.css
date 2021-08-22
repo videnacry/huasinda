@@ -3,23 +3,33 @@
     margin: 0 20px;
 }
 .greeting-c>.brand{
-    margin: 40px 0;
-    margin-bottom: 120px;
+    margin: 20px 0;
+    margin-bottom: 100px;
 }
 .greeting-c>.brand>.time-range{
     text-align: end;
 }
 .greeting-c>.brand>.title{
     margin-block-start: 10px;
-    width: 85%;
+    width: 65%;
 }
 .greeting-c>.msg{
     width: 50%;
     color: #484848;
 }
-@media screen and (max-aspect-ratio: 7/10) {
-    .greeting-c>.msg{
+@media screen and (min-aspect-ratio: 10/6) {
+    .greeting-c>.brand{
+        margin-bottom: 3%;
     }
-    .greeting-c>.brand>.time-range{
+}
+@media screen and (max-aspect-ratio: 1652/1000) {
+    .greeting-c>.brand{
+        margin-bottom: 110px;
+    }
+}
+@media screen and (max-aspect-ratio: 7/10) {
+    .greeting-c>.brand{
+        margin: 40px 0;
+        margin-bottom: 120px;
     }
 }

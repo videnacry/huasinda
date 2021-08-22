@@ -1,6 +1,7 @@
 .box-c {
     padding: 2vmin;
     position: relative;
+    display: inline-block;
 }
 .box-c.absolute {
     position: absolute;

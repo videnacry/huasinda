@@ -4,20 +4,22 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+    align-items: stretch;
+    font-size: 0.8em;
     background-color: rgba(255, 255, 255, 0.5);
-    z-index: 3;
 }
 .header-c svg{
     width: auto;
-    height: 2em;
-    margin: 0.5em 0;
+    height: 1.8em;
+    margin: 0.3em 0;
 }
 .header-c > div {
     width: 100%;
     max-width: 450px;
+    margin-top: 6px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -37,9 +39,9 @@
     .header-c {
         border-radius: 20px 20px 0px 0px;
     }
-    .header-c h2{
-        margin: revert;
-        font-weight: 500;
+    .header-c svg {
+        height: 2em;
+        margin: 0.5em 0;
     }
     .header-c > div {
         max-width: 550px;

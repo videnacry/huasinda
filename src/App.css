@@ -35,16 +35,19 @@
           text-size-adjust: 100%;
 }
 body {
-  font-size: 26px;
+  font-size: 22px;
+}
+p {
+  margin: 0;
 }
 h1 {
-  font-size: 45px;
+  font-size: 34px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 h3 {
-  font-size: 35px;
+  font-size: 26px;
 }
 a {
   color: inherit;

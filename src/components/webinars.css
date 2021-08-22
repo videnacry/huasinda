@@ -1,9 +1,10 @@
 .webinars-c{
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
     background-color: #363636;
-    font-size: 18px;
+    text-align: center;
+    font-size: 14px;
 }
 .webinars-c>.webinar{
     color: whitesmoke;
@@ -15,8 +16,17 @@
 }
 .webinars-c>.webinar>.img{
     width: 70px;
-    height: 70px;
+    height: 50px;
     margin: auto;
     border-radius: 10px;
     background-size: cover;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .webinars-c {
+        font-size: 18px;
+    }
+    .webinars-c>.webinar>.img {
+        width: 70px;
+        height: 70px;
+    }
 }
