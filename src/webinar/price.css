@@ -25,33 +25,19 @@
 .price-c>.spheres>.max, .price-c>.spheres>.mid, .price-c>.spheres>.min{
     position: absolute;
 }
-.price-c>.spheres>.max{
-    top: -15%;
-    left: 20%;
-}
-.price-c>.spheres>.mid{
-    top: 30%;
-    right: 30%;
-}
-.price-c>.spheres>.min{
-    bottom: 20%;
-    left: 0%;
-}
 .price-c>.spheres>.mid .sphere-sm, .price-c>.spheres>.mid .sphere-md{
     background-color: whitesmoke;
     color: #383838;
 }
 .price-c>.btn{
-    position: absolute;
-    right: 100px;
-    bottom: 13%;
-    text-decoration: none;
     padding: 10px 40px;
-    background-color: white;
     border: solid 0.5px rgb(160, 160, 160);
-    box-shadow: inset 0 0 5px gray;
     border-radius: 5px;
+    position: absolute;
+    text-decoration: none;
+    background-color: white;
     color: #383838;
+    box-shadow: inset 0 0 5px gray;
 }
 .price-c>.btn:hover{
     background-color: #363636;
@@ -62,6 +48,52 @@
     height: 200px;
     margin-bottom: 150px;
 }
-@media screen and (min-aspect-ratio: 10/6) {
-    
+@media screen and (max-aspect-ratio: 10/7) {
+    .price-c>.spheres>.max{
+        top: -15%;
+        left: 20%;
+    }
+    .price-c>.spheres>.mid{
+        top: 30%;
+        right: 30%;
+    }
+    .price-c>.spheres>.min{
+        bottom: 20%;
+        left: 0%;
+    }
+    .price-c>.btn{
+        position: absolute;
+        right: 100px;
+        bottom: 13%;
+    }
+}
+@media screen and (min-aspect-ratio: 10/7) {
+    .price-c>.spheres{
+        width: 60%;
+        margin-left: 30%;
+    }
+    .price-c>.spheres>.img{
+        padding-top: 54%;
+    }
+    .price-c>.spheres>.max{
+        top: 5%;
+        left: -20%;
+    }
+    .price-c>.spheres>.mid{
+        bottom: 20%;
+        left: 50%;
+    }
+    .price-c>.spheres>.min{
+        top: 40%;
+        left: 85%;
+    }
+    .price-c>.title>h1 {
+        margin-bottom: 2%;
+        padding: 1%;
+    }
+    .price-c>.btn{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+    }
 }
