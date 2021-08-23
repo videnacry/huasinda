@@ -1,11 +1,16 @@
-.price-c{
+.price-c {
     margin-top: -2%;
     position: relative;
     text-align: start;
 }
-.price-c>.title{
+.price-c>.title {
     position: relative;
     text-align: center;
+}
+.price-c>.title>.background {
+    width: 70%;
+    height: 100%;
+    position: absolute;
 }
 .price-c>.title>h1 {
     margin-bottom: 12%;
@@ -13,7 +18,13 @@
     position: relative;
     z-index: 1;
 }
-.price-c>.spheres>.img{
+.price-c>.box-left, .price-c>.box-right, .price-c>.line-dark {
+    position: absolute;
+}
+.price-c>.line-dark {
+    height: 0.8em;
+}
+.price-c>.spheres>.img {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -49,6 +60,26 @@
     margin-bottom: 150px;
 }
 @media screen and (max-aspect-ratio: 10/7) {
+    .price-c>.title>.background {
+        left: 30%;
+    }
+    .price-c>.box-left {
+        width: 10%;
+        height: 30%;
+        top: 4em;
+        left: 0;
+    }
+    .price-c>.box-right {
+        width: 50%;
+        height: 40%;
+        bottom: -7%;
+        right: 0;
+    }
+    .price-c>.line-dark {
+        width: 50%;
+        bottom: -7%; 
+        right: 0;
+    }
     .price-c>.spheres>.max{
         top: -15%;
         left: 20%;
@@ -62,16 +93,36 @@
         left: 0%;
     }
     .price-c>.btn-buy {
-        top: 85%;
-        right: 10%;
-    }
-    .price-c>.btn-modules {
         bottom: -10%;
         left: 50%;
         transform: translateX(-50%);
     }
+    .price-c>.btn-modules {
+        top: 85%;
+        right: 10%;
+    }
 }
 @media screen and (min-aspect-ratio: 10/7) {
+    .price-c>.title>.background {
+        right: 30%;
+    }
+    .price-c>.box-left {
+        width: 20%;
+        height: 27%;
+        bottom: 10%;
+        left: 0;
+    }
+    .price-c>.box-right {
+        width: 50%;
+        height: 70%;
+        top: 30%;
+        right: 0;
+    }
+    .price-c>.line-dark {
+        width: 100%;
+        bottom:19%;
+        left: 0;
+    }
     .price-c>.spheres{
         width: 60%;
         margin-left: 30%;

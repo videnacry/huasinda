@@ -16,8 +16,19 @@ const Price = () => {
     return(
         <section className='price-c'>
             <div className='title'>
-                <Box absolute style={{width: '100%', height: '100%', left: '0'}}/>
+                <div className='background'>
+                    <Box style={{width: '100%', height: '100%', left: '0'}}/>
+                </div>
                 <h1>**OFERTAS**</h1>
+            </div>
+            <div className='box-left'>
+                <Box style={{width: '100%', height: '100%', left: '0'}}/>
+            </div>
+            <div className='box-right'>
+                <Box style={{width: '100%', height: '100%', left: '0'}}/>
+            </div>
+            <div className='line-dark'>
+                <Box dark style={{width: '100%', height: '100%', left: '0'}}/>
             </div>
             <div className='spheres'>
                 <div className='max'><Spheres text={max}/></div>
