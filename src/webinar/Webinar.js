@@ -1,15 +1,12 @@
 import React, {useEffect} from 'react'
-import {Link} from 'react-router-dom'
 
 import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
 import Price from './price'
-// import LeaveComment from '../components/leaveComment'
 import './webinar.css'
 
 import complete_outsie from '../img/rectangle/complete_outside.jpg'
-import wall_ceiling_window from '../img/rectangle/wall_ceiling_window.jpg'
 
 const Webinar = (props) => {
     
@@ -44,8 +41,6 @@ const Webinar = (props) => {
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg=''/>
             <Summary img={complete_outsie} boxes={boxes}/>
             <Price/>
-            {/* <Summary img={wall_ceiling_window} boxes={props.modules.map(webinar => <Link className='btn-green' to={`/${webinar.topic}`}>{webinar.title}</Link>)} title='**Módulos**'/> */}
-            {/* <div className='leave-comment'><LeaveComment/></div> */}
         </div>
     )
 }

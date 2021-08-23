@@ -1,10 +1,12 @@
 import {Link} from 'react-router-dom'
 
-import Box from '../components/box'
+import Box from '../../components/box'
 import Spheres from './spheres'
-import './price.css'
+import './index.css'
+import { ReactComponent as CartSvg } from './cart.svg'
+import { ReactComponent as StackSvg } from './stack.svg'
 
-import img from '../img/rectangle/wall_window_cealing_plant.jpg'
+import img from '../../img/rectangle/wall_window_cealing_plant.jpg'
 
 const Price = () => {
     const max = <div style={{margin:'0 30px'}}><h4><span>1</span> módulo</h4><h4>-Total USD 60-</h4></div>
@@ -23,7 +25,8 @@ const Price = () => {
                 <div className='min'><Spheres text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
-            <Link to="/checkout" className="btn">Comprar</Link>
+            <Link to="/checkout" className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</Link>
+            <button className="btn-big btn-modules"><StackSvg height='1.2em' width='1.2em'/>Módulos</button>
             <div className='space'></div>
         </section>
     )
