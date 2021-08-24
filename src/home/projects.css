@@ -1,6 +1,8 @@
 .projects-s {
     width: 100%;
     color: #363636;
+    padding-top: 3%;
+    padding-bottom: 8%;
 }
 .projects-s > p {
     padding: 3% 10%;
@@ -70,14 +72,27 @@
     text-align: center;
 }
 @media screen and (max-aspect-ratio: 1/1) {
-    .projects-s > div > .frame-right > .img-right {
-        padding-top: 55%;
-    } .projects-s > div > .frame-left > .img-left {
-        margin-top: 20px;
-        padding-top: 110%;
+    .projects-s {
+        padding-top: 10%;
     }
-}
-@media screen and (max-aspect-ratio: 7/10) {
     .projects-s > p {
+        padding-bottom: 10%;
+    }
+    .projects-s > div {
+        padding-top: 3%;
+    }
+    .projects-s > div >.pharagraph-left {
+        margin-top: 5%;
+    }
+    .projects-s > div > .frame-right > .img-right {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 65%;
+    } .projects-s > div > .frame-left > .img-left {
+        margin-top: 80px;
+        padding-top: 140%;
+    }
+    .projects-s > div > .link {
+        margin-top: 5%;
     }
 }

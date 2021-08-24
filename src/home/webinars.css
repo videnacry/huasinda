@@ -1,6 +1,8 @@
 .webinars-s{
     width: 100%;
     color: #363636;
+    padding-top: 8%;
+    padding-bottom: 3%;
 }
 .webinars-s > p {
     padding: 3% 10%;
@@ -90,12 +92,29 @@
     text-align: center;
 }
 @media screen and (max-aspect-ratio: 1/1) {
+    .webinars-s {
+        padding-top: 10%;
+    }
+    .webinars-s > p {
+        padding-bottom: 10%;
+    }
+    .webinars-s>.article{
+        padding-top: 3%;
+    }
+    .webinars-s>.article>.title>h1 {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    .webinars-s > .article >.pharagraph-left {
+        margin-top: 5%;
+    }
     .webinars-s > .article >  .black-line {
+        margin-top: 100px;
         padding-top: 30%;
     }
     .webinars-s > .article > .black-line > .frame-left {
         width: 60%;
-        top: -40px;
+        top: -140px;
     }
     .webinars-s > .article > .black-line > .frame-center {
         width: 20%;
@@ -103,19 +122,18 @@
     }
     .webinars-s > .article > .black-line > .frame-right {
         width: 45%;
-        bottom: -40px;
+        bottom: -100px;
     }
     .webinars-s > .article > .black-line > .frame-right > .img-right {
-        padding-top: 50%;
+        padding-top: 65%;
     }
     .webinars-s > .article > .black-line > .frame-center > .white {
-        padding-top: 130%;
+        padding-top: 120%;
     }
     .webinars-s > .article > .black-line > .frame-left > .img-left {
-        padding-top: 50%;
+        padding-top: 65%;
     }
-}
-@media screen and (max-aspect-ratio: 7/10) {
-    .projects-s > p {
+    .webinars-s>.article>.link{
+        margin-top: 5%;
     }
 }
