@@ -1,0 +1,45 @@
+.module-s {
+    width: 100%;
+    margin: 8% 0;
+    position: relative;
+}
+.module-s>.line-white, .module-s>.line-black {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.module-s>.line-black {
+    left: 0;
+}
+.module-s>.line-white {
+    right: 0;
+}
+.module-s>.card-module {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 18px;
+    position: relative;
+    background-color: white;
+}
+.module-s>.card-module>h1 {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.module-s>.card-module>hr {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.module-s>.card-module>.options {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.module-s>.card-module>.options>button {
+    margin: 0 10px;
+}

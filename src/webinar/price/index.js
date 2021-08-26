@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 
 import Box from '../../components/box'
 import Spheres from './spheres'
+import ModalModules from './modal-modules'
 import './index.css'
 import { ReactComponent as CartSvg } from './cart.svg'
 import { ReactComponent as StackSvg } from './stack.svg'
@@ -39,6 +40,7 @@ const Price = () => {
             <Link to="/checkout" className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</Link>
             <button className="btn-big btn-modules"><StackSvg height='1.2em' width='1.2em'/>Módulos</button>
             <div className='space'></div>
+            <ModalModules/>
         </section>
     )
 }

@@ -28,11 +28,13 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
   font-family: Roboto;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  color: #363636;
 }
 body {
   font-size: 22px;
@@ -62,7 +64,7 @@ button {
 a:hover {
   text-decoration: underline;
 }
-a.btn-green, button.btn-green {
+a.btn-green, button.btn-green, button.btn-black, a.btn-black {
   border-radius: 5px;
   padding: 0 3%;
   background-color: #56BB33;
@@ -71,10 +73,13 @@ a.btn-green, button.btn-green {
           box-shadow: 1px 2px 2px #000000c2;
   white-space: nowrap;
 }
-button.btn-green {
+button.btn-green, button.btn-black {
   border: none;
 }
-button.btn-green:focus-visible {
+button.btn-black, a.btn-black {
+  background-color: #363636;
+}
+button.btn-green:focus-visible, button.btn-black:focus-visible {
   outline: none;
 }
 a.btn-big, button.btn-big {
