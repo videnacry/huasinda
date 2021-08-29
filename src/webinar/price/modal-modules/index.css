@@ -1,4 +1,5 @@
 .modal-s {
+    overflow: auto;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -10,7 +11,7 @@
 .modal-s>.backdrop {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgb(0 45 33 / 77%);
@@ -21,14 +22,26 @@
     height: 90%;
     margin: auto;
     border-radius: 30px;
+    padding-bottom: 50px;
     position: relative;
     top: 5%;
     background-color: white;
-}   
+}
+.modal-s>.modal>.background {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-clip: content-box;
+}
 .modal-s>.modal>.header {
+    height: 280px;
     padding: 2em 2em;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .modal-s>.modal>.header>.btn-close {
     width: 2em;
@@ -46,25 +59,90 @@
 .modal-s>.modal>.header>.btn-close:focus-visible {
     outline: none;
 }
-.modal-s>.modal>.column-dark {
-    width: 40%;
-    height: 100%;
+.modal-s>.modal>.box-first-white, .modal-s>.modal>.box-second-white, .modal-s>.modal>.box-third-white {
     position: absolute;
-    top: 0;
-    right: 0;
 }
-.modal-s>.modal>.container-gray {
+.modal-s>.modal>.box-first-white {
+    width: 60%;
+    height: 100%;
+}
+.modal-s>.modal>.box-second-white {
+    width: 5%;
+    height: 100%;
+}
+.modal-s>.modal>.box-third-white {
+    width: 100%;
+    height: 100%;
+}
+.modal-s>.modal>.box-first-gray, .modal-s>.modal>.box-second-gray {
+    overflow: hidden;
+    width: 80%;
+    height: calc(100% - 280px - 80px);
+    border-radius: 30px;
+    position: absolute;
+}
+.modal-s>.modal>.container {
     overflow: auto;
-    width: 90%;
-    padding: 5% 0;
-    max-height: 82%;
-    margin: 0 auto;
+    width: 93%;
+    height: calc(100% - 280px - 60px);
+    margin-bottom: 60px;
+    padding: 30px 0;
     border-radius: 30px;
     position: relative;
-    background-color: #efefef;
+}
+@media screen and (max-aspect-ratio: 10/6) {
 }
 @media screen and (max-aspect-ratio: 7/10) {
     .modal-s>.modal {
         width: 95%;
+    }
+    .modal-s>.modal>.header {
+        padding: 4em;
+        padding-top: 2em;
+    }
+    .modal-s>.modal>.background {
+        background-size: contain;
+    }
+    .modal-s>.modal>.box-first-white {
+        top: 0;
+        left: 0;
+    }
+    .modal-s>.modal>.box-second-white {
+        top: 0;
+        left: 65%;
+    }
+    .modal-s>.modal>.box-third-white {
+        top: 35vh;
+        left: 0;
+    }
+    .modal-s>.modal>.box-first-gray {
+        top: 320px;
+        left: 3%;
+    }
+    .modal-s>.modal>.box-second-gray {
+        top: 280px;
+        left: 6%;
+    }
+    .modal-s>.modal>.container {
+        left: 6%;
+    }
+}
+@media screen and (min-aspect-ratio: 1/1) {
+    .modal-s>.modal {
+        width: 90%;
+        border-radius: 10px;
+    }
+    .modal-s>.modal>.background {
+        background-size: cover;
+    }
+    .modal-s>.modal>.header {
+        padding: 1.2em 1.2em;
+    }
+    .modal-s>.modal>.container {
+        width: 95%;
+        border-radius: 10px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
