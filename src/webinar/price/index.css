@@ -36,9 +36,11 @@
 .price-c>.spheres>.max, .price-c>.spheres>.mid, .price-c>.spheres>.min{
     position: absolute;
 }
+.price-c>.spheres>.mid .sphere-md * {
+    color: #383838;
+}
 .price-c>.spheres>.mid .sphere-sm, .price-c>.spheres>.mid .sphere-md{
     background-color: whitesmoke;
-    color: #383838;
 }
 .price-c>.btn-buy, .price-c>.btn-modules {
     position: absolute;

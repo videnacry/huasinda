@@ -32,7 +32,7 @@
     background-color: #363636;
     box-shadow: 0 10px 3px rgb(0,0,0,40%);
 }
-.links-c>.links>li>.link {
+.links-c>.links>li>.link>* {
     color: #e5e5e5;
     text-decoration: none;
     font-size: 20px;

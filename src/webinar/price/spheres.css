@@ -1,5 +1,7 @@
 .spheres-s{
     position: absolute;
+}
+.spheres-s * {
     color: whitesmoke;
 }
 .spheres-s >.sphere-sm, .spheres-s >.sphere-md{
