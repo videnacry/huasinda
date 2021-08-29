@@ -1,34 +1,33 @@
 .module-s {
     width: 100%;
-    margin: 8% 0;
+    margin-bottom: 8%;
     position: relative;
 }
-.module-s>.line-white, .module-s>.line-black {
-    width: 50%;
+.module-s>.line-white {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-.module-s>.line-black {
+.module-s>.line-white {
     left: 0;
 }
-.module-s>.line-white {
-    right: 0;
-}
 .module-s>.card-module {
-    width: 90%;
-    margin: auto;
+    width: 88%;
+    margin-left: 30px;
     border-radius: 20px;
     padding: 30px;
     padding-bottom: 18px;
     position: relative;
     background-color: white;
+    box-shadow: 0 5px 5px;
 }
 .module-s>.card-module>h1 {
     overflow: hidden;
     position: relative;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-weight: 500;
 }
 .module-s>.card-module>hr {
     margin-top: 10px;
@@ -42,4 +41,32 @@
 }
 .module-s>.card-module>.options>button {
     margin: 0 10px;
+}
+.module-s>.card-module>.options>.btn-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-aspect-ratio: 10/6) {
+    .module-s {
+        width: 50%;
+        margin: 5% 0 0 0;
+    }
+    .module-s>.card-module {
+        width: 90%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 20px;
+        padding-bottom: 18px;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 5px 5px;
+    }
+    .module-s>.card-module>h1 {
+        font-size: 1em;
+    }
+    .module-s>.card-module>hr {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
