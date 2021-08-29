@@ -3,6 +3,10 @@
     position: relative;
     display: inline-block;
 }
+.box-c.fill {
+    width: 100%;
+    height: 100%;
+}
 .box-c.absolute {
     position: absolute;
 }
@@ -11,6 +15,8 @@
 }
 .box-c.dark{
     background-color: #363636;
+}
+.box-c.dark * {
     color: #c8c8c8;
 }
 .box-c.light{

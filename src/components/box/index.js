@@ -3,8 +3,9 @@ import './index.css'
 
 const Box = (props) => {
 
-    const {title, lines, style, dark, radius, absolute, shadowTopLeft, shadowTopRight, shadowBottomLeft, shadowBottomRight, wrap} = props
+    const {title, lines, style, dark, radius, absolute, shadowTopLeft, shadowTopRight, shadowBottomLeft, shadowBottomRight, wrap, fill} = props
     let boxClass = 'box-c'
+    boxClass += fill ? ' fill' : ''
     boxClass += wrap ? ' wrap' : ''
     boxClass += dark ? ' dark' : ' light'
     boxClass += radius ? ' border-radius' : ''
