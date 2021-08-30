@@ -47,17 +47,16 @@
     justify-content: center;
     align-items: center;
 }
-@media screen and (min-aspect-ratio: 10/6) {
+@media screen and (min-aspect-ratio: 1/1) {
     .module-s {
-        width: 50%;
-        margin: 5% 0 0 0;
+        margin: 0 0 5% 0;
     }
     .module-s>.card-module {
-        width: 90%;
-        margin: auto;
+        width: 71%;
+        margin-left: 3.5%;
         border-radius: 5px;
-        padding: 20px;
-        padding-bottom: 18px;
+        padding: 14px;
+        padding-bottom: 8px;
         position: relative;
         background-color: white;
         box-shadow: 0 5px 5px;
@@ -66,7 +65,13 @@
         font-size: 1em;
     }
     .module-s>.card-module>hr {
-        margin-top: 10px;
+        margin-top: 8px;
         margin-bottom: 20px;
+    }
+    .module-s>.card-module>.options>button {
+        margin: 0 5px;
+    }
+    .module-s>.card-module>.options * {
+        font-size: 16px;
     }
 }

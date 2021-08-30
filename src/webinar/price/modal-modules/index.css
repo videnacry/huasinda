@@ -29,7 +29,7 @@
 }
 .modal-s>.modal>.background {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 30px;
     position: absolute;
     left: 0;
@@ -43,9 +43,13 @@
     justify-content: space-between;
     position: relative;
 }
+.modal-s>.modal>.header>.btn-close, .modal-s>.modal>.header>h1 {
+    z-index: 1;
+}
 .modal-s>.modal>.header>.btn-close {
     width: 2em;
     height: 2em;
+    border: none;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -55,6 +59,10 @@
 }
 .modal-s>.modal>.header>.btn-close>h1 {
     color: white;
+    text-shadow: 0 2px 3px black;
+}
+.modal-s>.modal>.header>.btn-close>h1:hover {
+    color: red;
 }
 .modal-s>.modal>.header>.btn-close:focus-visible {
     outline: none;
@@ -74,7 +82,7 @@
     width: 100%;
     height: 100%;
 }
-.modal-s>.modal>.box-first-gray, .modal-s>.modal>.box-second-gray {
+.modal-s>.modal>.box-first-gray, .modal-s>.modal>.box-second-gray, .modal-s>.modal>.box-dark {
     overflow: hidden;
     width: 80%;
     height: calc(100% - 280px - 80px);
@@ -90,7 +98,12 @@
     border-radius: 30px;
     position: relative;
 }
-@media screen and (max-aspect-ratio: 10/6) {
+.modal-s>.modal>.container>.modules {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 @media screen and (max-aspect-ratio: 7/10) {
     .modal-s>.modal {
@@ -119,7 +132,7 @@
         top: 320px;
         left: 3%;
     }
-    .modal-s>.modal>.box-second-gray {
+    .modal-s>.modal>.box-second-gray, .modal-s>.modal>.box-dark {
         top: 280px;
         left: 6%;
     }
@@ -129,20 +142,91 @@
 }
 @media screen and (min-aspect-ratio: 1/1) {
     .modal-s>.modal {
-        width: 90%;
-        border-radius: 10px;
+        width: 95vw;
+        height: 90vh;
+        border-radius: 5px;
+        top: 5vh;
     }
     .modal-s>.modal>.background {
+        padding: 10px;
+        padding-right: 20px;
         background-size: cover;
     }
     .modal-s>.modal>.header {
-        padding: 1.2em 1.2em;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .modal-s>.modal>.header>h1 {
+        height: 40%;
+        padding: 0 40px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+        background-color: white;
+        font-size: 1.4em;
+    }
+    .modal-s>.modal>.header>.btn-close {
+        margin-left: auto;
+    }
+    .modal-s>.modal>.box-first-white {
+        width: 50%;
+        height: 40%;
+        top: 0;
+        left: 0;
+    }
+    .modal-s>.modal>.box-second-white {
+        width: 76%;
+        height: 100%;
+        top: 0;
+        left: 12%;
+    }
+    .modal-s>.modal>.box-third-white {
+        width: 50%;
+        height: 50%;
+        bottom: 0;
+        right: 0;
+    }
+    .modal-s>.modal>.box-first-gray, .modal-s>.modal>.box-second-gray, .modal-s>.modal>.box-dark {
+        width: 60%;
+        height: 85%;
+        border-radius: 5px;
+    }
+    .modal-s>.modal>.box-first-gray {
+        top: 13%;
+        left: 16%;
+    }
+    .modal-s>.modal>.box-dark {
+        width: 57%;
+        height: 83%;
+        top: 11%;
+        left: 22.5%;
+    }
+    .modal-s>.modal>.box-second-gray {
+        top: 7%;
+        left: 24%;
     }
     .modal-s>.modal>.container {
-        width: 95%;
+        width: 70%;
+        height: 80%;
         border-radius: 10px;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
+        top: 10%;
+        left: 30%;
+    }
+}
+@media screen and (min-aspect-ratio: 10/6) {
+    .modal-s>.modal {
+        width: 130vh;
+        height: 95vh;
+        top: 2.5vh;
+    }
+    .modal-s>.modal>.header>h1 {
+        padding: 0 30px;
+        left: 5%;
     }
 }

@@ -24,6 +24,9 @@ const ModulesModal = () => {
                 <div className='box-first-gray'>
                     <Box fill/>
                 </div>
+                <div className='box-dark'>
+                    <Box dark fill/>
+                </div>
                 <div className='box-second-gray'>
                     <Box fill/>
                 </div>
