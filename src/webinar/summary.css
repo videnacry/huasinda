@@ -11,14 +11,21 @@
     top: -18%;
     right: 0;
 }
+.summary-c > .frame > .box-light-2 {
+    width: 45%;
+    padding-top: 10%;
+    position: absolute;
+}
 .summary-c > .frame > .box-dark {
     max-width: 50%; 
     min-height: 50%;
     width: 30%;
+    border-radius: 10px;
     position: absolute;
     z-index: 2;
     top: -10%;
     right: 1%;
+    background-color: #363636;
 }
 .summary-c > .frame > .box-white {
     width: 33%;
@@ -47,6 +54,12 @@
         width: 80%;
         margin-left: 5%;
         padding-top: 40%;
+    }
+    .summary-c > .frame > .box-light-2 {
+        top: 85%;
+    }
+    .summary-c > .frame > .box-white {
+        top: 55%;
     }
 }
 @media screen and (min-aspect-ratio: 10/6) {
@@ -92,32 +105,3 @@
     width: 100%;
     margin-bottom: 30%;
 }
-/*
-
-.summary-c>.text {
-    background-color: #363636;
-    border-radius: 10px;
-    padding: 20px;
-    color: #c8c8c8;
-    text-align: start;
-    width: 50%;
-    position: absolute;
-    right: 2vw;
-    top: -100px;
-}
-
-.summary-c>.text>.line {
-    overflow: hidden;
-    margin: 12px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.summary-c>.text:hover {
-    max-width: 80%;
-    width: fit-content;
-}
-.summary-c>.text:hover>.line {
-    white-space: initial;
-}
-
-*/
