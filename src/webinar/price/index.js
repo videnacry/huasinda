@@ -9,7 +9,7 @@ import { ReactComponent as StackSvg } from './stack.svg'
 
 import img from '../../img/rectangle/wall_window_cealing_plant.jpg'
 
-const Price = () => {
+const Price = (props) => {
     const max = <div style={{margin:'0 30px'}}><h4><span>1</span> módulo</h4><h4>-Total USD 60-</h4></div>
     const mid = <div style={{margin:'0 30px'}}><h4><span>1</span> taller {'&'} módulo</h4><h4>-Total USD 150 -</h4></div>
     const min = <div style={{margin:'0 30px'}}><h4><span>1</span> taller</h4><h4>-Total USD 99 -</h4></div>
@@ -40,7 +40,7 @@ const Price = () => {
             <Link to="/checkout" className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</Link>
             <button className="btn-big btn-modules"><StackSvg height='1.2em' width='1.2em'/>Módulos</button>
             <div className='space'></div>
-            <ModalModules/>
+            <ModalModules modules={props.modules}/>
         </section>
     )
 }

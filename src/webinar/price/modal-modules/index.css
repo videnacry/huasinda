@@ -140,7 +140,7 @@
         left: 6%;
     }
 }
-@media screen and (min-aspect-ratio: 1/1) {
+@media screen and (min-aspect-ratio: 7/10) {
     .modal-s>.modal {
         width: 95vw;
         height: 90vh;
@@ -151,6 +151,7 @@
         padding: 10px;
         padding-right: 20px;
         background-size: cover;
+        filter: opacity(0.8);
     }
     .modal-s>.modal>.header {
         width: 100%;

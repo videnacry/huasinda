@@ -40,7 +40,7 @@ const Webinar = (props) => {
             <Webinars modules={props.modules}/>
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg=''/>
             <Summary img={complete_outsie} boxes={boxes}/>
-            <Price/>
+            <Price modules={props.modules}/>
         </div>
     )
 }

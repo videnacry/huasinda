@@ -3,7 +3,6 @@ import Greeting from './greeting'
 import Webinars from '../components/webinars'
 import Summary from './summary'
 import Teacher from './teacher'
-// import LeaveComment from '../components/leaveComment'
 import './webinar.css'
 
 const Prototype = (props) => {
@@ -25,7 +24,6 @@ const Prototype = (props) => {
             </section>
             <Teacher teachers={props.module.teachers}/>
             <img className='img' src={props.module.img[1]}/>
-            {/* <div className='leave-comment'><LeaveComment/></div> */}
             <div className='footer-space'></div>
         </div>
     )

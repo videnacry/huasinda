@@ -2,7 +2,7 @@ import Box from '../../../components/box'
 import Module from './module'
 import './index.css'
 import ImgSrcEcovillage from './ecovillage.jpg'
-const ModulesModal = () => {
+const ModulesModal = (props) => {
     return(
         <div className='modal-s'>
             <div className='backdrop'/>
@@ -32,12 +32,7 @@ const ModulesModal = () => {
                 </div>
                 <div className='container'>
                     <div className='modules'>
-                        <Module/>
-                        <Module/>
-                        <Module/>
-                        <Module/>
-                        <Module/>
-                        <Module/>
+                        {props.modules.map((module, index) => <Module topic={module.topic} title={module.title}/>)}
                     </div>
                 </div>
             </div>
