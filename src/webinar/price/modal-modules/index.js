@@ -5,7 +5,7 @@ import ImgSrcEcovillage from './ecovillage.jpg'
 const ModulesModal = (props) => {
     return(
         <div className='modal-s'>
-            <div className='backdrop'/>
+            <div className='backdrop' onClick={props.toggleIsVisible}/>
             <div className='modal'>
                 <div className='background' style={{backgroundImage: `url(${ImgSrcEcovillage})`}}/>
                 <div className='box-first-white'>
@@ -19,7 +19,7 @@ const ModulesModal = (props) => {
                 </div>
                 <div className='header'>
                     <h1>**Módulos**</h1>
-                    <button className='btn-close'><h1>x</h1></button>
+                    <button className='btn-close' onClick={props.toggleIsVisible}><h1>x</h1></button>
                 </div>
                 <div className='box-first-gray'>
                     <Box fill/>
