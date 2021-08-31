@@ -16,7 +16,7 @@ const Summary = (props) => {
                     <Box fill/>
                 </div>
                 <div className='box-dark'>
-                    <Box wrap radius dark shadowTopLeft fill lines={props.boxes.dark.elmts}/> 
+                    <Box wrap radius dark fill lines={props.boxes.dark.elmts}/> 
                 </div>
                 </> : ''}
                 <div className='img' style={{backgroundImage: 'url(' + props.img + ')'}}/>

@@ -3,6 +3,9 @@
     color: #363636;
     padding-top: 8%;
     padding-bottom: 3%;
+} 
+.webinars-s p {
+    font-size: 22px;
 }
 .webinars-s > p {
     padding: 3% 10%;
@@ -16,7 +19,8 @@
     background-color: #EFEFEF;
 }
 .webinars-s>.article>.title>h1 {
-    margin-bottom: 0;
+    margin: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 500;
     color: #363636;

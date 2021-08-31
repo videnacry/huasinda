@@ -8,6 +8,9 @@
     padding: 3% 10%;
     text-align: center;
 }
+.projects-s p {
+    font-size: 22px;
+}
 .projects-s > div {
     position: relative;
     padding-top: 1px;
@@ -17,6 +20,8 @@
     z-index: 1;
 }
 .projects-s > div > a > .title{
+    margin: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 500;
     color: #363636;
