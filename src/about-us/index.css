@@ -1,0 +1,33 @@
+.about-us-s > .short-img {
+    display: initial;
+}
+.about-us-s > .long-img {
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+.about-us-s > .info {
+    margin-top: 30px;
+}
+@media screen and (min-aspect-ratio: 912/1368) {
+    .about-us-s > .info {
+        display: flex;
+        align-items: center;
+    }
+    .about-us-s > .short-img {
+        display: none;
+    }
+    .about-us-s > .long-img {
+        display: block;
+        height: 40vh;
+    }
+}
+@media screen and (min-aspect-ratio: 1/1) {
+    .about-us-s > .short-img {
+        display: none;
+    }
+    .about-us-s > .long-img {
+        display: block;
+        height: 60vh;
+    }
+}

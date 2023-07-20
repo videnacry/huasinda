@@ -24,10 +24,10 @@
     color: #000000;
 }
 .box-c.dark.shadow-top-left {
-    box-shadow: 3px -3px 5px white;
+    box-shadow: -3px -3px 5px white;
 }
 .box-c.dark.shadow-bottom-left {
-    box-shadow: 3px -3px 5px white;
+    box-shadow: -3px 3px 5px rgb(0, 0, 0, 0.6);
 }
 .box-c.dark.shadow-top-right {
     box-shadow: 3px -3px 5px white;    
@@ -36,10 +36,10 @@
     box-shadow: 3px 3px 5px white;    
 }
 .box-c.light.shadow-top-left {
-    box-shadow: 3px -3px 5px rgb(0, 0, 0, 0.6);
+    box-shadow: -3px -3px 5px rgb(0, 0, 0, 0.6);
 }
 .box-c.light.shadow-bottom-left {
-    box-shadow: 3px -3px 5px rgb(0, 0, 0, 0.6);
+    box-shadow: -3px 3px 5px rgb(0, 0, 0, 0.6);
 }
 .box-c.light.shadow-top-right {
     box-shadow: 3px -3px 5px rgb(0, 0, 0, 0.6);    

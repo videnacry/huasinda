@@ -101,7 +101,7 @@ a.btn-big, button.btn-big {
     border-radius: 20px;
   }
 }
-@media screen and (max-aspect-ratio: 7/10) {
+@media screen and (max-aspect-ratio: 911/1368) {
   body {
     font-size: 32px;
   }

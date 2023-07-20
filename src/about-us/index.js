@@ -1,11 +1,14 @@
+import './index.css'
+
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import Jumbotron from '../components/jumbotron'
 import jumbotronImgSrc from './jumbotron.jpg'
-import Summary from '../webinar/summary'
+import jumbotronDeskImgSrc from './jumbotron-desk.webp'
 import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'
 import Description from './description'
+import Links from '../components/links'
 
 const mission = {
     title: 'Misión',
@@ -19,7 +22,9 @@ const mission = {
         '¡Escríbenos, por favor!',
         '',
         <a href='mailto:aquaterra@gmail.com' className='btn-green'>aquaterra@gmail.com</a>,
-    ]
+    ],
+    startMsg: 'Atención al cliente todos los días, de 9:00 a 18:00 horas',
+    endMsg: 'Nuestras oficinas y proyectos se encuentran en Lloa'
 }
 const vision = {
     title: 'Visión',
@@ -30,7 +35,9 @@ const vision = {
         '¿Te unes a la causa?',
         '',
         <Link to='/modules' className='btn-green'>Información del curso</Link>
-    ]
+    ],
+    startMsg: '',
+    endMsg: ''
 }
 const About = () => {
     
@@ -39,13 +46,20 @@ const About = () => {
       }, [])
 
     return(
-        <div className='home-c'>
-            <Jumbotron title="Acerca de nosotros" message="" imgSrc={jumbotronImgSrc}/>
-            <Description title={mission.title} description={mission.description}/>
-            <Summary img={missionImgSrc} boxes={{dark: {elmts: mission.lines}}}/>
-            <Description title={vision.title} description={vision.description}/>
-            <Summary img={visionImgSrc} boxes={{dark: {elmts: vision.lines}}}/>
+        <div className='about-us-s'>
+            <div className='short-img'>
+                <Jumbotron title="Sobre nosotros" message="" imgSrc={jumbotronImgSrc}/>
+            </div>
+            <div className='long-img'>
+                <Jumbotron centerText title="Sobre nosotros" message="" imgSrcDuo={[jumbotronImgSrc, jumbotronDeskImgSrc]} style={{position:'absolute', top:'50%', left:0, transform: 'translateY(-50%)'}}/>
+            </div>
+            
+            <div className='info'>
+                <Description mission title={mission.title} description={mission.description} dialog={mission.lines} imgSrc={missionImgSrc} startMsg={mission.startMsg} endMsg={mission.endMsg}/>
+                <Description title={vision.title} description={vision.description} dialog={vision.lines} imgSrc={visionImgSrc} startMsg={vision.startMsg} endMsg={vision.endMsg}/>
+            </div>
             <div className='space'></div>
+            <Links/>
         </div>
     )
 }
