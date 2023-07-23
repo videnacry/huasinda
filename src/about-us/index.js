@@ -1,7 +1,6 @@
 import './index.css'
 
-import React, {useEffect} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useCallback, useContext, useEffect} from 'react'
 import Jumbotron from '../components/jumbotron'
 import jumbotronImgSrc from './jumbotron.jpg'
 import jumbotronDeskImgSrc from './jumbotron-desk.webp'
@@ -9,37 +8,41 @@ import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'
 import Description from './description'
 import Links from '../components/links'
+import Context from '../context'
 
-const mission = {
-    title: 'Misión',
-    description: 'Aquaterra nace como respuesta al incremento de la huella de carbono, lleva realizando proyectos que impulsen la economía circular y por ende el desarrollo sostenible.',
-    lines: [
-        'Nos encontramos en pleno crecimiento,',
-        '¿te gustaría apoyar/unirte?',
-        '¿más información?',
-        '¿feedback, consejo?',
-        '',
-        '¡Escríbenos, por favor!',
-        '',
-        <a href='mailto:aquaterra@gmail.com' className='btn-green'>aquaterra@gmail.com</a>,
-    ],
-    startMsg: 'Atención al cliente todos los días, de 9:00 a 18:00 horas',
-    endMsg: 'Nuestras oficinas y proyectos se encuentran en Lloa'
-}
-const vision = {
-    title: 'Visión',
-    description: 'Reducir la huella de carbono mediante la construcción responsable utilizando como protagonista al bambú, que alcanza la dureza máxima a los 3 años y es un gran sumidero de carbono.',
-    lines: [
-        'Además de tener proyectos de construcción, nuestro objetivo es formar profesionales.',
-        '',
-        '¿Te unes a la causa?',
-        '',
-        <Link to='/modules' className='btn-green'>Información del curso</Link>
-    ],
-    startMsg: '',
-    endMsg: ''
-}
 const About = () => {
+
+    const context = useContext(Context)
+    
+    const mission = {
+        title: 'Misión',
+        description: 'Aquaterra nace como respuesta al incremento de la huella de carbono, lleva realizando proyectos que impulsen la economía circular y por ende el desarrollo sostenible.',
+        lines: [
+            'Nos encontramos en pleno crecimiento,',
+            '¿te gustaría apoyar/unirte?',
+            '¿más información?',
+            '¿feedback, consejo?',
+            '',
+            '¡Escríbenos, por favor!',
+            '',
+            <a href='mailto:aquaterra@gmail.com' className='btn-green'>aquaterra@gmail.com</a>,
+        ],
+        startMsg: 'Atención al cliente todos los días, de 9:00 a 18:00 horas',
+        endMsg: 'Nuestras oficinas y proyectos se encuentran en Lloa'
+    }
+    const vision = {
+        title: 'Visión',
+        description: 'Reducir la huella de carbono mediante la construcción responsable utilizando como protagonista al bambú, que alcanza la dureza máxima a los 3 años y es un gran sumidero de carbono.',
+        lines: [
+            'Además de tener proyectos de construcción, nuestro objetivo es formar profesionales.',
+            '',
+            '¿Te unes a la causa?',
+            '',
+            <a onClick={() => context.goOffer()} className='btn-green'>Información del curso</a>
+        ],
+        startMsg: '',
+        endMsg: ''
+    }
     
     useEffect(() => {
         window.scrollTo(0, 0)

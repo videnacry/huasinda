@@ -9,9 +9,9 @@ const Payment = (props) => {
         <section className="payment-s">
             <div className="space"></div>
             <div className="blackbox">
-                <h1>**Métodos de pago**</h1>
-                <p>Transferencia a cuenta itaú Dólares: Nº 6726162.</p>
-                <p>Depósito a tarjeta Mi Dinero Internacional CI: 3 484 906 -8, en dólares.</p>
+                <h1 className="title">**Métodos de pago**</h1>
+                <p >Transferencia a cuenta itaú Dólares: Nº 6726162.</p>
+                <p >Depósito a tarjeta Mi Dinero Internacional CI: 3 484 906 -8, en dólares.</p>
             </div>
             <article className="msg">
                 <h1>**Precio total**</h1>

@@ -144,7 +144,7 @@ a.btn-big, button.btn-big {
   opacity: 0.8;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://image.flaticon.com/icons/png/512/2917/2917995.png);
+  background-image: url(./leaf.png);
   -webkit-animation-name: satellite;
           animation-name: satellite;
   -webkit-animation-iteration-count: infinite;

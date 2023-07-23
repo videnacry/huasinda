@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import {Link} from 'react-router-dom'
+import { useContext, useState } from 'react'
 
 import Box from '../../components/box'
 import Spheres from './spheres'
@@ -9,8 +8,11 @@ import { ReactComponent as CartSvg } from './cart.svg'
 import { ReactComponent as StackSvg } from './stack.svg'
 
 import img from '../../img/rectangle/wall_window_cealing_plant.jpg'
+import Context from '../../context'
 
 const Price = (props) => {
+    const context = useContext(Context)
+
     const [isVisibleModalModules, setIsVisibleModalModules] = useState(false)
     const toggleIsVisibleModalModules = () => setIsVisibleModalModules(prev => prev ? false : true)
 
@@ -41,7 +43,7 @@ const Price = (props) => {
                 <div className='min'><Spheres text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
-            <Link to="/checkout" className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</Link>
+            <a onClick={() => context.goCheckout()} className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</a>
             <button className="btn-big btn-modules" onClick={toggleIsVisibleModalModules}>
                 <StackSvg height='1.2em' width='1.2em'/>Módulos
             </button>

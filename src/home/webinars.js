@@ -1,17 +1,19 @@
-import {Link} from 'react-router-dom'
-import Box from '../components/box'
 
+import { useContext } from 'react'
+
+import Context from '../context'
 import './webinars.css'
 import webinarFirstSrc from './webinar-1.jpg'
 import webinarSecondSrc from './webinar-2.jpg'
 
 const Webinars = () => {
+    const context = useContext(Context)
 
     return(
         <div className='webinars-s'>
             <p>Aquaterra se especializa en la formación de profesionales en el ámbito de la edificación responsable a base del bambú.</p>
             <div className='article'>
-                <Link to='./modules' className='title'><h1>Módulos</h1></Link>
+                <a onClick={() => context.goOffer()} className='title'><h1>Módulos</h1></a>
                 <p className='pharagraph-right'>Donde estés...</p>
                 <div className='black-line'>
                     <div className='frame-left'>
@@ -25,7 +27,7 @@ const Webinars = () => {
                     </div>
                 </div>
                 <p className='pharagraph-left'>...con quien estés !!</p>
-                <div className='link'><Link to='./modules' className='btn-green'>más info</Link></div>
+                <div className='link'><a onClick={() => context.goOffer()} className='btn-green'>más info</a></div>
             </div>
         </div>
     )

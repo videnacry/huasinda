@@ -19,8 +19,10 @@
     padding: 30px 30px 0 30px;
     top: 15vw;
     left: 3%;
-    color: #fefefe;
     text-align: start;
+}
+.payment-s>.blackbox>.title, .payment-s>.blackbox>p{
+    color: #fefefe;
 }
 .payment-s>.msg .price{
 }

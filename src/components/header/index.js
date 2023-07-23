@@ -1,17 +1,21 @@
+import { useContext } from 'react'
+import Context from '../../context'
+
 import './index.css'
-import { Link } from 'react-router-dom'
 import {ReactComponent as LogoSvg} from './logo.svg'
 
 const Header = () => {
+
+    const context = useContext(Context)
 
     return(
         <nav className="header-c">
             <LogoSvg fill="#363636"/>
             <div>
-                <Link to='/'>Inicio</Link>
-                <Link to='/modules'>Módulos</Link>
-                <Link to='/projects'>Proyectos</Link>
-                <Link to='/about-us'>Acerca de</Link>
+                <a onClick={() => context.goHome()}>Inicio</a>
+                <a onClick={() => context.goOffer()}>Módulos</a>
+                <a onClick={() => context.goProjects()}>Proyectos</a>
+                <a onClick={() => context.goAboutUs()}>Acerca de</a>
             </div>
         </nav>
     )

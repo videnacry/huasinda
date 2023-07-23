@@ -7,8 +7,11 @@
     font-size: 14px;
 }
 .webinars-c>.webinar{
-    color: whitesmoke;
     filter: brightness(100%);
+}
+.webinars-c>.webinar>.title{
+    color: whitesmoke;
+    text-shadow: 1px 1px #363636, -1px -1px #363636;
 }
 .webinars-c>.webinar:hover{
     filter: brightness(130%);

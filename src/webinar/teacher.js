@@ -1,8 +1,10 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, { useContext } from 'react'
 import './teacher.css'
+import Context from '../context'
 
 const Teacher = (props) => {
+
+    const context = useContext(Context)
 
     return(
         <section class="teacher-c">
@@ -12,7 +14,7 @@ const Teacher = (props) => {
                     <p>{teacher}</p>
                 ))}
             </article>
-            <Link to="/checkout" className="btn">Comprar</Link>
+            <a onClick={() => context.goCheckout()} className="btn">Comprar</a>
         </section>
     )
 }

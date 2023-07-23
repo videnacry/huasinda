@@ -14,21 +14,21 @@ const ContactForm = () => {
             </div>
             <img className="img" style={style} />
             <form className="form">
-                <h1>**Datos de contacto**</h1>
+                <h1 className='title'>**Datos de contacto**</h1>
                 <fieldset className="fieldset">
-                    <label for="name">Nombre</label>
+                    <label className="label" for="name">Nombre</label>
                     <input id="name" type="text" className="input" />
                 </fieldset>
                 <fieldset className="fieldset">
-                    <label for="lastnames">Apellidos</label>
+                    <label className="label" for="lastnames">Apellidos</label>
                     <input id="lastnames" type="text" className="input" />
                 </fieldset>
                 <fieldset className="fieldset">
-                    <label for="email">Correo electrónico</label>
+                    <label className="label" for="email">Correo electrónico</label>
                     <input id="email" type="text" className="input" />
                 </fieldset>
                 <fieldset className="fieldset">
-                    <label for="telephone">Número de teléfono</label>
+                    <label className="label" for="telephone">Número de teléfono</label>
                     <input id="telephone" type="text" className="input" />
                 </fieldset>
             </form>
