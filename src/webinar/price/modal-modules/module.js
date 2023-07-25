@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom'
 import Box from '../../../components/box'
 import {ReactComponent as SvgCart} from './cart.svg'
 import './module.css'
@@ -10,10 +9,10 @@ const Module = (props) => {
                 <Box fill style={{backgroundColor: 'white'}}/>
             </div>
             <div className='card-module'>
-                <h1><Link to={props.topic}>{props.title}</Link></h1>
+                <h1><a href={props.topic}>{props.title}</a></h1>
                 <hr/>
                 <div className='options'>
-                    <button className='btn-black'><Link to={props.topic}>info</Link></button>
+                    <button className='btn-black'><a href={props.topic}>info</a></button>
                     <button className='btn-green'>+<SvgCart height='1em' width='auto' fill='white'/></button>
                 </div>
             </div>

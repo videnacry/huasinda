@@ -6,7 +6,7 @@ const Spheres = (props) => {
     return(
       <div className='spheres-s'>
         <div className='sphere-md'>
-            <p>{props.text}</p>
+            <div>{props.text}</div>
         </div>
         <div className='sphere-sm'></div>
       </div>  

@@ -14,6 +14,7 @@ const Header = () => {
             <div>
                 <a onClick={() => context.goHome()}>Inicio</a>
                 <a onClick={() => context.goOffer()}>Módulos</a>
+                <a onClick={() => context.goModules()}>Contenidos</a>
                 <a onClick={() => context.goProjects()}>Proyectos</a>
                 <a onClick={() => context.goAboutUs()}>Acerca de</a>
             </div>

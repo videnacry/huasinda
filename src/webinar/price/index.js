@@ -43,9 +43,9 @@ const Price = (props) => {
                 <div className='min'><Spheres text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
-            <a onClick={() => context.goCheckout()} className="btn-big btn-buy"><CartSvg height='1.2em' width='1.2em'/>Comprar</a>
+            <a onClick={() => context.goCheckout()} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Comprar</a>
             <button className="btn-big btn-modules" onClick={toggleIsVisibleModalModules}>
-                <StackSvg height='1.2em' width='1.2em'/>Módulos
+                <StackSvg className='svg' height='1.2em' width='1.2em'/>Módulos
             </button>
             <div className='space'></div>
             {isVisibleModalModules ? <ModalModules modules={props.modules} toggleIsVisible={toggleIsVisibleModalModules}/> : ''}

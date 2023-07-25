@@ -56,6 +56,9 @@
     background-color: #363636;
     color: white;
 }
+.price-c>.btn-modules:hover>.svg,.price-c>.btn-buy:hover>.svg {
+    fill: white;
+}
 .price-c>.space{
     width: 100%;
     height: 200px;
