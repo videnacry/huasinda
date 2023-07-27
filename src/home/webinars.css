@@ -3,9 +3,6 @@
     color: #363636;
     padding-top: 8%;
     padding-bottom: 3%;
-} 
-.webinars-s p {
-    font-size: 22px;
 }
 .webinars-s > p {
     padding: 3% 10%;
@@ -100,6 +97,7 @@
         padding-top: 10%;
     }
     .webinars-s > p {
+        padding: 1% 2%;
         padding-bottom: 10%;
     }
     .webinars-s>.article{

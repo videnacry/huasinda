@@ -3,7 +3,6 @@
     height: 100%;
     margin: auto;
     position: relative;
-    top: 5%;
     background-color: white;
 }
 .nav-s.inverse {
@@ -20,10 +19,10 @@
 }
 .nav-s>.square-hole, .nav-s>.line-hole {
     position: absolute;
-    top: 0;
+    top: -10px;
 }
 .nav-s>.square-hole {
-    left: 0;
+    left: -1px;
     width: 60%;
     height: 100%;   
 }

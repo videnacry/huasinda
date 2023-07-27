@@ -33,13 +33,11 @@
 .links-c>.links>li>.link>* {
     color: #e5e5e5;
     text-decoration: none;
-    font-size: 20px;
 }
 .links-c>.links>li>.link>h3 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-size: 26px;
     font-weight: 600;
 }
 .links-c>.links>li>.link * {
@@ -55,14 +53,8 @@
     margin: 0;
 }
 @media screen and (max-aspect-ratio: 7/10) {
-    .links-c>.links>li>.link>h3 {
-        font-size: 32px;
-    }
     .links-c>.links>li {
         width: 30%;
-    }
-    .links-c>.links>li>.link {
-        font-size: 28px;
     }
     .links-c>.links>li:last-child {
         display: none;

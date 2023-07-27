@@ -6,6 +6,7 @@ import './index.css'
 import Indexer from './indexer'
 import navModule from './indexer/nav-module'
 import Webinars from '../components/webinars'
+import Taller from './taller'
 
 const navModules1 = Array.from({length:4}, (el, idx) => {
     const module = {...navModule}
@@ -33,7 +34,9 @@ const Index = () => {
                 <div className="index-nav">
                     <Indexer modules={navModules1} bgHoleColor='rgba(249, 249, 249, 1)'/>
                 </div>
-                <div></div>
+                <div className='document'>
+                    <Taller />
+                </div>
                 <div className='index-nav'>
                     <Indexer modules={navModules2} isLeft bgHoleColor='rgba(249, 249, 249, 1)'/>
                 </div>
