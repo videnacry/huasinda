@@ -5,3 +5,58 @@
     width: 100%;
     height: 100%;
 }
+
+
+
+
+
+
+
+
+/*----------------------------------------------basic styles for workshop pages-----------------------------------------------*/
+
+
+
+
+
+
+.pages-s>div {
+    margin: 4px;
+    padding: 6vh 3vw;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.pages-s .space-pc, .pages-s .space-tablet {
+    width: 100%;
+    height: 18vh;
+}
+.pages-s .space-tablet {
+    display: none;
+}
+.pages-s .space-pc::after, .pages-s .space-tablet::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: inherit;
+    transform: translateY(6vh);
+    width: 100%;
+    height: 40px;
+    padding: 0 5%;
+    background-color: rgb(249, 249, 249);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);;
+}
+@media screen and (max-aspect-ratio: 770/1024) {
+    
+    .pages-s .space-tablet {
+        display: block;
+    }
+    .pages-s .space-pc {
+        display: none;
+    }
+}
+@media screen and (max-aspect-ratio: 375/667) {
+    .pages-s .space-tablet {
+        display: block;
+        position: inherit;
+    }
+}
