@@ -15,7 +15,7 @@ const Index = () => {
                         electromagnéticas, telúricas y otros fenómenos naturales presentes en el entorno, con el objetivo de 
                         crear espacios saludables y en armonía con el entorno natural. Esto permite tomar decisiones 
                         informadas sobre la ubicación y el diseño de la estructura, minimizando la exposición a radiaciones 
-                        nocivas y maximizando la armonía con el entorno. También se puede utilizar para aprovechar las 
+                        nocivas y <div className='space-tablet'/>maximizando la armonía con el entorno. También se puede utilizar para aprovechar las 
                         corrientes eléctricas naturales presentes en el suelo para sistemas de energía geotérmica. La 
                         prospección telúrica permite tomar decisiones informadas sobre la ubicación de las estructuras y 
                         minimizar los posibles efectos negativos sobre la salud.
@@ -23,7 +23,7 @@ const Index = () => {
                     <p>
                         La prospección telúrica se basa en la idea de que la Tierra emite energías y radiaciones naturales que 
                         pueden tener un impacto en la salud y el bienestar de las personas que habitan un lugar. Estas energías 
-                        pueden variar dependiendo de la composición geológica del terreno, la presencia de corrientes 
+                        pueden variar dependiendo de la composición geológica del terreno, la presencia de corrientes <div className='space-tablet'/>
                         subterráneas, fallas geológicas, minerales y otros factores. El objetivo de la prospección telúrica en 
                         bioconstrucción es identificar y evaluar las radiaciones y energías presentes en un lugar, tanto las 
                         beneficiosas como las perjudiciales. Algunos aspectos que se pueden analizar en la prospección telúrica 
@@ -32,7 +32,7 @@ const Index = () => {
                             <li>
                                 <strong>Radiaciones electromagnéticas:</strong> Se estudia la presencia de radiaciones electromagnéticas naturales, 
                                 como las emitidas por líneas de fuerza geomagnética, corrientes subterráneas y líneas de Hartmann y 
-                                Curry. Se busca determinar su intensidad y su posible influencia en la salud de las personas.
+                                Curry. Se busca determinar su intensidad y su posible influencia en la salud de <div className='space-tablet'/>las personas.
                                 Radiaciones ionizantes: Se investiga la presencia de radiaciones ionizantes naturales, como las 
                                 emanaciones de radón, que pueden ser perjudiciales para la salud si se encuentran en concentraciones 
                                 elevadas.
@@ -43,7 +43,7 @@ const Index = () => {
                                 subterráneas, fallas geológicas, cavidades, minerales radiactivos, entre otros.
                             </li>
                             <li>
-                                <strong>Beneficios y potencial energético:</strong> Además de identificar las radiaciones y energías perjudiciales, la 
+                                <strong>Beneficios y potencial energético:</strong> Además de identificar <div className='space-tablet'/>las radiaciones y energías perjudiciales, la 
                                 prospección telúrica también puede identificar áreas con radiaciones beneficiosas y un potencial 
                                 energético favorable para la bioconstrucción y la salud.
                             </li>
@@ -54,7 +54,7 @@ const Index = () => {
                         diseño y construcción de un proyecto de bioconstrucción para minimizar la exposición a radiaciones 
                         perjudiciales y aprovechar las energías beneficiosas presentes en el entorno. Esto puede incluir la 
                         ubicación adecuada de las edificaciones, la implementación de medidas de protección, el diseño de 
-                        sistemas de aislamiento electromagnético y la elección de materiales y técnicas constructivas 
+                        sistemas de aislamiento <div className='space-tablet'/>electromagnético y la elección de materiales y técnicas constructivas 
                         saludables.
                     </p>
                 </li>
@@ -65,7 +65,7 @@ const Index = () => {
                         y la alineación de una construcción en relación con el campo magnético terrestre. En el Ecodomo, se 
                         considera la ubicación geomagnética para aprovechar los beneficios naturales que ofrece el campo 
                         magnético, como la orientación de las aberturas hacia el sol para obtener un aprovechamiento eficiente 
-                        de la luz solar y el diseño de sistemas de energía renovable que se benefician de la orientación 
+                        de la luz solar y el diseño de sistemas de energía renovable que se benefician <div className='space-tablet'/>de la orientación 
                         adecuada. La ubicación geomagnética se considera para aprovechar los beneficios del campo magnético 
                         terrestre en el diseño de las estructuras. Se busca orientar las aberturas, como ventanas y puertas, para 
                         aprovechar la luz solar y la ventilación natural de manera eficiente. Esto puede contribuir a la 
@@ -75,14 +75,14 @@ const Index = () => {
                     </p>
                     <p>
                         <ul>
-                            Es la elección estratégica del emplazamiento de una construcción teniendo en cuenta los aspectos 
+                            Es la elección estratégica del <div className='space-tablet'/>emplazamiento de una construcción teniendo en cuenta los aspectos 
                             geomagnéticos del lugar. Se basa en la premisa de que la Tierra emite un campo magnético natural que 
                             puede tener influencia en la salud y el bienestar de las personas. La ubicación geomagnética busca 
                             aprovechar los beneficios de un entorno geomagnético equilibrado y armonioso para crear espacios 
                             habitables saludables. Algunos aspectos que se consideran en la ubicación geomagnética son:
                             <li>
                                 <strong>Orientación y alineación:</strong> Se evalúa la orientación y alineación de la construcción en relación con las 
-                                líneas de fuerza geomagnética y los puntos cardinales. Se busca lograr una armonía entre la estructura y 
+                                líneas de fuerza geomagnética <div className='space-tablet'/>y los puntos cardinales. Se busca lograr una armonía entre la estructura y 
                                 el campo magnético terrestre, evitando orientaciones que puedan generar desequilibrios energéticos.
                             </li>
                             <li>
@@ -92,7 +92,7 @@ const Index = () => {
                                 negativas en la salud.
                             </li>
                             <li>
-                                <strong>Influencias externas:</strong> Se evalúa la presencia de fuentes de radiaciones electromagnéticas externas que 
+                                <strong>Influencias externas:</strong> Se evalúa la presencia de fuentes de <div className='space-tablet'/>radiaciones electromagnéticas externas que 
                                 puedan afectar el entorno geomagnético, como torres de alta tensión o antenas de comunicación. Se 
                                 busca minimizar la exposición a estas fuentes y crear un entorno electromagnético saludable.
                             </li>
@@ -103,7 +103,7 @@ const Index = () => {
                             </li>
                         </ul>
                     </p>
-                        La ubicación geomagnética en bioconstrucción busca crear espacios armónicos y saludables que estén 
+                        La ubicación geomagnética en bioconstrucción busca crear <div className='space-tablet'/>espacios armónicos y saludables que estén 
                         en sintonía con el campo magnético natural de la Tierra. Al considerar los aspectos geomagnéticos en el 
                         proceso de diseño y ubicación de la construcción, se busca optimizar el bienestar de las personas que 
                         habitarán el lugar.
@@ -115,7 +115,7 @@ const Index = () => {
                     <p>
                         El replanteo de obra es el proceso de marcar y establecer las dimensiones y 
                         ubicación exacta de los elementos de construcción en el terreno. En el contexto del Ecodomo, el 
-                        replanteo de obra se realiza teniendo en cuenta los principios de sostenibilidad y eficiencia energética. 
+                        replanteo de obra se realiza teniendo en cuenta los principios de sostenibilidad y <div className='space-tablet'/>eficiencia energética. 
                     </p>
                     <p>
                         Se busca optimizar el uso de los materiales y recursos, evitando el desperdicio y minimizando el impacto 
@@ -126,7 +126,7 @@ const Index = () => {
                     </p>
                     <p>
                         <ul>
-                            El replanteo de obra implica las siguientes actividades:
+                            El replanteo de obra implica las siguientes actividades:<div className='space-tablet'/>
                             <li>
                                 <strong>Marcado de ejes y puntos de referencia:</strong> Se establecen los ejes principales de la construcción, como las 
                                 líneas de referencia y los puntos cardinales. Estos ejes ayudan a orientar la construcción y proporcionan 
@@ -138,7 +138,7 @@ const Index = () => {
                                 medición precisos, como niveles, cintas métricas y estacas.
                             </li>
                             <li>
-                                <strong>Nivelación y alineación:</strong> Se verifica y ajusta la nivelación y alineación de los elementos de la estructura 
+                                <strong>Nivelación y alineación:</strong> Se verifica y ajusta la nivelación y <div className='space-tablet'/>alineación de los elementos de la estructura 
                                 de acuerdo con los planos de construcción. Esto es especialmente importante en la construcción de 
                                 estructuras de múltiples pisos para garantizar su estabilidad y uniformidad.
                             </li>
@@ -148,7 +148,7 @@ const Index = () => {
                                 verificación de las dimensiones de los espacios interiores, como habitaciones y pasillos.
                             </li>
                             <li>
-                                <strong>Marcaje de ubicaciones de servicios:</strong> Se marcan las ubicaciones precisas de los servicios, como tuberías 
+                                <strong>Marcaje de ubicaciones de servicios:</strong> Se marcan las <div className='space-tablet'/>ubicaciones precisas de los servicios, como tuberías 
                                 de agua, desagües, instalaciones eléctricas y sistemas de ventilación. Esto garantiza una correcta 
                                 instalación y evita conflictos durante la fase de construcción.
                             </li>
@@ -161,7 +161,7 @@ const Index = () => {
                         y estándares de la construcción sostenible y respetuosa con el medio ambiente.
                     </p>
                 </li>
-                <li>
+                <li><div className='space-tablet'/>
                     <h2>Zanjas</h2>
                     <p>
                         En el Ecodomo, las zanjas se pueden utilizar para diversos propósitos, como la instalación 
@@ -169,7 +169,7 @@ const Index = () => {
                         sistemas de captación de agua de lluvia. Durante la construcción de zanjas en un proyecto de Ecodomo, 
                         se pueden implementar técnicas de excavación sostenibles, como el uso de maquinaria eficiente, la 
                         gestión adecuada de los materiales excavados y la consideración de la reutilización y reciclaje de los 
-                        materiales. Durante la excavación de zanjas en un proyecto de bioconstrucción, se pueden implementar 
+                        materiales. Durante la excavación de zanjas en un proyecto de <div className='space-tablet'/>bioconstrucción, se pueden implementar 
                         prácticas sostenibles, como la minimización de la erosión del suelo, la gestión adecuada de los 
                         materiales excavados y la consideración de la reutilización y el reciclaje de los materiales.
                     </p>
@@ -178,7 +178,7 @@ const Index = () => {
                             Las zanjas en el contexto de un ecomodo se refieren a excavaciones lineales en el terreno que se utilizan 
                             para diversos fines relacionados con la construcción sostenible y el manejo adecuado de los recursos 
                             naturales. Estas zanjas pueden tener diferentes propósitos y se diseñan de acuerdo con las necesidades 
-                            específicas del proyecto y las características del sitio. Algunos ejemplos de zanjas utilizadas en la 
+                            específicas del proyecto y las características del sitio. Algunos <div className='space-tablet'/>ejemplos de zanjas utilizadas en la 
                             bioconstrucción de un ecomodo son:
                             <li>
                                 <strong>Zanjas para captación y desvío de agua:</strong> Se pueden construir zanjas para recolectar y desviar el agua de 
@@ -188,7 +188,7 @@ const Index = () => {
                             </li>
                             <li>
                                 <strong>Zanjas para drenaje:</strong> En un ecomodo, las zanjas también se pueden utilizar para facilitar el drenaje del 
-                                agua, evitando acumulaciones y asegurando un correcto manejo de las aguas pluviales. Estas zanjas se 
+                                agua, evitando acumulaciones y asegurando un <div className='space-tablet'/>correcto manejo de las aguas pluviales. Estas zanjas se 
                                 diseñan para conducir el agua de manera controlada, evitando inundaciones y daños en las 
                                 construcciones.
                             </li>
@@ -199,7 +199,7 @@ const Index = () => {
                                 impacto visual en el entorno.
                             </li>
                             <li>
-                                <strong>Zanjas para cimentación:</strong> En la construcción de un ecomodo, las zanjas pueden ser utilizadas para la 
+                                <strong>Zanjas para cimentación:</strong> En la construcción de un ecomodo, las zanjas pueden ser utilizadas para <div className='space-tablet'/>la 
                                 excavación y posterior cimentación de los elementos estructurales, como los cimientos de la edificación. 
                             </li>
                         </ul>

@@ -17,7 +17,7 @@ const Index = () => {
                         levantamiento geo monolítico. Consiste en tomar medidas para evitar la infiltración de agua desde el 
                         suelo hacia la estructura. Se utilizan técnicas como la colocación de capas impermeables, el drenaje 
                         adecuado del terreno y la implementación de sistemas de barreras para proteger la estructura de la 
-                        humedad y la humedad ascendente. En la bioconstrucción, la impermeabilización del terreno es esencial 
+                        humedad y la humedad ascendente. En la bioconstrucción, la impermeabilización del terreno es <div className='space-tablet'/>esencial 
                         para evitar problemas de humedad y garantizar un ambiente saludable y duradero. Se utilizan técnicas 
                         como el uso de materiales impermeabilizantes naturales y ecológicos, como membranas de arcilla, 
                         geotextiles, capas de gravilla y sistemas de drenaje sostenibles. El objetivo es evitar la acumulación de 
@@ -25,24 +25,26 @@ const Index = () => {
                         construcción.
                     </p>
                     <p>
-                        Algunas técnicas comunes utilizadas en la impermeabilización del terreno en bioconstrucción para el 
-                        levantamiento geo monolítico incluyen:
-                    </p>
-                    <p>
-                        Uso de geomembranas: Las geomembranas son láminas delgadas y flexibles que se colocan sobre el 
-                        terreno para crear una barrera impermeable. Pueden estar fabricadas con diferentes materiales como 
-                        polietileno, PVC, caucho, entre otros, y se instalan correctamente para cubrir toda el área de la 
-                        estructura y prevenir la infiltración de agua.
-                    </p>
-                    <p>
-                        Aplicación de revestimientos impermeables: Se utilizan materiales impermeabilizantes como pinturas 
-                        especiales, morteros, revestimientos epóxicos u otros productos adecuados para formar una capa 
-                        protectora sobre el terreno. Estos revestimientos se aplican cuidadosamente según las instrucciones del 
-                        fabricante para asegurar una buena impermeabilización.
-                    </p>
-                    <p>
-                        Diseño de drenajes y sistemas de captación de agua: En el levantamiento geo monolítico, se pueden 
-                        integrar sistemas de drenaje y captación de agua para evitar la acumulación de líquidos en el terreno. 
+                        <ul>
+                            Algunas técnicas comunes utilizadas en la impermeabilización del terreno en bioconstrucción para el 
+                            levantamiento geo monolítico incluyen:
+                            <li>
+                                <strong>Uso de geomembranas:</strong> Las geomembranas son láminas <div className='space-tablet'/>delgadas y flexibles que se colocan sobre el 
+                                terreno para crear una barrera impermeable. Pueden estar fabricadas con diferentes materiales como 
+                                polietileno, PVC, caucho, entre otros, y se instalan correctamente para cubrir toda el área de la 
+                                estructura y prevenir la infiltración de agua.
+                            </li>
+                            <li>
+                                <strong>Aplicación de revestimientos impermeables:</strong> Se utilizan materiales impermeabilizantes como pinturas 
+                                especiales, morteros, revestimientos epóxicos u otros productos adecuados para formar una capa 
+                                protectora sobre el terreno. Estos revestimientos se aplican cuidadosamente según las instrucciones del 
+                                fabricante para <div className='space-tablet'/>asegurar una buena impermeabilización.
+                            </li>
+                            <li>
+                                <strong>Diseño de drenajes y sistemas de captación de agua:</strong> En el levantamiento geo monolítico, se pueden 
+                                integrar sistemas de drenaje y captación de agua para evitar la acumulación de líquidos en el terreno. 
+                            </li>
+                        </ul>
                     </p>
                     <p>
                         Esto implica el diseño de zanjas de drenaje, canales o sistemas de recolección de agua de lluvia que 
@@ -50,7 +52,7 @@ const Index = () => {
                     </p>
                     <p>
                         La impermeabilización del terreno en el levantamiento geo monolítico en bioconstrucción es 
-                        fundamental para garantizar la durabilidad y estabilidad de la estructura, evitando problemas asociados 
+                        fundamental <div className='space-tablet'/>para garantizar la durabilidad y estabilidad de la estructura, evitando problemas asociados 
                         con la humedad, como la aparición de moho, deterioro de materiales y pérdida de eficiencia energética. 
                     </p>
                 </li>
@@ -62,7 +64,7 @@ const Index = () => {
                         En el levantamiento geo monolítico, la 
                         formulación telúrica se refiere a la consideración de las características electromagnéticas y telúricas del 
                         sitio de construcción. Se evalúa el flujo de energía en el terreno y se utilizan técnicas como la 
-                        prospección telúrica y la ubicación geomagnética para asegurar un entorno saludable y equilibrado. La 
+                        prospección telúrica y la ubicación geomagnética para asegurar un entorno saludable y equilibrado. La <div className='space-tablet'/>
                         formulación telúrica también puede influir en la elección de materiales y sistemas constructivos que 
                         sean compatibles con el entorno natural. En la bioconstrucción, la formulación telúrica se aplica para 
                         crear un entorno armonioso y saludable en la estructura. Se consideran las características 
@@ -70,7 +72,7 @@ const Index = () => {
                         nocivas o campos electromagnéticos indeseables. También se busca aprovechar las energías naturales 
                         presentes en el entorno para mejorar el confort y la eficiencia energética de la construcción.
                     </p>
-                    <p>
+                    <p><div className='space-tablet'/>
                         La formulación telúrica se basa en el conocimiento y la comprensión de las propiedades de los 
                         materiales disponibles localmente, como tierra, arcilla, arena, paja u otros recursos naturales, así como 
                         en la utilización de técnicas tradicionales y ancestrales de construcción. Estos materiales se combinan en 
@@ -79,7 +81,7 @@ const Index = () => {
                     </p>
                     <p>
                         El objetivo principal de la formulación telúrica es lograr una mezcla de materiales que sea resistente, 
-                        duradera y que proporcione una buena capacidad de aislamiento térmico y acústico. Además, se busca 
+                        duradera y que <div className='space-tablet'/>proporcione una buena capacidad de aislamiento térmico y acústico. Además, se busca 
                         minimizar el impacto ambiental utilizando recursos locales y renovables, evitando el uso de materiales 
                         sintéticos o con alto contenido de energía incorporada. En el levantamiento geo monolítico, la 
                         formulación telúrica se aplica en diferentes etapas de la construcción, como en la elaboración de los 
@@ -90,7 +92,7 @@ const Index = () => {
                 <li>
                     <h2>
                         Instalación hidráulica
-                    </h2>
+                    </h2><div className='space-tablet'/>
                     <p>    
                         La instalación hidráulica en el levantamiento geo monolítico se refiere a la 
                         planificación y ejecución de sistemas de agua, como el suministro de agua potable, el manejo de aguas 
@@ -98,7 +100,7 @@ const Index = () => {
                         captación de agua de lluvia y su reutilización, el tratamiento de aguas residuales y el diseño de sistemas 
                         de drenaje que minimicen el impacto ambiental. También se promueve el uso eficiente del agua en la 
                         construcción y en el funcionamiento de la estructura, utilizando tecnologías como los inodoros de bajo 
-                        consumo, grifos eficientes y sistemas de riego por goteo. El objetivo es minimizar el consumo de agua y 
+                        consumo, grifos eficientes y sistemas de riego por <div className='space-tablet'/>goteo. El objetivo es minimizar el consumo de agua y 
                         reducir la carga sobre los recursos hídricos.
                     </p>
                     <p>
@@ -112,7 +114,7 @@ const Index = () => {
                                 la calidad del agua.
                             </li>
                             <li>
-                                <strong>Sistema de desagüe:</strong> Se refiere al diseño e instalación de sistemas de drenaje para la eliminación 
+                                <strong>Sistema de desagüe:</strong> Se refiere al diseño e instalación de sistemas <div className='space-tablet'/>de drenaje para la eliminación 
                                 adecuada de las aguas residuales y pluviales. Esto puede incluir la construcción de sistemas de 
                                 alcantarillado, fosas sépticas, trampas de grasa, entre otros, dependiendo de las necesidades y 
                                 regulaciones locales.
@@ -123,7 +125,7 @@ const Index = () => {
                                 planifican sistemas de drenaje apropiados para evitar la acumulación de agua en áreas no deseadas.
                             </li>
                             <li>
-                                <strong>Sistemas de recolección y reutilización de agua:</strong> En la bioconstrucción, se fomenta la utilización de 
+                                <strong>Sistemas de recolección y <div className='space-tablet'/>reutilización de agua:</strong> En la bioconstrucción, se fomenta la utilización de 
                                 sistemas de captación de agua de lluvia y su posterior reutilización en diferentes procesos, como el riego 
                                 de plantas, la limpieza de superficies u otros usos no potables.
                             </li>
@@ -136,7 +138,7 @@ const Index = () => {
                     </p>
                 </li>
                 <li>
-                    <h2>
+                    <h2><div className='space-tablet'/>
                         Levantamiento estructural monolítico
                     </h2>
                     <p>
@@ -148,7 +150,7 @@ const Index = () => {
                         uniones visibles.
                     </p>
                     <p>
-                        Se utilizan técnicas como el uso de encofrados especiales, hormigón reforzado y un diseño cuidadoso 
+                        Se utilizan técnicas como el uso de encofrados especiales, hormigón <div className='space-tablet'/>reforzado y un diseño cuidadoso 
                         para garantizar la integridad y durabilidad de la estructura. El levantamiento estructural monolítico se 
                         realiza utilizando materiales naturales y ecológicos, como adobes, madera, paja o tierra compactada. Se 
                         busca minimizar el uso de materiales industrializados y reducir el impacto ambiental. Además, se 
@@ -157,28 +159,30 @@ const Index = () => {
                         en armonía con el entorno natural.
                     </p>
                     <p>
-                        El levantamiento estructural monolítico implica los siguientes aspectos:
+                        El levantamiento estructural <div className='space-tablet'/>monolítico implica los siguientes aspectos:
                         <ul>
                             <li>
                                 <strong>Diseño estructural:</strong> Se realiza un diseño detallado de la estructura teniendo en cuenta los principios de la 
                                 bioconstrucción, como el uso de materiales naturales y sostenibles, la consideración de la eficiencia 
                                 energética y la aplicación de técnicas constructivas adecuadas.
                             </li>
+                            <li>
                                 <strong>Preparación del terreno:</strong> Antes de iniciar la construcción, se realizan las labores de preparación del 
                                 terreno, como la nivelación, compactación y acondicionamiento del suelo para asegurar una base 
                                 estable y resistente.
-                            <li>
                             </li>
-                                <strong>Cimentación:</strong> Se construye una base sólida y estable para soportar la estructura. En la bioconstrucción, 
+                            <li>
+                                <strong>Cimentación:</strong> Se construye una <div className='space-tablet'/>base sólida y estable para soportar la estructura. En la bioconstrucción, 
                                 se utilizan materiales como piedra, hormigón elaborado con aditivos naturales, o incluso técnicas como 
                                 la compactación del suelo mejorado.
+                            </li>
                             <li>
                                 <strong>Muros y paredes:</strong> Los muros y paredes se construyen utilizando técnicas de bioconstrucción, como el 
                                 uso de adobe, piedra, tierra compactada (tapial), bahareque, entre otros. Se busca emplear materiales 
                                 naturales y ecológicos que sean resistentes, duraderos y que aporten beneficios térmicos y acústicos.
                             </li>
                             <li>
-                                <strong>Techos y cubiertas:</strong> Los techos y cubiertas también se diseñan y construyen siguiendo principios de la 
+                                <strong>Techos y cubiertas:</strong> Los techos y cubiertas también se diseñan y <div className='space-tablet'/>construyen siguiendo principios de la 
                                 bioconstrucción. Se pueden emplear materiales como vigas de madera, tejas ecológicas, techos verdes u 
                                 otras soluciones que promuevan la eficiencia energética y la integración con el entorno.
                             </li>
@@ -189,7 +193,7 @@ const Index = () => {
                             </li>
                             <li>
                                 <strong>Instalaciones:</strong> Durante el levantamiento estructural monolítico, se considera la instalación de sistemas 
-                                eléctricos, hidráulicos y sanitarios. Estos sistemas se integran cuidadosamente en la estructura para 
+                                eléctricos, hidráulicos y sanitarios. Estos <div className='space-tablet'/>sistemas se integran cuidadosamente en la estructura para 
                                 minimizar su impacto visual y garantizar su buen funcionamiento.
                             </li>
                         </ul>
@@ -204,7 +208,7 @@ const Index = () => {
                         eléctricos en la estructura. Esto incluye la planificación de la distribución de energía, la colocación de 
                         conductos eléctricos, la instalación de puntos de luz y tomas de corriente, y la implementación de 
                         sistemas de iluminación eficientes. Se busca garantizar la seguridad eléctrica y la eficiencia energética en 
-                        el funcionamiento de la estructura. Las instalaciones eléctricas se realizan considerando la eficiencia 
+                        el funcionamiento de la estructura. Las <div className='space-tablet'/>instalaciones eléctricas se realizan considerando la eficiencia 
                         energética y la seguridad eléctrica. Se pueden utilizar tecnologías de energía renovable, como paneles 
                         solares o sistemas eólicos, para generar electricidad de manera sostenible. Además, se implementan 
                         medidas para reducir el consumo energético, como el uso de iluminación LED eficiente y 
@@ -212,7 +216,7 @@ const Index = () => {
                         protección contra sobrecargas y la instalación adecuada de conductos y cableado.
                     </p>
                     <p>
-                        Algunos aspectos importantes de las instalaciones eléctricas en bioconstrucción para levantamiento de 
+                        Algunos aspectos importantes de las instalaciones eléctricas en <div className='space-tablet'/>bioconstrucción para levantamiento de 
                         estructura geo monolítico son los siguientes:
                         <ul>
                             <li>
@@ -222,7 +226,7 @@ const Index = () => {
                             </li>
                             <li>
                                 <strong>Energías renovables:</strong> Se fomenta la integración de fuentes de energía renovable, como la energía solar 
-                                fotovoltaica o la energía eólica, para abastecer parte o la totalidad de las necesidades energéticas de la 
+                                fotovoltaica o la energía eólica, para abastecer parte o la totalidad de las necesidades energéticas de la <div className='space-tablet'/>
                                 edificación.
                             </li>
                             <li>
@@ -234,7 +238,7 @@ const Index = () => {
                             <li>
                                 <strong>Protección y seguridad:</strong> Se incluyen dispositivos de protección, como interruptores diferenciales y 
                                 fusibles, para garantizar la seguridad de las instalaciones y prevenir posibles sobrecargas eléctricas. 
-                                Además, se toman medidas para minimizar los campos y la contaminación electromagnéticos en los 
+                                Además, se toman medidas para minimizar los <div className='space-tablet'/>campos y la contaminación electromagnéticos en los 
                                 espacios habitables.
                             </li>
                             <li>
@@ -244,7 +248,7 @@ const Index = () => {
                             </li>
                             <li>
                                 <strong>Conexión a la red eléctrica:</strong> En caso de que la edificación esté conectada a la red eléctrica convencional, 
-                                se realizan las conexiones correspondientes de acuerdo con las normativas y requisitos establecidos.
+                                se realizan las conexiones correspondientes de acuerdo con las normativas y <div className='space-tablet'/>requisitos establecidos.
                             </li>
                         </ul>
                     </p>
@@ -259,7 +263,7 @@ const Index = () => {
                         técnica de construcción en la cual se utiliza un solo material, generalmente tierra compactada, para 
                         levantar las paredes de una estructura de forma continua, sin juntas ni separaciones. En cuanto a los 
                         revoques internos y externos, son los revestimientos aplicados sobre las superficies de las paredes para 
-                        mejorar su aspecto estético, proporcionar protección y mejorar el aislamiento térmico y acústico. Estos 
+                        mejorar su aspecto estético, proporcionar protección y <div className='space-tablet'/>mejorar el aislamiento térmico y acústico. Estos 
                         revoques se pueden realizar utilizando diversos materiales y técnicas, dependiendo de las necesidades y 
                         preferencias de la construcción. Estos revestimientos tienen varias funciones, como proteger las 
                         superficies, proporcionar aislamiento térmico y acústico, mejorar la estética y promover la salud en el 
@@ -270,7 +274,7 @@ const Index = () => {
                         externos en bioconstrucción:
                         <ul>
                             <li>
-                                <strong>Elección de materiales naturales:</strong> En lugar de utilizar revestimientos convencionales a base de productos 
+                                <strong>Elección de materiales naturales:</strong> En lugar de utilizar revestimientos convencionales a <div className='space-tablet'/>base de productos 
                                 químicos y sintéticos, se priorizan los materiales naturales como la arcilla, la cal, el yeso, la tierra, la paja 
                                 y otros materiales orgánicos. Estos materiales son respetuosos con el medio ambiente, no emiten 
                                 sustancias tóxicas y permiten la transpiración de las paredes, lo que contribuye a mantener un ambiente 
@@ -279,7 +283,7 @@ const Index = () => {
                             <li>
                                 <strong>Preparación de mezclas naturales:</strong> Se preparan mezclas de revoque utilizando ingredientes naturales, 
                                 como tierra, arena, arcilla, fibras vegetales y aditivos naturales. Estas mezclas se ajustan según las 
-                                necesidades específicas de la construcción y se aplican mediante técnicas tradicionales, como el 
+                                necesidades específicas de la construcción y se <div className='space-tablet'/>aplican mediante técnicas tradicionales, como el 
                                 enlucido manual.
                             </li>
                             <li>
@@ -289,7 +293,7 @@ const Index = () => {
                             </li>
                             <li>
                                 <strong>Acabados naturales y saludables:</strong> Los revoques internos y externos en bioconstrucción se caracterizan 
-                                por su aspecto natural y estético. Pueden dejarse con su aspecto original, como la arcilla o la cal, o 
+                                por su aspecto natural y estético. Pueden dejarse con su aspecto original, como la arcilla o <div className='space-tablet'/>la cal, o 
                                 recibir tratamientos de acabado con pinturas ecológicas a base de agua y pigmentos naturales. Estas 
                                 pinturas no contienen compuestos tóxicos ni emiten vapores perjudiciales para la salud.
                             </li>
@@ -299,7 +303,7 @@ const Index = () => {
                                 control preciso de la aplicación y una mayor integración con los materiales de construcción utilizados.
                             </li>
                             <li>
-                                <strong>Mantenimiento y reparación sostenibles:</strong> En caso de daños o desgastes en los revoques, la 
+                                <strong>Mantenimiento y reparación sostenibles:</strong> En caso de daños o <div className='space-tablet'/>desgastes en los revoques, la 
                                 bioconstrucción fomenta el uso de técnicas de mantenimiento y reparación sostenibles. Esto implica la 
                                 aplicación de técnicas de restauración con materiales compatibles y respetuosos con el medio ambiente.
                             </li>

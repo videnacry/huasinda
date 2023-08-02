@@ -23,8 +23,28 @@
 .pages-s>div {
     margin: 4px;
     padding: 6vh 3vw;
+    word-spacing: 3px;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.pages-s>div p, .pages-s>div h1, .pages-s>div h2 {
+    margin-bottom: 10px;
+}
+.pages-s>div p {
+    color: #004771;
+}
+.pages-s>div h1 {
+    color: #a30042;
+}
+.pages-s>div h2 {
+    color: #009b5c;
+}
+.pages-s>div ul, .pages-s>div ol {
+    padding-inline-start: 14px;
+}
+.pages-s>div ul {
+    list-style-position: inside;
+    list-style-type: square;
 }
 .pages-s .space-pc, .pages-s .space-tablet {
     width: 100%;
