@@ -10,11 +10,10 @@ const Header = () => {
 
     return(
         <nav className="header-c">
-            <LogoSvg fill="#363636"/>
+            <LogoSvg onClick={() => context.goHome()} fill="#363636"/>
             <div>
-                <a onClick={() => context.goHome()}>Inicio</a>
-                <a onClick={() => context.goOffer()}>Módulos</a>
-                <a onClick={() => context.goModules()}>Contenidos</a>
+                <a onClick={() => context.goOffer()}>Taller</a>
+                <a onClick={() => context.goModules()}>Módulos</a>
                 <a onClick={() => context.goProjects()}>Proyectos</a>
                 <a onClick={() => context.goAboutUs()}>Nosotros</a>
             </div>

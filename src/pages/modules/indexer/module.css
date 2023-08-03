@@ -84,3 +84,17 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .nav_module>.card-module>h1 {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-aspect-ratio: 911/1368) {
+    .nav_module>.card-module>h1 {
+        white-space: normal;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}

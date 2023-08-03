@@ -47,6 +47,7 @@
     list-style-type: square;
 }
 .pages-s .space-pc, .pages-s .space-tablet {
+    display: block;
     width: 100%;
     height: 18vh;
 }

@@ -37,6 +37,7 @@
   color: #363636;
 }
 body {
+  word-spacing: 5px;
   font-size: 22px;
 }
 p {
@@ -104,19 +105,19 @@ ol {
 }
 @media screen and (max-aspect-ratio: 911/1368) {
   body {
-    font-size: 32px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 45px;
-  }
-  h3 {
     font-size: 40px;
   }
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 46px;
+  }
   h4 {
-    font-size: 38px;
+    font-size: 42px;
   }
 }
 
