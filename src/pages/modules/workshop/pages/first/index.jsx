@@ -1,6 +1,7 @@
+
 import './index.css'
 
-const Index = () => {
+const Index = (props) => {
 
     return(
         <div className="first">
@@ -14,18 +15,18 @@ const Index = () => {
                         bioconstrucción, se puede tener en cuenta la ubicación de las líneas Harmann al diseñar y ubicar 
                         edificaciones. Algunas personas creen que estas líneas pueden influir en la calidad del ambiente interior 
                         y en el bienestar de las personas. Por lo tanto, se podría buscar evitar la construcción de espacios 
-                        habitables en áreas donde las líneas Harmann<div className='space-tablet'/> sean más intensas.
+                        habitables en áreas donde las líneas Harmann<span className='space-tablet'/> sean más intensas.
                     </p>
                     <p>
                         La determinación de líneas Harmann se refiere a un estudio o análisis realizado para identificar y mapear 
                         las líneas de radiación electromagnética presentes en un lugar determinado. Estas líneas son 
                         consideradas energías telúricas o energías sutiles que pueden tener efectos sobre la salud y el bienestar 
                         de las personas.
-                    </p><div className='space-pc'/>
+                    </p><span className='space-pc'/>
                     <p>
                         Las líneas Harmann son una teoría propuesta por el investigador alemán Manfred Curry y se consideran 
                         parte del campo de la geobiología. Según esta teoría, existen corrientes de energía electromagnética 
-                        que fluyen en la Tierra y forman una red o malla. Estas corrientes pueden estar<div className='space-tablet'/> influenciadas por 
+                        que fluyen en la Tierra y forman una red o malla. Estas corrientes pueden estar<span className='space-tablet'/> influenciadas por 
                         diferentes factores, como la presencia de fallas geológicas, corrientes subterráneas, minerales en el 
                         suelo, entre otros. La determinación de líneas Harmann implica realizar mediciones y análisis utilizando 
                         dispositivos de detección electromagnética especializados. Estos dispositivos pueden incluir brújulas 
@@ -34,8 +35,8 @@ const Index = () => {
                     </p>
                     <p>
                         El análisis de la presencia y la dirección de las líneas Harmann en un área determinada, ya sea en el 
-                        terreno donde se realizará la construcción o en el lugar donde se<div className='space-tablet'/> encuentra una estructura existente, 
-                        permite tomar decisiones informadas en la<div className='space-pc'/> bioconstrucción, como la ubicación de dormitorios, áreas de 
+                        terreno donde se realizará la construcción o en el lugar donde se<span className='space-tablet'/> encuentra una estructura existente, 
+                        permite tomar decisiones informadas en la<span className='space-pc'/> bioconstrucción, como la ubicación de dormitorios, áreas de 
                         descanso o áreas de trabajo, evitando la exposición prolongada a las líneas de radiación.
                         Es importante tener en cuenta que el estudio de las líneas Harmann y su influencia en la bioconstrucción 
                         se basa en enfoques y creencias alternativas, y no cuenta con respaldo científico sólido en la comunidad 
@@ -43,7 +44,7 @@ const Index = () => {
                         según las creencias y preferencias individuales de los profesionales y constructores involucrados.
                     </p>
                 </li>
-                <li><div className='space-tablet'/>
+                <li><span className='space-tablet'/>
                     <h2>Determinación de líneas Curry:</h2> 
                     <p>
                         Las líneas Curry son líneas imaginarias que se considera que 
@@ -52,7 +53,7 @@ const Index = () => {
                         influencia en la salud y el bienestar de las personas. Al igual que con las líneas Harmann, en la 
                         bioconstrucción se puede considerar la ubicación de las líneas Curry para evitar posibles efectos 
                         negativos en la salud y el bienestar de las personas. Algunas personas pueden buscar evitar la ubicación 
-                        de áreas<div className='space-tablet'/> de descanso, como camas o espacios de meditación, en áreas donde las líneas<div className='space-pc'/> Curry sean más 
+                        de áreas<span className='space-tablet'/> de descanso, como camas o espacios de meditación, en áreas donde las líneas<span className='space-pc'/> Curry sean más 
                         prominentes.
                     </p>
                     <p>
@@ -60,16 +61,16 @@ const Index = () => {
                         mapear las líneas de radiación geopatógena propuestas por el investigador alemán Manfred Curry. Estas 
                         líneas también se conocen como "líneas de rejilla Curry" o "rejilla de Curry". Según la teoría de Curry, la 
                         Tierra está atravesada por una red de líneas de energía geopatógena que se extienden en dirección
-                        noreste-suroeste y noroeste-sureste. Estas líneas se generan debido a la interacción entre los campos<div className='space-tablet'/> 
+                        noreste-suroeste y noroeste-sureste. Estas líneas se generan debido a la interacción entre los campos<span className='space-tablet'/> 
                         magnéticos terrestres y las corrientes eléctricas en la Tierra. Se cree que la exposición prolongada a 
                         estas líneas puede tener efectos negativos para la salud humana.
                     </p>
                     <p>
                         La determinación de líneas Curry implica el uso de instrumentos de medición, como brújulas sensibles a 
                         campos magnéticos, para detectar y trazar estas líneas en un área determinada. El objetivo es identificar 
-                        la ubicación y dirección de las líneas de rejilla Curry, de manera similar a la<div className='space-pc'/> determinación de las líneas 
+                        la ubicación y dirección de las líneas de rejilla Curry, de manera similar a la<span className='space-pc'/> determinación de las líneas 
                         Harmann. Puede ser considerada al planificar y diseñar una estructura, especialmente en áreas donde se 
-                        busca maximizar la salud y el bienestar de los<div className='space-tablet'/> ocupantes. Algunas personas creen que evitar la 
+                        busca maximizar la salud y el bienestar de los<span className='space-tablet'/> ocupantes. Algunas personas creen que evitar la 
                         construcción de áreas sensibles, como dormitorios o áreas de descanso, sobre estas líneas puede 
                         contribuir a un entorno más saludable.
                     </p>
@@ -83,13 +84,13 @@ const Index = () => {
                         calidad de los espacios habitados. 
                     </p>
                     <p>
-                        Las chimeneas y venas telúricas son<div className='space-tablet'/> consideradas fenómenos naturales que se cree que tienen un 
+                        Las chimeneas y venas telúricas son<span className='space-tablet'/> consideradas fenómenos naturales que se cree que tienen un 
                         impacto en el bienestar y la salud de las personas. Se dice que las chimeneas son corrientes de energía 
                         que ascienden desde el subsuelo hacia la superficie, mientras que las venas son corrientes que fluyen 
                         horizontalmente en la Tierra. La determinación de chimeneas y venas telúricas implica el uso de 
                         herramientas de detección especializadas, como varillas de radiestesia, péndulos o dispositivos de 
-                        medición de campos<div className='space-pc'/> electromagnéticos. Estas herramientas se utilizan para detectar las corrientes 
-                        energéticas y trazar su ubicación y dirección en un<div className='space-tablet'/> área determinada.
+                        medición de campos<span className='space-pc'/> electromagnéticos. Estas herramientas se utilizan para detectar las corrientes 
+                        energéticas y trazar su ubicación y dirección en un<span className='space-tablet'/> área determinada.
                     </p>
                     <p>
                         En la bioconstrucción, se cree que la presencia de chimeneas y venas telúricas puede tener efectos 
@@ -100,7 +101,7 @@ const Index = () => {
                     </p>
                     <p>
                         Es importante tener en cuenta que la orientación magnética estructural en la bioconstrucción se basa en 
-                        enfoques y creencias alternativas, y<div className='space-tablet'/> no cuenta con un amplio respaldo científico en la comunidad 
+                        enfoques y creencias alternativas, y<span className='space-tablet'/> no cuenta con un amplio respaldo científico en la comunidad 
                         científica convencional. Su aplicación y consideración pueden variar según las creencias y preferencias 
                         individuales de los profesionales y constructores involucrados en el campo de la bioconstrucción.
                     </p>
@@ -110,14 +111,14 @@ const Index = () => {
                     <p>
                         La orientación magnética estructural se refiere a la medición y 
                         análisis de la orientación de las estructuras geológicas, como estratos, pliegues o fallas, utilizando 
-                        brújulas o u otros instrumentos de medición de campos magnéticos. El objetivo es alinear la<div className='space-pc'/> estructura 
-                        de manera que<div className='space-tablet'/> su eje principal o áreas sensibles, como dormitorios o áreas de descanso, estén 
+                        brújulas o u otros instrumentos de medición de campos magnéticos. El objetivo es alinear la<span className='space-pc'/> estructura 
+                        de manera que<span className='space-tablet'/> su eje principal o áreas sensibles, como dormitorios o áreas de descanso, estén 
                         orientadas de manera paralela o perpendicular al campo magnético terrestre. Esta información puede 
                         ser importante para estudios geológicos y geotécnicos, así como para la exploración de recursos 
                         naturales. Puede ser considerada para aprovechar la energía natural del entorno. Algunas técnicas de 
                         diseño bioconsciente pueden tener en cuenta la orientación magnética de las estructuras geológicas 
                         para maximizar la entrada de luz solar, el aprovechamiento de la ventilación natural o la captación de 
-                        energía geotérmica.<div className='space-tablet'/>
+                        energía geotérmica.<span className='space-tablet'/>
                     </p>
                     <p>
                         La orientación magnética estructural se refiere a la elección y alineación de una estructura o edificio de 
@@ -126,8 +127,8 @@ const Index = () => {
                         los ocupantes, se basa en la idea de que el campo magnético terrestre tiene influencia sobre los seres 
                         vivos y puede interactuar con la energía del entorno construido. Al considerar la orientación de una 
                         estructura en relación con el campo magnético, se busca maximizar la armonía y la interacción positiva 
-                        entre los<div className='space-tablet'/> ocupantes y su entorno.
-                    </p><div className='space-pc'/>
+                        entre los<span className='space-tablet'/> ocupantes y su entorno.
+                    </p><span className='space-pc'/>
                     <p>
                         Se cree que la orientación magnética adecuada puede mejorar la calidad del sueño, promover un mayor 
                         bienestar y reducir el estrés en los ocupantes. Además, se considera que una buena orientación 
