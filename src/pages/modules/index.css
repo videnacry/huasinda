@@ -1,4 +1,5 @@
 .modules-p {
+    position: relative;
     width: 100%;
 }
 .modules-p::before {
@@ -37,11 +38,46 @@
 .modules-p>.contents>.index-nav-mobile {
     display: none;
 }
+.modules-p>.pdf-viewer {
+    position: absolute;
+    top: 36vmin;
+    left: 2.5%;
+    width: 95%;
+    height: 74%;
+    padding-bottom: 40px;
+    background-color: white;
+}
+.modules-p>.hide_pdf-viewer {
+    position: absolute;
+    top: 28vmin;
+    right: 5vw;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 100%;
+    background-image: url('./water.jpg');
+    color: white;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    animation: showModalButtonMobileIndexer 1s;
+}
+.modules-p>.pdf-viewer>.bottom {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
 
 @media screen and (max-aspect-ratio: 1/1) {
     .modules-p>.contents {
         height: 65vh;
         margin-top: 8vmin;
+    }
+    .modules-p>.pdf-viewer {
+        top: 30vmin;
+        height: 78%;
+    }
+    .modules-p>.hide_pdf-viewer {
+        top: 23vmin;
     }
 }
 
@@ -56,7 +92,6 @@
         width: 86%;
         margin: auto;
     }
-    
     .modules-p>.contents>.index-nav-mobile {
         display: initial;
         position: absolute;
@@ -82,6 +117,12 @@
     }
     .modules-p>.contents>.index-nav-mobile>.show-pdf {
         right: 2%;
+    }
+    .modules-p>.pdf-viewer {
+        top: 36vmin;
+    }
+    .modules-p>.hide_pdf-viewer {
+        top: 26vmin;
     }
     @keyframes showModalButtonMobileIndexer {
         0%{opacity: 0;}

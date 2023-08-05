@@ -7,6 +7,7 @@ import navModule from './indexer/nav-module'
 import Webinars from '../../components/webinars'
 import Workshop from './workshop'
 import IndexerMogile from './indexer/mobile'
+import PdfViewerComponent from './pdfViewer'
 
 
 
@@ -14,6 +15,7 @@ const Index = ({moduleIdx=-1}) => {
 
     const context = useContext(Context)
     const [modalIsVisible, setModalIsVisible] = useState(false)
+    const [pdfIsVisible, setPdfIsVisible] = useState(false)
 
     const modules = context.modules.map(el => {
         return {
@@ -43,6 +45,7 @@ const Index = ({moduleIdx=-1}) => {
     pdfButton.colored = true
     pdfButton.blackBtn = {...navModule.blackBtn}
     pdfButton.blackBtn.text = 'ok'
+    pdfButton.blackBtn.clickHandler = () => setPdfIsVisible(true)
     pdfButton.greenBtn = {...navModule.greenBtn}
     pdfButton.greenBtn.isVisible = false
     
@@ -65,11 +68,17 @@ const Index = ({moduleIdx=-1}) => {
                     <Indexer modules={navModules2} isLeft bgHoleColor='rgba(249, 249, 249, 1)'/>
                 </div>
                 <div className='index-nav-mobile'>
-                    {modalIsVisible || <button className="show-modal" onClick={() => setModalIsVisible((prev) => true)}>Módulos</button>}
-                    {modalIsVisible || <button className="show-pdf" onClick={() => {}}>PDF</button>}
+                    {modalIsVisible || pdfIsVisible || <button className="show-modal" onClick={() => setModalIsVisible((prev) => true)}>Módulos</button>}
+                    {modalIsVisible || pdfIsVisible || <button className="show-pdf" onClick={pdfButton.blackBtn.clickHandler}>PDF</button>}
                     {modalIsVisible && <IndexerMogile modules={navModules} close={() => setModalIsVisible((prev) => false)}/>}
                 </div>
             </div>
+            {pdfIsVisible && <>
+            <div className="pdf-viewer"><PdfViewerComponent document={'document.pdf'}/>
+                <div className='bottom'/>
+            </div> 
+            <button className="hide_pdf-viewer" onClick={() => setPdfIsVisible(false)}>&times;</button>
+            </>}
         </div>
     )
 }
