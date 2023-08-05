@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import Context from '../../context'
 
 import './index.css'
@@ -6,12 +6,15 @@ import Indexer from './indexer'
 import navModule from './indexer/nav-module'
 import Webinars from '../../components/webinars'
 import Workshop from './workshop'
+import IndexerMogile from './indexer/mobile'
 
 
 
 const Index = ({moduleIdx=-1}) => {
 
     const context = useContext(Context)
+    const [modalIsVisible, setModalIsVisible] = useState(false)
+
     const modules = context.modules.map(el => {
         return {
             ...el, clickHandler: () => el.go(context.setState)
@@ -34,14 +37,18 @@ const Index = ({moduleIdx=-1}) => {
         module.blackBtn.clickHandler = modules[idx+4].clickHandler
         return module
     })
+    const navModules = [...navModules1, ...navModules2]
     const pdfButton = {...navModule}
     pdfButton.title = 'Visualizar y editar pdf'
     pdfButton.colored = true
     pdfButton.blackBtn = {...navModule.blackBtn}
+    pdfButton.blackBtn.text = 'ok'
     pdfButton.greenBtn = {...navModule.greenBtn}
+    pdfButton.greenBtn.isVisible = false
     
     navModules2.unshift(pdfButton)
 
+    
 
     return(
         <div className='modules-p'>
@@ -56,6 +63,11 @@ const Index = ({moduleIdx=-1}) => {
                 </div>
                 <div className='index-nav'>
                     <Indexer modules={navModules2} isLeft bgHoleColor='rgba(249, 249, 249, 1)'/>
+                </div>
+                <div className='index-nav-mobile'>
+                    {modalIsVisible || <button className="show-modal" onClick={() => setModalIsVisible((prev) => true)}>Módulos</button>}
+                    {modalIsVisible || <button className="show-pdf" onClick={() => {}}>PDF</button>}
+                    {modalIsVisible && <IndexerMogile modules={navModules} close={() => setModalIsVisible((prev) => false)}/>}
                 </div>
             </div>
         </div>

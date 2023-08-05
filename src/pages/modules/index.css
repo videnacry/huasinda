@@ -17,6 +17,7 @@
     background-color: white;
 }
 .modules-p>.contents {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,9 +34,58 @@
     width:48%;
     height: 100%;
 }
+.modules-p>.contents>.index-nav-mobile {
+    display: none;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     .modules-p>.contents {
         height: 65vh;
         margin-top: 8vmin;
     }
 }
+
+@media screen and (max-aspect-ratio: 911/1368) {
+    .modules-p>.contents {
+        margin-top: 18vw;
+    }
+    .modules-p>.contents>.index-nav {
+        display: none;
+    }
+    .modules-p>.contents>.document {
+        width: 86%;
+        margin: auto;
+    }
+    
+    .modules-p>.contents>.index-nav-mobile {
+        display: initial;
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 12vw);
+        left: 0;
+        top: -12vw;
+        pointer-events: none;
+    }
+    .modules-p>.contents>.index-nav-mobile * {
+        pointer-events: all;
+    }
+    .modules-p>.contents>.index-nav-mobile>.show-modal, .modules-p>.contents>.index-nav-mobile>.show-pdf {
+        position: absolute;
+        top: 0;
+        right: 26vw;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 100%;
+        background-image: url('./water.jpg');
+        color: white;
+        animation: showModalButtonMobileIndexer 1s;
+    }
+    .modules-p>.contents>.index-nav-mobile>.show-pdf {
+        right: 2%;
+    }
+    @keyframes showModalButtonMobileIndexer {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+}
+

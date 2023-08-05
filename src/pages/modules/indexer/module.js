@@ -11,8 +11,8 @@ const Module = ({data=navModule, bgHole='white', isLeft=false}) => {
                 <h1><a onClick={data.blackBtn.clickHandler}>{data.title}</a></h1>
                 <hr/>
                 <div className='options'>
-                    <button className='btn-black' onClick={data.blackBtn.clickHandler}>{data.blackBtn.text}</button>
-                    <button className='btn-green'>+<data.greenBtn.svg height='1em' width='auto' fill='white'/></button>
+                    {data.blackBtn.isVisible&&<button className='btn-black' onClick={data.blackBtn.clickHandler}>{data.blackBtn.text}</button>}
+                    {data.greenBtn.isVisible&&<button className='btn-green'>+<data.greenBtn.svg height='1em' width='auto' fill='white'/></button>}
                 </div>
             </div>
         </div>

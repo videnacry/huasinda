@@ -5,11 +5,13 @@ const navModule = {
     title:'',
     blackBtn:{
         text:'info',
-        clickHandler:()=>{console.log('hi')}
+        clickHandler:()=>{console.log('hi')},
+        isVisible: true
     },
     greenBtn:{
         svg:svgCart,
-        clickHandler:()=>{}
+        clickHandler:()=>{},
+        isVisible: true
     }
 }
 
