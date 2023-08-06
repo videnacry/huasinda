@@ -16,12 +16,13 @@
     position: relative;
     z-index: 1;
 }
-.projects-s > div > a > .title{
+.projects-s > div > a > .title {
     margin: 20px;
     margin-bottom: 30px;
     text-align: center;
-    font-weight: 500;
-    color: #363636;
+    font-weight: bold;
+    color: #bb6d00;
+    text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
 .projects-s > div > a > .title:hover {
     text-decoration: underline;
@@ -97,5 +98,46 @@
     }
     .projects-s > div > .link {
         margin-top: 5%;
+    }
+}
+@media screen and (max-width: 534px) {
+    .projects-s {
+        padding-bottom: 0px;
+    }
+    .projects-s > div > a > .title {
+        margin-bottom: 10px;
+        text-align: end;
+    }
+    .projects-s > div >.pharagraph-left {
+        width: 100%;
+        margin-top: 0;
+        text-align: start;
+    }
+    .projects-s > div > .frame-right {
+        width: 76%;
+    }
+    .projects-s > div > .frame-right > .img-right {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .projects-s > div > .frame-left {
+        width: 44%;
+    } 
+    .projects-s > div > .frame-left > .img-left {
+        margin-top: 20px;
+    }
+    .projects-s > div >.pharagraph-right {
+        width: 56%;
+        margin-top: 70px;
+        padding: 2% 4%;
+        text-align: end;
+    }
+}
+@media screen and (max-width: 350px) {  
+    .projects-s > div >.pharagraph-right {
+        width: 56%;
+        margin-top: 14px;
+        padding: 2% 4%;
+        text-align: end;
     }
 }

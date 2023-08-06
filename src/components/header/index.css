@@ -1,7 +1,11 @@
+.header-c-space{
+    width: 100%;
+    height: 76px;
+}
 .header-c{
     width: 100%;
     padding: 0px 20px;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 3;
@@ -10,10 +14,19 @@
     align-items: stretch;
     background-color: rgba(255, 255, 255, 0.5);
 }
+.header-c.absolute{
+    position: absolute;
+}
+.header-c.fixed{
+    position: fixed;
+    width: 96%;
+    left: 2%;
+}
 .header-c svg{
     width: auto;
     height: 1.8em;
     margin: 0.3em 0;
+    cursor: pointer;
 }
 .header-c > div {
     width: 100%;
@@ -33,21 +46,21 @@
 .header-c > div > a:hover {
     text-decoration: underline;
 }
-
-@media screen and (max-aspect-ratio: 1/1) {
-    .header-c {
-        border-radius: 20px 20px 0px 0px;
+@media screen and (max-width: 534px) {
+    .header-c{
+        flex-direction: column;
+        padding: 0 4px;
     }
     .header-c svg {
-        height: 2em;
-        margin: 0.5em 0;
+        height: 1.4em;
+        margin: 0.4em 0 0 0;
+    }
+    .header-c > div > a {
+        font-weight: bold;
+        font-size: 16px;
     }
     .header-c > div {
-        max-width: 650px;
-    }
-}
-@media screen and (max-aspect-ratio: 7/10) {
-    .header-c > div {
-        max-width: 700px;
+        border-bottom: solid white 1px;
+        padding-bottom: 0.4em;
     }
 }

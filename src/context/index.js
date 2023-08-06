@@ -13,6 +13,11 @@ import modules from "./modules-info";
 let links = {
     state:{}, 
     setState:()=>{},
+    /**
+     * set header state to absolute, fixed, or none of them by passing an empty object as parameter
+     * @param {object} param0 header new state 
+     */
+    setHeaderState({isFixed=false, isAbsolute=false}) {this.header={isFixed, isAbsolute}},
     goHome() {this.setState(<Home />)}, 
     goOffer() {this.setState(<Webinar />)}, 
     goProjects() {this.setState(<Projects/>)}, 

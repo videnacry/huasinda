@@ -46,6 +46,7 @@ const About = () => {
     
     useEffect(() => {
         window.scrollTo(0, 0)
+        context.setHeaderState({isAbsolute:true})
       }, [])
 
     return(

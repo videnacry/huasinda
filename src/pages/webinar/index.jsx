@@ -17,6 +17,7 @@ const Webinar = () => {
     })
     useEffect(() => {
         window.scrollTo(0, 0)
+        context.setHeaderState({isFixed:true})
       }, [])
 
     const boxes = {

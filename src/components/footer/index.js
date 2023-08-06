@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div className='contact'>
                 <a href='mailto:aquaterra@gmail.com'>aquaterra@gmail.com</a>
-                <a href='tel:+592 98 456 1233'>TEL: +592 98 456 1233</a>
+                <a href='tel:+592 96 138 5672'>TEL: +592 96 138 5672</a>
             </div>
         </div>
     )

@@ -9,15 +9,16 @@ import Context from './context';
 function App() {
 
   const [pageState, setPageState] = useState(<Home />)
+  const [headerState, setHeaderState] = useState({isAbsolute:false, isFixed:false})
   const context = useContext(Context)
 
   return (
     <div className="App">
       <div className='top-left-leaf'/>
       <div className='bottom-right-leaf'/>
-      <Context.Provider value={{...context, state:pageState, setState:setPageState}}>
-      {pageState}
-      <Header/>
+      <Context.Provider value={{...context, state:pageState, setState:setPageState, setHeaderState:({isAbsolute=false, isFixed=false}) => setHeaderState({isAbsolute, isFixed})}}>
+        <Header isAbsolute={headerState.isAbsolute} isFixed={headerState.isFixed}/>
+        {pageState}
       </Context.Provider>
       <Footer/>
     </div>

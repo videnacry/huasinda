@@ -58,3 +58,11 @@
         margin-bottom: 4%;
     }
 }
+@media screen and (max-width: 470px) {
+    .footer-c > .contact {
+        flex-direction: column;
+    }
+    .footer-c > .contact :nth-child(2) {
+        text-align: end;
+    }
+}

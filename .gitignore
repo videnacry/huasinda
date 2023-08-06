@@ -11,6 +11,9 @@
 # production
 /build
 
+# pdv viewer
+/public/pspdfkit-lib
+
 # misc
 .DS_Store
 .env.local

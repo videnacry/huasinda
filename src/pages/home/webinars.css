@@ -19,8 +19,9 @@
     margin: 20px;
     margin-bottom: 30px;
     text-align: center;
-    font-weight: 500;
-    color: #363636;
+    font-weight: bold;
+    color: #bb6d00;
+    text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
 .webinars-s>.article>.title>h1:hover {
     text-decoration: underline;
@@ -72,7 +73,9 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-top: 48%;
+    background-image: url('./webinar-1.jpg');
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
+    animation: home_workshop-s_img 5s infinite alternate-reverse linear;
 }
 .webinars-s > .article > .black-line > .frame-center > .white {
     border-radius: 5px;
@@ -84,10 +87,21 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-top: 45%;
+    background-image: url('./webinar-2.jpg');
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
+    animation: home_workshop-s_img 5s infinite alternate linear;
+}
+@keyframes home_workshop-s_img {
+    0% {
+        background-image: url('./webinar-2.jpg');
+    }
+    100% {
+        background-image: url('./webinar-1.jpg');
+    }
 }
 .webinars-s>.article>.link{
     width: 50%;
+    margin-top: 2%;
     margin-left: auto;
     display: block;
     text-align: center;
@@ -107,6 +121,7 @@
         margin-top: 5%;
         margin-bottom: 3%;
     }
+
     .webinars-s > .article >.pharagraph-left {
         margin-top: 5%;
     }
@@ -137,5 +152,45 @@
     }
     .webinars-s>.article>.link{
         margin-top: 5%;
+    }
+}
+@media screen and (max-width: 660px) {  
+    .webinars-s > .article >.pharagraph-right {
+        margin-left: 50%;
+    }
+    .webinars-s > .article >.pharagraph-left {
+        margin-right: 50%;
+    }
+}
+@media screen and (max-width: 450px) {  
+    .webinars-s>.article {
+        padding-bottom: 20px;
+    }      
+    .webinars-s>.article>.title>h1 {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .webinars-s > .article >.pharagraph-left, .webinars-s > .article >.pharagraph-right {
+        margin-left: unset;
+        margin-right: unset;
+        white-space: nowrap;
+    }
+    .webinars-s > .article > .black-line {
+        margin: 80px 0;
+        padding-top: 46%;
+    }    
+    .webinars-s > .article > .black-line > .frame-left {
+        width: 70%;
+        top: unset;
+        bottom: 42%;
+    }
+    .webinars-s > .article > .black-line > .frame-center {
+        width: 33%;
+        left: 42%;
+    }
+    .webinars-s > .article > .black-line > .frame-right {
+        width: 54%;
+        top: 66%;
+        bottom: unset;
     }
 }

@@ -14,7 +14,7 @@ const Links = () => {
                         <a className="link" href={link.url}>
                             <div className='img' style={{backgroundImage: 'url("' + link.img_path + '")'}}/>
                             <h3>{link.name[0].toUpperCase() + link.name.substr(1)}</h3>
-                            <p>{link.content.substr(0, 45) + '...'}</p>
+                            <p>{link.content.substr(0, 45).trim() + '...'}</p>
                         </a>
                     </li>
                 ))}

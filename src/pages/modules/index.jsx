@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Context from '../../context'
 
 import './index.css'
@@ -16,6 +16,7 @@ const Index = ({moduleIdx=-1}) => {
     const context = useContext(Context)
     const [modalIsVisible, setModalIsVisible] = useState(false)
     const [pdfIsVisible, setPdfIsVisible] = useState(false)
+    useEffect(() => context.setHeaderState({}), [])
 
     const modules = context.modules.map(el => {
         return {
@@ -55,7 +56,6 @@ const Index = ({moduleIdx=-1}) => {
 
     return(
         <div className='modules-p'>
-            <div className='space'/>
             <Webinars modules={modules}/>
             <div className='contents'>
                 <div className="index-nav">
