@@ -1,9 +1,6 @@
 .webinar-p{
     position: relative;
 }
-.webinar-p>.header-space{
-    height: 70px;
-}
 .webinar-p>.schedule *{
     color: #363636;
 }

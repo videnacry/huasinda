@@ -13,7 +13,6 @@ const IndexerMogile = ({modules=[{...navModule}], close = ()=>{console.log('clos
                         <li className="module">
                             <h2 className="title">{data.title}</h2>        
                             {data.blackBtn.isVisible&&<button className='btn-black' onClick={data.blackBtn.clickHandler}>{data.blackBtn.text}</button>}
-                            {data.greenBtn.isVisible&&<button className='btn-green'>+<data.greenBtn.svg height='1em' width='auto' fill='white'/></button>}
                         </li>
                     )
                 }

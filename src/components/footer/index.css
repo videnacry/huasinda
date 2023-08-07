@@ -65,4 +65,13 @@
     .footer-c > .contact :nth-child(2) {
         text-align: end;
     }
+    .footer-c > .spheres > .sphere-big {
+        width: 36%;
+        margin: 15px;
+    }
+    .footer-c > .spheres > .sphere-small {
+        width: 14%;
+        margin: 5px;
+        margin-bottom: 28px;
+    }
 }

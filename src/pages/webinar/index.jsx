@@ -17,7 +17,7 @@ const Webinar = () => {
     })
     useEffect(() => {
         window.scrollTo(0, 0)
-        context.setHeaderState({isFixed:true})
+        context.setHeaderState({})
       }, [])
 
     const boxes = {
@@ -42,7 +42,6 @@ const Webinar = () => {
     
     return(
         <div className='webinar-p'>
-            <div className='header-space'></div>
             <Webinars modules={modules}/>
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg=''/>
             <Summary img={complete_outsie} boxes={boxes}/>

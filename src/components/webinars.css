@@ -34,3 +34,23 @@
         height: 70px;
     }
 }
+@media screen and (max-width: 600px) {
+    .webinars-c>.webinar:nth-child(7) {
+        display: none;
+    }
+}
+@media screen and (max-width: 520px) {
+    .webinars-c>.webinar:nth-child(6) {
+        display: none;
+    }
+}
+@media screen and (max-width: 440px) {
+    .webinars-c>.webinar:nth-child(5) {
+        display: none;
+    }
+}
+@media screen and (max-width: 370px) {
+    .webinars-c>.webinar:nth-child(4) {
+        display: none;
+    }
+}

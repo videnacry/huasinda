@@ -80,10 +80,33 @@
         display: block;
         position: inherit;
     }
+    .pages-s .space-pc {
+        display: none;
+    }
 }
 
-@media screen and (max-aspect-ratio: 911/1368) {
+@media screen and (min-width: 650px) {
     .pages-s>div {
         padding: 6vh 8vw;
+    }
+}
+@media screen and (max-width: 386px) {
+    .pages-s h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 370px) {
+    
+    .pages-s h1{
+        font-size: 28px;
+    }
+    .pages-s h2{
+        font-size: 26px;
+    }
+    .pages-s h3{
+        font-size: 24px;
+    }
+    .pages-s p, .pages-s li{
+        font-size: 20px;
     }
 }

@@ -19,7 +19,7 @@
     justify-content: space-between;
     width: 100%;
     height: 90vh;
-    margin-top: 15vmin;
+    margin-top: 100px;
 }
 .modules-p>.contents>.index-nav {
     width:26%;
@@ -35,7 +35,7 @@
 }
 .modules-p>.pdf-viewer {
     position: absolute;
-    top: 36vmin;
+    top: 170px;
     left: 2.5%;
     width: 95%;
     height: 74%;
@@ -44,10 +44,10 @@
 }
 .modules-p>.hide_pdf-viewer {
     position: absolute;
-    top: 28vmin;
+    top: 120px;
     right: 5vw;
-    width: 6vmin;
-    height: 6vmin;
+    width: 33px;
+    height: 33px;
     border-radius: 100%;
     background-image: url('./water.jpg');
     color: white;
@@ -76,14 +76,12 @@
     }
 }
 
-@media screen and (max-aspect-ratio: 911/1368) {
-    .modules-p>.contents {
-        margin-top: 18vw;
-    }
+@media screen and (max-width: 850px) {
     .modules-p>.contents>.index-nav {
         display: none;
     }
     .modules-p>.contents>.document {
+        max-width: 580px;
         width: 86%;
         margin: auto;
     }
@@ -101,23 +99,26 @@
     }
     .modules-p>.contents>.index-nav-mobile>.show-modal, .modules-p>.contents>.index-nav-mobile>.show-pdf {
         position: absolute;
-        top: 0;
-        right: 26vw;
-        width: 20vw;
-        height: 20vw;
+        top: 50%;
+        left: 4%;
+        width: 86px;
+        height: 86px;
         border-radius: 100%;
         background-image: url('./water.jpg');
         color: white;
+        font-size: 20px;
         animation: showModalButtonMobileIndexer 1s;
     }
     .modules-p>.contents>.index-nav-mobile>.show-pdf {
-        right: 2%;
+        left: unset;
+        right: 4%;
     }
     .modules-p>.pdf-viewer {
-        top: 36vmin;
+        top: 164px;
+        height: 88%;
     }
     .modules-p>.hide_pdf-viewer {
-        top: 26vmin;
+        top: 110px;
     }
     @keyframes showModalButtonMobileIndexer {
         0%{opacity: 0;}
@@ -125,3 +126,28 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .modules-p>.contents {
+        height: 74vh;
+        margin-top: 80px;
+    }
+    .modules-p>.contents>.index-nav-mobile>.show-modal, .modules-p>.contents>.index-nav-mobile>.show-pdf {
+        top: -20px;
+        right: 100px;
+        left: unset;
+    }
+    .modules-p>.contents>.index-nav-mobile>.show-pdf {
+        right: 2%;
+    }
+    .modules-p>.pdf-viewer {
+        top: 160px;
+    }
+    .modules-p>.hide_pdf-viewer {
+        top: 110px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .modules-p>.contents>.document {
+        width: 96%;
+    }
+}

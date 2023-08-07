@@ -36,3 +36,39 @@
         bottom: 10%;
     }
 }
+@media screen and (max-width:938px) {
+    .spheres-s >.sphere-md{
+        max-width: 300px;
+        max-height: 260px;
+        width: 36vmin;
+        height: 30vmin;
+    }
+    .spheres-s >.sphere-sm{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:500px) {    
+    .spheres-s >.sphere-md{
+        max-width: 300px;
+        max-height: 260px;
+        width: 38vmin;
+        height: 40vmin;
+    }
+}
+@media screen and (max-width:430px) {    
+    .spheres-s >.sphere-md{
+        max-width: 300px;
+        max-height: 260px;
+        width: 46vmin;
+        height: 44vmin;
+    }
+}
+@media screen and (max-width:370px) {
+    .spheres-s >.sphere-md{
+        max-width: 300px;
+        max-height: 260px;
+        width: 60vmin;
+        height: 60vmin;
+    }
+}
