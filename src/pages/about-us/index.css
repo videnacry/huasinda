@@ -9,7 +9,7 @@
 .about-us-s > .info {
     margin-top: 30px;
 }
-@media screen and (min-aspect-ratio: 912/1368) {
+/* @media screen and (min-aspect-ratio: 912/1368) {
     .about-us-s > .info {
         display: flex;
         align-items: center;
@@ -21,13 +21,14 @@
         display: block;
         height: 40vh;
     }
-}
-@media screen and (min-aspect-ratio: 1/1) {
+} */
+@media screen and (min-width: 700px) {
     .about-us-s > .short-img {
         display: none;
     }
     .about-us-s > .long-img {
         display: block;
-        height: 60vh;
+        min-height: 500px;
+        height: 50vh;
     }
 }

@@ -60,15 +60,18 @@
     .spheres-s >.sphere-md{
         max-width: 300px;
         max-height: 260px;
-        width: 46vmin;
-        height: 44vmin;
+        width: 42vmin;
+        height: 36vmin;
+    }
+    .spheres-s >.sphere-md h4{
+        font-size: 20px;
     }
 }
 @media screen and (max-width:370px) {
     .spheres-s >.sphere-md{
         max-width: 300px;
         max-height: 260px;
-        width: 60vmin;
+        width: 54vmin;
         height: 60vmin;
     }
 }

@@ -1,7 +1,7 @@
 .box-c {
-    padding: 2vmin;
-    position: relative;
     display: inline-block;
+    position: relative;
+    padding: 2vmin;
 }
 .box-c.fill {
     width: 100%;

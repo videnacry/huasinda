@@ -36,16 +36,104 @@
 .description-mission-s > .text-boxes > .dialog {
     width: 84%;
 }
+@media screen and (max-width:630px) {
+    .description-mission-s > .end-msg {
+        margin: 60px 0 40px 0;
+    }
+}
+   
+@media screen and (max-width:570px) {
+    .description-mission-s > .text-boxes {
+        width: 60%;
+    }    
+    .description-mission-s > .img {
+        width: 76%;
+        height: unset;
+    }
+    .description-mission-s > .text-boxes > .description {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width:530px) {
+    .description-mission-s > .text-boxes {
+        width: 80%;
+    }    
+    .description-mission-s > .bg-box {
+        top: unset;
+        bottom: -5%;
+        width: 90%;
+    }
+    .description-mission-s > .img {
+        top: 44%;
+        width: 84%;
+        height: unset;
+    }
+    .description-mission-s > .text-boxes > .description {
+        margin-bottom: 140px;
+    }    
+    .description-mission-s > .text-boxes > .dialog {
+        margin-right: auto;
+        margin-left: 4%;
+    }
 
-@media screen and (min-aspect-ratio: 912/1368) {
+}
+@media screen and (max-width:470px) {
     .description-mission-s > .start-msg, .description-mission-s > .end-msg {
         margin: 50px 0;
     }
     .description-mission-s > .start-msg {
-        text-align: end;
+        margin-bottom: 70px;
     }
-    .description-mission-s > .end-msg {
-        text-align: start;
+    .description-mission-s > .text-boxes {
+        width: 86%;
+    }     
+    .description-mission-s > .bg-box {
+        width: 94%;
+    }
+    .description-mission-s > .img {
+        top:50%;
+        width: 86%;
+    }
+    .description-mission-s > .text-boxes > .description div, .description-mission-s > .text-boxes > .dialog div{
+        font-size: 20px;
+    }
+    .description-mission-s > .text-boxes > .description {
+        width: 98%;
+    }    
+    .description-mission-s > .text-boxes > .dialog {
+        margin-right: auto;
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width:430px) {
+    .description-mission-s > .bg-box {
+        top: 90px;
+        bottom: unset;
+        transform: unset;
+        width: 50%;
+    }
+    .description-mission-s > .text-boxes {
+        width: 92%;
+    }    
+}
+@media screen and (max-width:415px) {
+    .description-mission-s > .text-boxes {
+        width: 98%;
+    }
+}
+@media screen and (max-width:380px) { 
+    .description-mission-s > .text-boxes > .dialog {
+        width: 98%;
+    }
+}
+@media screen and (max-width:360px) {
+    .description-mission-s > .img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px) {
+    .description-mission-s > .bg-box {
+        top: 110px;
     }
 }
 
@@ -64,22 +152,102 @@
 }
 .description-vision-s > .img {
     width: 83%;
-    height: 66%;
     left: 1%;
     bottom: 0;
 }
 .description-vision-s > .text-boxes {
     padding: 70px 0 24px 0;
+    margin-bottom: 100px;
 }
 .description-vision-s > .text-boxes > .description {
     width: 60%;
-    margin: 0 120px 40px auto;
+    margin: 0 12% 40px auto;
     text-align: center;
 }
 .description-vision-s > .text-boxes > .dialog {
     width: 46%;
     margin: 0 25px 0 auto;
 }
-.description-vision-s > .end-msg {
 
+@media screen and (max-width:630px) {
+    .description-vision-s > .bg-box {
+        width: 90%;
+    }
+    .description-vision-s > .img {
+        width: 86%;
+    }
+    .description-vision-s > .text-boxes {
+        padding: 40px 0 24px 0;
+        margin-bottom: 100px;
+    }
+    .description-vision-s > .text-boxes > .description {
+        width: 70%;
+        margin: 0 4% 60px auto;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 52%;
+        margin: 0 9% 0 auto;
+    }
+}
+@media screen and (max-width:530px) {
+    .description-vision-s > .bg-box {
+        width: 50%;
+        height: 52%;
+    }
+    .description-vision-s > .text-boxes {
+        padding: 40px 0 24px 0;
+        margin-bottom: 100px;
+    }
+    .description-vision-s > .text-boxes > .description div, .description-vision-s > .text-boxes > .dialog div{
+        font-size: 20px;
+    }
+    .description-vision-s > .text-boxes > .description {
+        width: 90%;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 60%;
+        margin: 0 4% 0 auto;
+    }
+}
+@media screen and (max-width:480px) {
+    .description-vision-s > .img {
+        top: 30%;
+    }
+    .description-vision-s > .text-boxes {
+        margin-bottom: 40px;
+    }
+    .description-vision-s > .text-boxes > .description {
+        width: 94%;
+        margin: 0 2% 100px 2%;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 70%;
+        margin: 0 4% 0 auto;
+    }
+}
+@media screen and (max-width:400px) {
+    .description-vision-s > .img {
+        top: 40%;
+    }
+    .description-vision-s > .text-boxes > .description {
+        margin-bottom: 130px;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 80%;
+    }
+}
+@media screen and (max-width:340px) {
+    .description-vision-s > .img {
+        width: 100%;
+    }
+    .description-vision-s > .bg-box {
+        height: 60%;
+    }
+    .description-vision-s > .text-boxes > .description {
+        width: 96%;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 96%;
+        margin: 0 2% 0 auto;
+    }
 }

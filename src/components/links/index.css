@@ -71,6 +71,7 @@
 @media screen and (max-width: 497px) {
     .links-c>.links>li {
         width: 48%;
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 310px) {
