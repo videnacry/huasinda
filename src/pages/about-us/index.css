@@ -9,26 +9,20 @@
 .about-us-s > .info {
     margin-top: 30px;
 }
-/* @media screen and (min-aspect-ratio: 912/1368) {
-    .about-us-s > .info {
-        display: flex;
-        align-items: center;
-    }
-    .about-us-s > .short-img {
-        display: none;
-    }
-    .about-us-s > .long-img {
-        display: block;
-        height: 40vh;
-    }
-} */
 @media screen and (min-width: 700px) {
     .about-us-s > .short-img {
         display: none;
     }
     .about-us-s > .long-img {
         display: block;
-        min-height: 500px;
+        max-height: 400px;
         height: 50vh;
     }
+}
+@media screen and (min-aspect-ratio: 1) {
+    .about-us-s > .long-img {
+        max-height: unset;
+        min-height: 500px;
+    }
+    
 }
