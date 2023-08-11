@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Box from '../../components/box'
+import Box from '../../components/styled/box'
 import './project.css'
 
 const Project = (props) => {

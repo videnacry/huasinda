@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import './index.css'
 
-import Webinars from '../../components/webinars'
+import Webinars from '../../components/styled/webinars'
 import ContactForm from './contactForm'
 import Cart from './cart'
 import Payment from './payment'

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import Greeting from './greeting'
-import Webinars from '../../components/webinars'
+import Webinars from '../../components/styled/webinars'
 import Summary from './summary'
 import Teacher from './teacher'
 import './webinar.css'

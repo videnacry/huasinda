@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './pages/home';
-import Header from './components/header';
-import Footer from './components/footer'
+import Header from './components/styled/header';
+import Footer from './components/styled/footer'
 import { useContext, useState } from 'react';
 import Context from './context';
 

@@ -1,4 +1,4 @@
-import Box from '../../components/box';
+import Box from '../../components/styled/box';
 import './description.css'
 
 const Description = (props) => {

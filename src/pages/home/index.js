@@ -1,10 +1,10 @@
 import React, {useContext, useEffect} from 'react'
 import './index.css'
-import Jumbotron from '../../components/jumbotron'
+import Jumbotron from '../../components/styled/jumbotron'
 import Proyects from './projects'
 import Webinars from './webinars'
-// import LeaveComment from '../../components/leaveComment'
-import Links from '../../components/links'
+// import LeaveComment from '../../components/styled/leaveComment'
+import Links from '../../components/styled/links'
 import jumbotronImgSrc from './jumbotron.jpg'
 import Context from '../../context'
 

@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 
-import Box from '../../../components/box'
+import Box from '../../../components/styled/box'
 import Spheres from './spheres'
 import ModalModules from './modal-modules'
 import './index.css'

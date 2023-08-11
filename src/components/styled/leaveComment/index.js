@@ -1,6 +1,6 @@
 import React from 'react'
 import Comment from './comment'
-import './leaveComment.css'
+import './index.css'
 
 const LeaveComment = () => {
 

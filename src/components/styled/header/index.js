@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import Context from '../../context'
+import Context from '../../../context'
 
 import './index.css'
 import {ReactComponent as LogoSvg} from './logo.svg'

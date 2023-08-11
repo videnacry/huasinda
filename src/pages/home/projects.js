@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import Box from '../../components/box'
+import Box from '../../components/styled/box'
 import projectFirstSrc from './project-1.jpg'
 import projectSecondSrc from './project-2.jpg'
 

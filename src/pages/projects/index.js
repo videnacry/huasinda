@@ -1,7 +1,7 @@
 import React, {useContext, useEffect} from 'react'
 
 import Project from './project'
-import Box from '../../components/box'
+import Box from '../../components/styled/box'
 
 import projectFirst from './project-first'
 import projectSecond from './project-second'

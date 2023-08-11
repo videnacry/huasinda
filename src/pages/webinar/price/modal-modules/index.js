@@ -1,4 +1,4 @@
-import Box from '../../../../components/box'
+import Box from '../../../../components/styled/box'
 import Module from './module'
 import './index.css'
 import ImgSrcEcovillage from './ecovillage.jpg'

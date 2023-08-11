@@ -16,6 +16,7 @@ const modules = [
     topic: 'Módulo 1',
     icon: moduleFirstSrc,
     title: ' Replanteo magnético y cardinal',
+    youtube: 'https://www.youtube.com/embed/MM3frXKJTZc',
     summery: [
         
         'Determinación de líneas HARMANN',
@@ -38,6 +39,7 @@ const modules = [
     date: '24-12-2020',
     topic: 'Módulo 2',
     icon: moduleSecondSrc,
+    youtube: 'https://www.youtube.com/embed/jv1iwPs0NO0',
     title: 'Replanteo de Obra',
     summery: [
         
@@ -63,6 +65,7 @@ const modules = [
     date: '26-12-2020',
     topic: 'Módulo 3',
     icon: moduleThirdSrc,
+    youtube: 'https://www.youtube.com/embed/VwOkqM4j-ts',
     title: 'Replanteo eléctrico e hidráulico',
     summery: [
         
@@ -86,6 +89,7 @@ const modules = [
     date: '28-12-2020',
     topic: 'Módulo 4',
     icon: moduleSixthSrc,
+    youtube: 'https://www.youtube.com/embed/N012uAj2gI4',
     title: 'Piso',
     summery: [
       
@@ -108,6 +112,7 @@ const modules = [
     date: '28-12-2020',
     topic: 'Módulo 5',
     icon: moduleSeventhSrc,
+    youtube: 'https://www.youtube.com/embed/y9DrZ5eQntQ',
     title: 'Revoques',
     summery: [
       
@@ -132,6 +137,7 @@ const modules = [
     date: '28-12-2020',
     topic: 'Módulo 6',
     icon: moduleEightSrc,
+    youtube: 'https://www.youtube.com/embed/K7GeuZiXyeE',
     title: 'Ecodomo',
     summery: [
       'Prospección telúrica',
@@ -154,6 +160,7 @@ const modules = [
     date: '28-12-2020',
     topic: 'Módulo 7',
     icon: moduleNinethSrc,
+    youtube: 'https://www.youtube.com/embed/fpZ4Rezp00Y',
     title: 'Levantamiento Geo monolítico',
     summery: [
       'Impermeabilización del terreno',

@@ -1,13 +1,13 @@
 import './index.css'
 
 import React, {useCallback, useContext, useEffect} from 'react'
-import Jumbotron from '../../components/jumbotron'
+import Jumbotron from '../../components/styled/jumbotron'
 import jumbotronImgSrc from './jumbotron.jpg'
 import jumbotronDeskImgSrc from './jumbotron-desk.webp'
 import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'
 import Description from './description'
-import Links from '../../components/links'
+import Links from '../../components/styled/links'
 import Context from '../../context'
 
 const About = () => {
