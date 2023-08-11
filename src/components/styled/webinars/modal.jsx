@@ -1,16 +1,24 @@
 
 import './modal.css'
 
-const videoActive = {remain:undefined, video:undefined, unactive(){
-    this.video?.classList.remove('active')
-    this.remain?.classList.remove('active')
-}}
+const videoActive = {
+    remain:undefined, 
+    video:undefined, 
+    unactive(){
+    document.getElementById(this.remain)?.classList.remove('active')
+    document.getElementById(this.video)?.classList.remove('active')
+    },
+    active(remainId, videoId){
+        this.remain=remainId
+        this.video=videoId
+    }
+}
 const setActive = (idRemain, idVideo) => {
     videoActive.unactive()
-    videoActive.video = document.getElementById(idRemain)
-    videoActive.video.classList.toggle('active')
-    videoActive.remain = document.getElementById(idVideo)
-    videoActive.remain.classList.toggle('active')
+    videoActive.video = idRemain
+    document.getElementById(idRemain).classList.toggle('active')
+    videoActive.remain = idVideo
+    document.getElementById(idVideo).classList.toggle('active')
 }
 const Modal = ({elements=[], selectedIdx=0, closeHandler=()=>{}}) => {
 
@@ -21,9 +29,10 @@ const Modal = ({elements=[], selectedIdx=0, closeHandler=()=>{}}) => {
             <button className='close' onClick={closeHandler}>&times;</button>
             <nav className='carousel'>
                 {elements.map((el, idx) => 
-                <div className='card'>
-
-                    <div id={`${idx}-carrousel-video`} className={`video ${idx==selectedIdx&&'. active'}`} key={`${idx} youtube video webinars`}>
+                
+                <div className='card'  key={`${idx} youtube video webinars`}>
+                    {idx==selectedIdx&&videoActive.active(`${idx}-carrousel-remain`, `${idx}-carrousel-video`)}
+                    <div id={`${idx}-carrousel-video`} className={`video ${idx==selectedIdx&&'. active'}`}>
                         <iframe 
                         width="100%" 
                         height="100%" 

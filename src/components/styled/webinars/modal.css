@@ -78,3 +78,45 @@
         opacity:1;
     }
 }
+@media screen and (max-aspect-ratio: 1/1) {
+    .modal-videos-c-s {
+        overflow: auto;
+        display: block;
+        box-sizing: border-box;
+        padding: calc((100vh - 20vw - 50vh - 70px)/2) 0;
+    }
+    .modal-videos-c-s > .viewer {
+        width: 100%;
+        height: 50vh;
+    }
+    .modal-videos-c-s > .close {
+        position: fixed;
+        top: calc((50vh + (50vh - 20vw)/2) - 80px);
+        left:calc(50% - 30px)
+    }
+    .modal-videos-c-s > .carousel {
+        overflow: auto;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 40px
+    }
+    .modal-videos-c-s > .carousel> .card {
+        width: fit-content;
+        padding: unset;
+    }
+    .modal-videos-c-s > .carousel> .card > .video, .modal-videos-c-s > .carousel > .card > .remaining  {
+        width: 40vw;
+        height: 20vw;
+        margin: 30px 10px;
+    }
+    .modal-videos-c-s > .carousel> .card > .video.active {
+        top: calc(((50vh - 20vw )/2 ) - 100px);
+        left: 0%;
+        width: 100%;
+        height: 46%;
+    }
+    .modal-videos-c-s > .carousel > .card > .remaining.active  {
+        width: 0;
+    }
+}
