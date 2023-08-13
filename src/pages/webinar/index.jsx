@@ -6,8 +6,11 @@ import Summary from './summary'
 import Price from './price'
 import './index.css'
 
-import complete_outsie from './complete_outside.jpg'
 import Context from '../../context'
+import complete_outsie from './complete_outside.jpg'
+import mapSrc from './map.png'
+import eduSrc from './education.png'
+import cloSrc from './workers.png'
 
 const Webinar = () => {
     
@@ -23,18 +26,16 @@ const Webinar = () => {
     const boxes = {
         dark: {
             elmts: [
-                <p>Aquaterra los invita a participar del programa:'</p>,
-                <p>¨Creación de entornos Bio Regenerativos: Una visión desde la Permacultura y la Bioconstrucción¨'</p>,
-                <p>Compuesto por 9 módulos.'</p>
+                <p>Aprende técnicas constructivas sustentables manteniendo el ecosistema intacto, y beneficiandolo con tratamientos de aguas residuales y paisajes acuáticos.'</p>
             ]
         },
         light: {
             elmts: [
-                <h1>**Talleres los fines de semana**</h1>,
-                <p>URU | ARG | CHI | BRA : 10 - 14hs {'&'} 16 - 20hs. </p>,
-                <p>BOL |PAR | VEN |DOM : 9 - 13hs {'&'} 15 - 19hs. </p>,
-                <p>ECU |PER | COL | PAN | MEX : 8 - 12hs. {'&'} 14 - 18hs. </p>,
-                <p>CENTROAMERICA: 7 - 11hs {'&'} 13 - 17hs. </p>
+                <h1>**Sugerencias**</h1>,
+                <></>,
+                <><img src={cloSrc} width='22px'/> Ponte tus guantes, cúbrete del sol o usa bloqueador!</>,
+                <><img src={eduSrc} width='22px'/> Sin experiencia requerida! te certificamos!</>,
+                <><img src={mapSrc} width='22px'/> Emprende una caminata por Lloa!</>
             ]
         }
     }

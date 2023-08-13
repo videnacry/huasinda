@@ -17,19 +17,13 @@
     width: 50%;
     color: #484848;
 }
-@media screen and (min-aspect-ratio: 10/6) {
-    .greeting-c>.brand{
-        margin-bottom: 3%;
+@media screen and (max-width: 600px) {
+    .greeting-c>.brand>.title{
+        width: 100%;
     }
 }
-@media screen and (max-aspect-ratio: 1652/1000) {
-    .greeting-c>.brand{
-        margin-bottom: 110px;
-    }
-}
-@media screen and (max-aspect-ratio: 7/10) {
-    .greeting-c>.brand{
-        margin: 40px 0;
-        margin-bottom: 120px;
+@media screen and (max-width: 410px) {
+    .greeting-c{
+        margin: 0;
     }
 }
