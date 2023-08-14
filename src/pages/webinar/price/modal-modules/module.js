@@ -13,7 +13,7 @@ const Module = (props) => {
                 <hr/>
                 <div className='options'>
                     <button className='btn-black' onClick={props.clickHandler}>info</button>
-                    <button className='btn-green'>+<SvgCart height='1em' width='auto' fill='white'/></button>
+                    {/* <button className='btn-green' onClick={props.buyHandler}>+<SvgCart height='1em' width='auto' fill='white'/></button> */}
                 </div>
             </div>
         </div>

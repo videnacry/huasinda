@@ -32,7 +32,7 @@ const ModulesModal = (props) => {
                 </div>
                 <div className='container'>
                     <div className='modules'>
-                        {props.modules.map((module, index) => <Module clickHandler={module.clickHandler} title={module.title} key={index+'modules-moodal'}/>)}
+                        {props.modules.map((module, index) => <Module clickHandler={module.clickHandler} title={module.title} key={index+'modules-moodal'} buyHandler={module.buyHandler}/>)}
                     </div>
                 </div>
             </div>

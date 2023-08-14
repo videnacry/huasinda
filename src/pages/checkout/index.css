@@ -1,16 +1,140 @@
-.checkout-p{
-    position: relative;
+.checkout-p {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cfa3ff;
+    animation: checkout-p_backgroun infinite 20s alternate;
 }
-.checkout-p>.header-space{
-    height: 80px;
+@keyframes checkout-p_backgroun {
+    0% {
+        background-color: rgb(219, 177, 177);
+    }
+    20% {
+        background-color: rgb(219, 219, 177);
+    }
+    40% {
+        background-color: rgb(191, 219, 177);
+    }
+    60% {
+        background-color: rgb(177, 219, 204);
+    }
+    80% {
+        background-color: rgb(180, 177, 219);
+    }
+    100% {
+        background-color: rgb(219, 177, 214);
+    }
 }
-.checkout-p>.header{
-    margin: 40px 80px 0px 40px;
+.checkout-p.hide {
+    display: none;
 }
-.checkout-p>.header>.title{
-    text-align: end;
+.checkout-p>.chalkboard {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(72%,120%);
+    max-width: 900px;
+    width: 70%;
+    max-height: 560px;
+    height: 56vw;
+    background-image: url('./chalkboard.webp');
+    background-size: 100% 100%;
+    animation: checkout-p_chalkboard 1s forwards;
 }
-.checkout-p>.header>.msg{
-    text-align: start;
-    color: #363636;
+@keyframes checkout-p_chalkboard {
+    to {
+        transform:translate(-50%,-50%);
+    }
+}
+.checkout-p>.text>.close, .checkout-p>.text {
+    opacity: 0;
+    animation: checkout-p_chalkboard-content 1s 1s forwards;
+}
+@keyframes checkout-p_chalkboard-content {
+    to {
+        opacity: 1;
+    }
+}
+.checkout-p>.chalk {
+    position: absolute;
+    right: 20%;
+    top: 60%;
+    width: 40px;
+    opacity: 0;
+    animation: checkout-p_chalkboard-content 1s 2s forwards;
+}
+.checkout-p>.text {
+    position: absolute;
+    bottom: 50%;
+    left: 46%;
+    transform: translate(-50%, 50%);
+    max-width: 440px;
+    width: 50%;
+    border: white 2px thick;
+    line-height: 40px;
+}
+.checkout-p>.text>.title, .checkout-p>.text>.msg, .checkout-p>.text>.nums>li>a, .checkout-p>.text>.nums>li {
+    color: white;
+}
+.checkout-p>.text>.close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 100%;
+    border: white dotted 2px;
+    background-color: transparent;
+    font-size: 26px;
+    color: white;
+}
+
+@media screen and (max-width:645px) {
+    .checkout-p>.chalkboard {
+        width: 80%;
+        height: 64vw;
+    }
+    .checkout-p>.chalk {
+        top: 50%;
+    }
+}
+@media screen and (max-width:585px) {
+    .checkout-p>.chalkboard {
+        width: 90%;
+        height: 70%;
+    }
+    .checkout-p>.text {
+        left: 42%;
+        width: 60%;
+    }
+    .checkout-p>.text>.nums {
+        margin-top: 40px;
+    }
+    .checkout-p>.chalk {
+        right: 16%;
+    }
+}
+@media screen and (max-width:585px) {
+    .checkout-p>.chalkboard {
+        width: 98%;
+        height: 80%;
+    }
+    .checkout-p>.text {
+        width: 70%;
+    }
+}
+@media screen and (max-width:410px) {
+    .checkout-p>.chalkboard {
+        height: 90%;
+    }
+    .checkout-p>.chalk {
+        right: 2%;
+    }
+    .checkout-p>.text {
+        left: 44%;
+        width: 80%;
+    }
 }

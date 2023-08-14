@@ -24,6 +24,7 @@ let links = {
     goAboutUs() {this.setState(<AboutUs/>)}, 
     goCheckout() {this.setState(<Checkout />)},
     goModules() {this.setState(<Modules/>)},
+    goCheckout() {(Checkout())},
     modules: []
 }
 modules.forEach((el,idx) => {

@@ -16,7 +16,7 @@ const Webinar = () => {
     
     const context = useContext(Context)
     const modules = context.modules.map(el => {
-        return {...el, clickHandler:() => el.go(context.setState)}
+        return {...el, clickHandler:() => el.go(context.setState), buyHandler:context.goCheckout}
     })
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -46,7 +46,7 @@ const Webinar = () => {
             <Webinars modules={modules}/>
             <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg=''/>
             <Summary img={complete_outsie} boxes={boxes}/>
-            <Price modules={modules} goCheckout={context.goCheckout}/>
+            <Price modules={modules} goCheckout={() => context.goCheckout()}/>
         </div>
     )
 }

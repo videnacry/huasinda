@@ -1,40 +1,28 @@
-import React, {useContext, useEffect, useState} from 'react'
+import chalkImgSrc from './chalk.webp'
 import './index.css'
-
-import Webinars from '../../components/styled/webinars'
-import ContactForm from './contactForm'
-import Cart from './cart'
-import Payment from './payment'
-import Context from '../../context'
-
+let hadStarted = false
 const Checkout = () => {
-
-    const [cart, setCart] = useState([])
-    const [price, setPrice] = useState(0)
-    const context = useContext(Context)
-    const modules = context.modules.map(el => {
-        return {
-            ...el, clickHandler: () => el.go(context.setState)
-        }
-    })
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-      
-    return(
-        <article class="checkout-p">
-            <div className='header-space'></div>
-            <Webinars modules={modules}/>
-            <header class="header">
-                <h1 class="title">CHECKOUT</h1>
-                <p class="msg">Con tus datos de compra te informaremos sobre el estado del webinar que compres</p>
-            </header>
-            <ContactForm />
-            <Cart modules={modules} setCart={setCart} cart={cart} setPrice={setPrice}/>
-            <Payment price={price} />
-        </article>
-    )
+    console.log('ber')
+    if (!hadStarted) {
+        hadStarted = true
+        const div = document.createElement('div')
+        document.body.appendChild(div)
+        div.className = 'checkout-p'
+        div.id = 'checkout-p-id'
+        div.innerHTML = `
+        <div class='chalkboard'></div>
+        <img src=${chalkImgSrc} alt='chalk img' class='chalk'/>
+        <div class='text'>
+            <button class="close" onclick='document.getElementById("checkout-p-id").classList.add("hide")'>&times;</button>
+            <h1 class='title'>Reserva tu cupo!</h1>
+            <h4 class='msg'>Manda un whattsap o llama al:</h4>
+            <ul class='nums'>
+                <li><a href='tel:+593 96 138 5672'>TEL: +593 96 138 5672</a></li>
+                <li><a href='tel:09 61 38 5672'>TEL: 09 61 38 5672</a></li>
+            </ul>
+        </div>
+        `
+    } else document.getElementById("checkout-p-id").classList.remove("hide")
 }
 
 export default Checkout

@@ -41,7 +41,7 @@ const Price = (props) => {
                 <div className='min'><Spheres text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
-            <a onClick={() => props.goCheckout()} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Comprar</a>
+            <a onClick={props.goCheckout} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Comprar</a>
             <button className="btn-big btn-modules" onClick={toggleIsVisibleModalModules}>
                 <StackSvg className='svg' height='1.2em' width='1.2em'/>Módulos
             </button>

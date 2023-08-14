@@ -12,7 +12,7 @@ const Module = ({data=navModule, bgHole='white', isLeft=false}) => {
                 <hr/>
                 <div className='options'>
                     {data.blackBtn.isVisible&&<button className='btn-black' onClick={data.blackBtn.clickHandler}>{data.blackBtn.text}</button>}
-                    {data.greenBtn.isVisible&&<button className='btn-green'>+<data.greenBtn.svg height='1em' width='auto' fill='white'/></button>}
+                    {/* {data.greenBtn.isVisible&&<button className='btn-green'>+<data.greenBtn.svg height='1em' width='auto' fill='white'/></button>} */}
                 </div>
             </div>
         </div>
