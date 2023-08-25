@@ -14,11 +14,23 @@ const Webinars = () => {
                 <a onClick={() => context.goOffer()} className='title'><h1>Taller</h1></a>
                 <p className='pharagraph-right'>Conecta con la naturaleza...</p>
                 <div className='black-line'>
-                    <div className='frame-left'>
-                        <div className='img-left'/>
-                    </div>
                     <div className='frame-center'>
                         <div className='white'/>
+                    </div>
+                    <div className='frame-center'>
+                        <b className='text'>Ecodomo</b>
+                        <p className='text'>
+                            Reduce la huella de CO2!
+                        </p>
+                    </div>
+                    <div className='frame-center'>
+                        <b className='text'>Paisaje acuático</b>
+                        <p className='text'>
+                            Reutiliza el agua!
+                        </p>
+                    </div>
+                    <div className='frame-left'>
+                        <div className='img-left'/>
                     </div>
                     <div className='frame-right'>
                         <div className='img-right'/>
