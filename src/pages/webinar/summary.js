@@ -19,6 +19,9 @@ const Summary = (props) => {
                     <Box radius dark fill lines={props.boxes.dark.elmts}/> 
                 </div>
                 </> : ''}
+                    <div className='box-light-2'>
+                        <Box absolute fill style={{top: 0, left: 0}}/>
+                    </div>
                 <div className='img' style={{backgroundImage: 'url(' + props.img + ')'}}/>
                 {
                     props.boxes.light ? 
@@ -29,13 +32,9 @@ const Summary = (props) => {
                     <div className='box-white'>
                         <Box radius shadowBottomRight style={{width: '100%', height: '100%', backgroundColor: 'white'}} lines={props.boxes.light.elmts}/>
                     </div>
-                    <div className='box-light-2'>
-                        <Box absolute fill style={{top: 0, left: 0}}/>
-                    </div>
                     </> : ''
                 }
             </div>
-            {/* {props.boxes.light ? <Box style={{width: '70%', marginBottom: '-20%', opacity: 0}} lines={props.boxes.light.elmts}/> : ''} */}
         </section>
     )
 }
