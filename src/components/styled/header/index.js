@@ -12,7 +12,7 @@ const Header = ({isAbsolute=false, isFixed=false}) => {
         document.onscroll = (e) => {
             if (window.scrollY > 0) 
                 navRef.current.classList?.add('bg-white')
-            else 
+            else if (window.scrollY == 0)
                 navRef.current.classList?.remove('bg-white')
         }
     }, [])

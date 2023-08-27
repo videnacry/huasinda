@@ -9,7 +9,7 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.description-mission-s > .bg-box, .description-mission-s > .img{
+.description-mission-s > .bg-box, .description-mission-s > .img {
     position: absolute;
 }
 .description-mission-s > .bg-box {
@@ -39,6 +39,28 @@
 .description-mission-s > .text-boxes > .dialog {
     width: 50%;
     margin-top: 20%;
+}
+@media screen and (min-width:1000px) {
+    .description-mission-s > .bg-box {
+        top: 20%;
+        height: 50%;
+    }
+    .description-mission-s > .text-boxes {
+        flex-direction: column;
+    }
+    .description-mission-s > .text-boxes > .description {
+        margin-top: 0;
+    }
+    .description-mission-s > .text-boxes > .dialog {
+        width: 46%;
+        margin-top: 4%;
+    }
+    .description-mission-s > .img {
+        right: unset;
+        left: 48%;
+        top: 50%;
+        transform: translateY(-54%);
+    }
 }
 @media screen and (max-width:790px) {
     .description-mission-s > .start-msg, .description-mission-s > .end-msg {
@@ -209,14 +231,27 @@
 }
 .description-vision-s > .text-boxes > .dialog {
     max-width: 380px;
-    width: 40%;
-    margin-top: 140px;
+    width: 44%;
+    margin-top: 30%;
     margin-left: auto;
     margin-bottom: 40px;
 }
+@media screen and (min-width:900px) {
+    .description-vision-s > .text-boxes {
+        flex-direction: column;
+        padding-left: 40%;
+    }
+    .description-vision-s > .text-boxes > .description {
+        width: 100%;
+        margin: 0 10vw 0 auto;
+    }
+    .description-vision-s > .text-boxes > .dialog {
+        width: 100%;
+        margin: 40px 10vw 0 auto;
+    }
+}
 
-
-@media screen and (max-width:760px) {
+@media screen and (max-width:800px) {
     .description-vision-s > .bg-box {
         width: 80%;
         height: 30%;

@@ -2,7 +2,7 @@ import './index.css'
 
 import React, {useCallback, useContext, useEffect} from 'react'
 import Jumbotron from '../../components/styled/jumbotron'
-import jumbotronImgSrc from './jumbotron.jpg'
+import jumbotronImgSrc from './jumbotron.webp'
 import jumbotronDeskImgSrc from './jumbotron-desk.webp'
 import missionImgSrc from './mission.jpg'
 import visionImgSrc from './vision.jpg'

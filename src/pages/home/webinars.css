@@ -36,7 +36,9 @@
 }
 .webinars-s > .article >  .black-line {
     width: 100%;
-    padding-top: 21%;
+    min-height: 160px;
+    max-height: 220px;
+    height: 44vh;
     position: relative;
     background-color: #252525;
 }
@@ -54,11 +56,14 @@
     justify-content: space-evenly;
     align-items: center;
     top: 52%;
-    left: 45%;
+    left: 54%;
     transform: translateY(-50%);
-    width: 14%;
-    aspect-ratio: 1/1.3;
+    height: 90%;
+    max-width: 18vw;
+    min-width: 104px;
+    aspect-ratio: 1/1.2;
     border-radius: 5px;
+    padding: 10px;
     background-color: white;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.712);
 }
@@ -81,7 +86,7 @@
 .webinars-s > .article > .black-line > .frame-right > .img-right {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding-top: 48%;
+    padding-top: 50%;
     background-image: url('./webinar-3.webp');
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
     animation: home_workshop-s_door 10s infinite alternate linear;
@@ -89,7 +94,7 @@
 .webinars-s > .article > .black-line > .frame-left > .img-left {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-top: 45%;
+    padding-top: 46%;
     background-image: url('./webinar-2.webp');
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
     animation: home_workshop-s_door-small 6s infinite alternate linear;
@@ -150,14 +155,13 @@
     }
     .webinars-s > .article > .black-line > .frame-center {
         top: 50%;
-        left: 40%;
-        width: 14%;
+        left: calc(4% + 400px);
     }
     .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
         left: 4%;
     }
     .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
-        left: 22%;
+        left: calc(4% + 200px);
     }
     .webinars-s > .article >  .black-line > .frame-right {
         bottom: 56%;
@@ -172,6 +176,74 @@
         width: fit-content;
         margin: auto;
         margin-left: 4%;
+    } 
+    
+    @media screen and (min-width: 1180px) {
+        .webinars-s > .article > .black-line > .frame-left, .webinars-s > .article >  .black-line > .frame-right {
+            top: 50%;
+            bottom: unset;
+            left: 480px;
+            transform: translateY(-50%);
+            width: calc(((90vw - 480px) / 2) - 20px);
+        }
+        .webinars-s > .article >  .black-line > .frame-right {
+            left: calc(((100vw - 480px) / 2) + 460px);
+        }
+        .webinars-s > .article > .black-line > .frame-left > .img-left, .webinars-s > .article >  .black-line > .frame-right > .img-right {
+            padding-top: 110%;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .webinars-s > .article > .black-line > .frame-center {
+            left: 44%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+            left: 4%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+            left: 24%;
+        }
+        .webinars-s > .article > .black-line > .frame-left {
+            left: 44%;
+        }
+        .webinars-s>.article>.link {
+            margin-top: 26px;
+        }        
+        .webinars-s > .article > .black-line > .frame-right > .img-right {
+            padding-top: 52%;
+        }
+        .webinars-s > .article > .black-line > .frame-left > .img-left {
+            padding-top: 56%;
+        }
+    }
+    @media screen and (max-width: 810px) {
+        .webinars-s>p {
+            padding: 4% 1%;
+        }
+        .webinars-s>.article>.title>h1, .webinars-s > .article >.pharagraph-right, .webinars-s > .article >.pharagraph-left {
+            padding-left: 1%;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        .webinars-s > .article > .black-line > .frame-center {
+            left: 48%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+            left: 1%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+            left: 25%;
+        }
+        .webinars-s > .article > .black-line > .frame-right, .webinars-s > .article > .black-line > .frame-left {
+            left: unset;
+            right: 1%;
+        }
+        .webinars-s > .article > .black-line > .frame-right > .img-right {
+            padding-top: 70%;
+        }
+        .webinars-s > .article > .black-line > .frame-left > .img-left {
+            padding-top: 66%;
+        }
     }
 }
 @media screen and (max-aspect-ratio: 1.3/1) {
@@ -193,7 +265,12 @@
     }
     .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
         transform: unset;
+        max-width: 180px;
+        max-width: unset;
+        min-height: 140px;
+        height: unset;
         width: 36%;
+        padding: 6.4%;
         aspect-ratio: 2/1;
     }
     .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
@@ -203,7 +280,7 @@
         right: 2%;
     }
     .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-        top: 60%;
+        top: 68%;
         left: 2%;
     }
     .webinars-s > .article > .black-line > .frame-right {
@@ -219,7 +296,7 @@
     .webinars-s > .article > .black-line > .frame-left > .img-left {
         padding-top: 65%;
     }
-    @media screen and (max-width: 660px) {  
+    @media screen and (max-width: 678px) {  
         .webinars-s>.article>.title>h1 {
             margin-bottom: 0;
         }
@@ -230,7 +307,13 @@
             margin-right: 50%;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            aspect-ratio: 1.6/1;
+            aspect-ratio: 2/1;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+            top: 56%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+            bottom: 54%;
         }
         .webinars-s > .article > .black-line > .frame-left {
             width: 58%;
@@ -238,6 +321,12 @@
         .webinars-s > .article > .black-line > .frame-right {
             top: 60%;
             width: 50%;
+        }
+        .webinars-s > .article > .black-line > .frame-right > .img-right {
+            padding-top: 200px;
+        }
+        .webinars-s > .article > .black-line > .frame-left > .img-left {
+            padding-top: 240px;    
         }
     }
     @media screen and (max-width: 450px) {  
@@ -269,6 +358,7 @@
         }    
         .webinars-s > .article > .black-line > .frame-left {
             width: 60%;
+            height: 104%;
             top: unset;
             bottom: 42%;
         }
@@ -280,6 +370,7 @@
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
             width: 36%;
+            padding: 10px;
             aspect-ratio: 1/1.1;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
@@ -292,25 +383,32 @@
         }
         .webinars-s > .article > .black-line > .frame-right {
             width: 60%;
+            height: 90%;
             top: 66%;
             bottom: unset;
         }
         .webinars-s > .article > .black-line > .frame-right > .img-right {
-            padding-top: 70%;
+            padding-top: unset;
+            height: 100%;
         }
         .webinars-s > .article > .black-line > .frame-left > .img-left {
-            padding-top: 84%;    
+            padding-top: unset;
+            height: 100%;
         }
     }
     @media screen and (max-width: 310px) {
         .webinars-s > .article >.pharagraph-right, .webinars-s > .article >.pharagraph-left {
             padding-left: 0;
         }
-        .webinars-s > .article > .black-line > .frame-right > .img-right {
-            padding-top: 88%;
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+            min-width: 100px;
+            min-height: 170px;
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left {
-            padding-top: 100%;    
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+            bottom: 36%;
+        }
+        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+            top: 60%;
         }
     }
 }
