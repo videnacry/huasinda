@@ -9,7 +9,7 @@ const Webinars = () => {
 
     return(
         <div className='webinars-s'>
-            <p>Aquaterra se especializa en la formación de profesionales en el ámbito de la edificación responsable a base del bambú.</p>
+            <p>Bioedifica se especializa en la formación de profesionales en el ámbito de la edificación responsable a base del bambú.</p>
             <div className='article'>
                 <a onClick={() => context.goOffer()} className='title'><h1>Taller</h1></a>
                 <p className='pharagraph-right'>Conecta con la naturaleza...</p>

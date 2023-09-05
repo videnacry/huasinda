@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className='sphere-big'>
                     <div className='image'>
-                        <img src={logoSrc} alt='aquaterra logo of a panda'/>
+                        <img src={logoSrc} alt='bioedifica logo of a panda'/>
                     </div>
                 </div>
                 <div className='sphere-small'>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='contact'>
-                <a href='mailto:aquaterra@gmail.com'>aquaterra@gmail.com</a>
+                <a href='mailto:bioedifica@gmail.com'>bioedifica@gmail.com</a>
                 <a href='tel:+593 96 138 5672'>TEL: +593 96 138 5672</a>
             </div>
         </div>

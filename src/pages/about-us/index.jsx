@@ -4,11 +4,13 @@ import React, {useCallback, useContext, useEffect} from 'react'
 import Jumbotron from '../../components/styled/jumbotron'
 import jumbotronImgSrc from './jumbotron.webp'
 import jumbotronDeskImgSrc from './jumbotron-desk.webp'
-import missionImgSrc from './mission.jpg'
-import visionImgSrc from './vision.jpg'
 import Description from './description'
 import Links from '../../components/styled/links'
 import Context from '../../context'
+
+import presentationMp4 from './presentation.mp4'
+import missionImgSrc from './mission.jpg'
+import visionImgSrc from './vision.jpg'
 
 const About = () => {
 
@@ -16,7 +18,7 @@ const About = () => {
     
     const mission = {
         title: 'Misión',
-        description: 'Aquaterra nace como respuesta al incremento de la huella de carbono, lleva realizando proyectos que impulsen la economía circular y por ende el desarrollo sostenible.',
+        description: 'Bioedifica nace como respuesta al incremento de la huella de carbono, lleva realizando proyectos que impulsen la economía circular y por ende el desarrollo sostenible.',
         lines: [
             'Nos encontramos en pleno crecimiento,',
             '¿te gustaría apoyar/unirte?',
@@ -51,13 +53,13 @@ const About = () => {
 
     return(
         <div className='about-us-s'>
-            <div className='short-img'>
+            {/* <div className='short-img'>
                 <Jumbotron title="Sobre nosotros" message="" imgSrc={jumbotronImgSrc}/>
             </div>
             <div className='long-img'>
                 <Jumbotron centerText title="Sobre nosotros" message="" imgSrcDuo={[jumbotronImgSrc, jumbotronDeskImgSrc]} style={{position:'absolute', top:'50%', left:0, transform: 'translateY(-50%)'}}/>
-            </div>
-            
+            </div> */}
+            <Jumbotron isVideo={true} videoSrc={presentationMp4} videoType='video/mp4' title="Sobre nosotros" message="" />
             <div className='info'>
                 <Description mission title={mission.title} description={mission.description} dialog={mission.lines} imgSrc={missionImgSrc} startMsg={mission.startMsg} endMsg={mission.endMsg}/>
                 <Description title={vision.title} description={vision.description} dialog={vision.lines} imgSrc={visionImgSrc} startMsg={vision.startMsg} endMsg={vision.endMsg}/>
