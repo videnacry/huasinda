@@ -40,6 +40,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 600;
+    font-size: 1em;
+}
+.links-c>.links>li>.link>p {
+    font-size: .8em;
 }
 .links-c>.links>li>.link * {
     margin: 3px 10px;

@@ -14,13 +14,13 @@
     border-radius: 10px;
 }
 .box-c.dark{
-    background-color: #363636;
+    background-color: #63512f;
 }
 .box-c.dark * {
-    color: #c8c8c8;
+    color: #f0f0f0;
 }
 .box-c.light{
-    background-color: #EFEFEF;
+    background-color: #deffda;
     color: #000000;
 }
 .box-c.dark.shadow-top-left {

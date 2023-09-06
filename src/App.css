@@ -93,7 +93,7 @@ ol {
 .App {
   overflow: hidden;
   position: relative;
-  background-color: white;
+  background-color: #e3edff;
   -webkit-box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
           box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
 }

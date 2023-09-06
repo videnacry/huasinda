@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: black;
+    background-color: rgb(23, 23, 23);
 }
 .jumbotron-c>.brand>.video {
     position: absolute;

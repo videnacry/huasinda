@@ -12,9 +12,13 @@ const Posts = () => {
     return(
         <div className='projects-s'>
             <p>A favor de la reducción de la huella de carbono y la economía circular, construimos estructuras amigables con el medio ambiente.</p>
+            <div className="frame-green">
+                <Box fill/>
+            </div>
+            <div className="frame-brown">
+                <Box fill dark/>
+            </div>
             <div>
-                <Box absolute style={{width: '80%', height: '52%', top: '0', left: '0'}}/>
-                <Box absolute dark style={{width: '100%', height: '30px', top: 'calc(52%)', left: '0'}}/>
                 <a onClick={() => context.goProjects()}><h1 className='title'>Proyectos</h1></a>
                 <p className='pharagraph-left'>Esqueleto de bambú y relleno de tierra...</p>
                 <div className='frame-right'>

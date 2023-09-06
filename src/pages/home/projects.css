@@ -1,16 +1,26 @@
 .projects-s {
+    position: relative;
     width: 100%;
     color: #363636;
-    padding-top: 3%;
     padding-bottom: 8%;
 }
 .projects-s > p {
-    padding: 3% 10%;
+    padding: 8% 10%;
     text-align: center;
 }
 .projects-s > div {
     position: relative;
     padding-top: 1px;
+}
+.projects-s > .frame-green {
+    position: absolute;
+    width: 100%;
+    height: 76%;
+}
+.projects-s > .frame-brown {
+    position: absolute;
+    top: 55%;
+    width: 100%;
 }
 .projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right, .projects-s > div > .frame-right, .projects-s > div > .frame-left, .projects-s > div > a {
     position: relative;
@@ -39,7 +49,7 @@
 .projects-s > div >.pharagraph-right {
     width: 70%;
     padding: 2% 4%;
-    text-align: end;
+    text-align: end;    
 }
 .projects-s > div >  .frame-right {
     width: 55%;
@@ -74,10 +84,40 @@
     display: block;
     text-align: center;
 }
-@media screen and (max-aspect-ratio: 1/1) {
-    .projects-s {
-        padding-top: 10%;
+@media screen and (min-aspect-ratio: 1.3/1) {
+    .projects-s > .frame-green {
+        min-width: 330px;
+        width: 30%;
+        height: 46%;
     }
+    .projects-s > .frame-brown {
+        width: 40%;
+        top: 90%
+    }
+    .projects-s > div >.pharagraph-left {
+        max-width: 310px;
+    }
+    .projects-s > div >.pharagraph-right {
+        width: 46%;
+        margin-left: 14%;
+    }
+    .projects-s > div >  .frame-right {
+        width: 34%;
+        margin-right: 4%;
+    }
+    .projects-s > div > .frame-left {
+        width: 36%;
+        margin-left: 4%;
+    }
+    .projects-s > div > .frame-right > .img-right {
+        margin-top: -20%;
+        padding-top: 84%;
+    }
+    .projects-s > div > .frame-left > .img-left {
+        padding-top: 70%;
+    }
+}
+@media screen and (max-aspect-ratio: 1/1) {
     .projects-s > p {
         padding: 1% 2%;
         padding-bottom: 10%;
