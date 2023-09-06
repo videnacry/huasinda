@@ -1,6 +1,7 @@
 .webinars-s{
     position: relative;
     width: 100%;
+    height: fit-content;
     color: #363636;
 }
 .webinars-s > p {
@@ -9,18 +10,20 @@
 }
 .webinars-s>.article{
     width: 100%;
-    padding-top: 1px;
-    padding-bottom: 60px;
+    padding: 20px 0;
     position: relative;
 }
-.webinars-s>.frame-green{
+.webinars-s>.article>* {
+    position: relative;
+}
+.webinars-s>.article>.frame-green{
     position: absolute;
+    bottom: 0;
     width: 50%;
-    height: 72%;
+    height: 100%;
 }
 .webinars-s>.article>.title>h1 {
-    margin: 20px;
-    margin-bottom: 30px;
+    margin: 0 20px 30px 20px;
     font-weight: bold;
     color: #bb6d00;
     text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
@@ -251,7 +254,7 @@
     }
 }
 @media screen and (max-aspect-ratio: 1.3/1) {
-    .webinars-s>.frame-green{
+    .webinars-s>.article>.frame-green{
         width: 100%;
     }
     .webinars-s > .article >.pharagraph-left {
@@ -336,67 +339,71 @@
             padding-top: 240px;    
         }
     }
-    @media screen and (max-width: 450px) {  
-        .webinars-s>.article {
-            padding-bottom: 20px;
-        }
+    @media screen and (max-width: 450px) {
         .webinars-s > p {
-            padding: 30px 2%;
+            padding: 12% 2%;
             text-align: center;
         }
-        
         .webinars-s > .article >.pharagraph-left, .webinars-s > .article >.pharagraph-right {
             margin-left: unset;
             margin-right: unset;
             white-space: nowrap;
         }
         .webinars-s > .article >.pharagraph-right {
-            padding-bottom: 4vh;
+            padding-bottom: 120px;
         }
         .webinars-s > .article >.pharagraph-left {
             padding-bottom: 0;
         }
         .webinars-s > .article >.pharagraph-left {
-            padding-top: 6vh;
+            padding-top: 140px;
         }
         .webinars-s > .article > .black-line {
             margin: 80px 0;
-            padding-top: 46%;
+            padding-top: 70%;
         }    
         .webinars-s > .article > .black-line > .frame-left {
-            width: 60%;
-            height: 104%;
+            width: 90%;
+            height: 80%;
             top: unset;
-            bottom: 42%;
+            bottom: 90%;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(1) {
             width: unset;
-            height: 80%;
-            aspect-ratio: 1/1.6;
+            height: 30%;
+            width: 96%;
+            max-width: unset;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            width: 36%;
+            max-width: unset;
+            min-height: 150px;
+            width: 44%;
             padding: 10px;
-            aspect-ratio: 1/1.1;
+            aspect-ratio: 1.2/1;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
-            right: 1%;
-            bottom: 42%;
+            right: 4%;
+            bottom: 50%;
+            transform: translateY(50%);
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            top: 66%;
-            left: 1%
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4%
         }
         .webinars-s > .article > .black-line > .frame-right {
-            width: 60%;
-            height: 90%;
-            top: 66%;
+            transform: translateX(50%);
+            top: 90%;
+            right: 50%;
             bottom: unset;
+            width: 90%;
+            height: 90%;
         }
         .webinars-s > .article > .black-line > .frame-right > .img-right {
             padding-top: unset;
-            height: 100%;
+            height: 90%;
         }
         .webinars-s > .article > .black-line > .frame-left > .img-left {
             padding-top: unset;
@@ -409,13 +416,6 @@
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
             min-width: 100px;
-            min-height: 170px;
-        }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
-            bottom: 36%;
-        }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            top: 60%;
         }
     }
 }

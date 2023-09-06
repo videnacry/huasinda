@@ -47,7 +47,7 @@
     text-align: start;
 }
 .projects-s > div >.pharagraph-right {
-    width: 70%;
+    width: 64%;
     padding: 2% 4%;
     text-align: end;    
 }
@@ -56,7 +56,7 @@
     float: right;
 }
 .projects-s > div > .frame-left {
-    width: 30%;
+    width: 36%;
     float: left;
 }
 .projects-s > div > .frame-right > .img-right, .projects-s > div > .frame-left > .img-left {
@@ -75,7 +75,7 @@
 .projects-s > div > .frame-left > .img-left {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-top: 90%;
+    padding-top: 80%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
 }
 .projects-s > div > .link {
@@ -91,8 +91,11 @@
         height: 46%;
     }
     .projects-s > .frame-brown {
-        width: 40%;
-        top: 90%
+        width: 42%;
+        top: 85.4%
+    }
+    .projects-s > div > a > .title {
+        margin-right: 8%;
     }
     .projects-s > div >.pharagraph-left {
         max-width: 310px;
@@ -119,8 +122,7 @@
 }
 @media screen and (max-aspect-ratio: 1/1) {
     .projects-s > p {
-        padding: 1% 2%;
-        padding-bottom: 10%;
+        padding: 8% 2%;
     }
     .projects-s > div {
         padding-top: 3%;
@@ -134,7 +136,7 @@
         padding-top: 65%;
     } .projects-s > div > .frame-left > .img-left {
         margin-top: 80px;
-        padding-top: 140%;
+        padding-top: 120%;
     }
     .projects-s > div > .link {
         margin-top: 5%;
@@ -143,6 +145,9 @@
 @media screen and (max-width: 534px) {
     .projects-s {
         padding-bottom: 0px;
+    }    
+    .projects-s > p {
+        padding: 12% 2%;
     }
     .projects-s > div > a > .title {
         margin-bottom: 10px;
