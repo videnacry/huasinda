@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import bgSrc from './background.jpg'
+import bgSrc from './background-2.webp'
 
 ReactDOM.render(
   <React.StrictMode>

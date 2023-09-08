@@ -39,9 +39,6 @@
 .price-c>.spheres>.mid .sphere-md * {
     color: #383838;
 }
-.price-c>.spheres>.mid .sphere-sm, .price-c>.spheres>.mid .sphere-md{
-    background-color: whitesmoke;
-}
 .price-c>.btn-buy, .price-c>.btn-modules {
     position: absolute;
     display: flex;

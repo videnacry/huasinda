@@ -4,7 +4,7 @@ import photoThirdSrc from './wall_ceiling_window.jpg'
 import photoFourthSrc from './cover_wall.jpg'
 
 const project = {
-    title: 'Vivienda de una planta',
+    title: 'Vivienda',
     photosSrc: [
         photoFirstSrc,
         photoSecondSrc,

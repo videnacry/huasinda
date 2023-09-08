@@ -14,11 +14,11 @@ code {
 }
 
 .index {
-  padding: 0 2vw;
+  padding: 0 3vw;
   background-attachment: fixed;
 }
 @media screen and (max-aspect-ratio: 1/1) {
   .index {
-    padding: 2vw;
+    padding: 3vh 2vw;
   }
 }

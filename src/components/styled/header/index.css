@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    background-color: #ffffff;
+    background-color: #d0f5fe;    
 }
 .container-header > .header-c.absolute{
     position: absolute;

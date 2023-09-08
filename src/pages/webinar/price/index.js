@@ -36,9 +36,9 @@ const Price = (props) => {
                 <Box dark style={{width: '100%', height: '100%', left: '0'}}/>
             </div>
             <div className='spheres'>
-                <div className='max'><Spheres text={max}/></div>
+                <div className='max'><Spheres isDark text={max}/></div>
                 <div className='mid'><Spheres text={mid}/></div>
-                <div className='min'><Spheres text={min}/></div>
+                <div className='min'><Spheres isDark text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
             <a onClick={props.goCheckout} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Comprar</a>

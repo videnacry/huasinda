@@ -27,7 +27,7 @@ const About = () => {
             '',
             '¡Escríbenos, por favor!',
             '',
-            <a href='mailto:aquaterra@gmail.com' className='btn-green'>aquaterra@gmail.com</a>,
+            <a href='mailto:bioedifica@gmail.com' className='btn-green'>bioedifica@gmail.com</a>,
         ],
         startMsg: 'Atención al cliente todos los días, de 9:00 a 18:00 horas',
         endMsg: 'Nuestras oficinas y proyectos se encuentran en Lloa'
@@ -53,12 +53,6 @@ const About = () => {
 
     return(
         <div className='about-us-s'>
-            {/* <div className='short-img'>
-                <Jumbotron title="Sobre nosotros" message="" imgSrc={jumbotronImgSrc}/>
-            </div>
-            <div className='long-img'>
-                <Jumbotron centerText title="Sobre nosotros" message="" imgSrcDuo={[jumbotronImgSrc, jumbotronDeskImgSrc]} style={{position:'absolute', top:'50%', left:0, transform: 'translateY(-50%)'}}/>
-            </div> */}
             <Jumbotron isVideo={true} videoSrc={presentationMp4} videoType='video/mp4' title="Sobre nosotros" message="" />
             <div className='info'>
                 <Description mission title={mission.title} description={mission.description} dialog={mission.lines} imgSrc={missionImgSrc} startMsg={mission.startMsg} endMsg={mission.endMsg}/>

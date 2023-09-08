@@ -16,8 +16,6 @@ const Footer = () => {
                 <div className='sphere-small' />
                 <a href='tel:+593 96 138 5672'>TEL: +593 96 138 5672</a>
             </div>
-            <div className='contact'>
-            </div>
         </div>
     )
 }

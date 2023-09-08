@@ -26,3 +26,9 @@
     }
     
 }
+@media screen and (max-aspect-ratio: 1/1) {
+    .about-us-s {
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+}

@@ -14,7 +14,7 @@
     border-radius: 10px;
 }
 .box-c.dark{
-    background-color: #63512f;
+    background-color: #3a2b21;
 }
 .box-c.dark * {
     color: #f0f0f0;
@@ -49,6 +49,10 @@
 }
 .box-c>.elmt *{
     margin-top: 0.4em;
+}
+.box-c>.elmt{
+    width: 100%;
+    min-height: 1em;
 }
 .box-c.wrap>.elmt{
     overflow: hidden;

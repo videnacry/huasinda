@@ -47,7 +47,6 @@
     max-height: 220px;
     height: 44vh;
     position: relative;
-    background-color: #63512f;
 }
 .webinars-s > .article >  .black-line > .frame-right, .webinars-s > .article > .black-line > .frame-left, .webinars-s > .article > .black-line > .frame-center {
     position: absolute;
@@ -104,30 +103,30 @@
     padding-top: 46%;
     background-image: url('./webinar-2.webp');
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
-    animation: home_workshop-s_door-small 6s infinite alternate linear;
+    animation: home_workshop-s_door-small 7s infinite alternate linear;
 }
 @keyframes home_workshop-s_door-small {
     0% {
-        background-image: url('./webinar-2.webp');
-    }
-    25% {
-        background-image: url('./webinar-2.webp');
-    }
-    50% {
         background-image: url('./webinar-1.webp');
+    }
+    40% {
+        background-image: url('./webinar-1.webp');
+    }
+    60% {
+        background-image: url('./webinar-2.webp');
     }
     100% {
-        background-image: url('./webinar-1.webp');
+        background-image: url('./webinar-2.webp');
     }
 }
 @keyframes home_workshop-s_door {
     0% {
         background-image: url('./webinar-3.webp');
     }
-    25% {
+    40% {
         background-image: url('./webinar-3.webp');
     }
-    50% {
+    80% {
         background-image: url('./webinar-4.webp');
     }
     100% {

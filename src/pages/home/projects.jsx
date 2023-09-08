@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import Box from '../../components/styled/box'
-import projectFirstSrc from './project-1.jpg'
-import projectSecondSrc from './project-2.jpg'
+import projectFirstSrc from './project-1.webp'
+import projectSecondSrc from './project-2.webp'
 
 import './projects.css'
 import Context from '../../context'

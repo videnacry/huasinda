@@ -12,6 +12,7 @@ const Links = () => {
     const pageLinks = links.slice(0, 4)
     const linksEl = pageLinks.map((link, idx) => (
         <li key={`link-${idx}`}>
+            <Box dark fill absolute style={{top:0}}/>
             <a className="link" href={link.url}>
                 <div className='img' style={{backgroundImage: 'url("' + link.img_path + '")'}}/>
                 <h3>{link.name[0].toUpperCase() + link.name.substring(1)}</h3>
@@ -23,7 +24,7 @@ const Links = () => {
     return(
         <div className="links-c">
             <Box absolute style={{width: '55%', height: '65%', top: '2%', right: '10%'}}/>
-            <h1>Links</h1>
+            <h1>Enlaces Recomendados</h1>
             <Carousel props={carouselProps}/>
         </div>
     )

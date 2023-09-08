@@ -1,6 +1,5 @@
 .footer-c {
-    margin-top: 10%;
-    padding-bottom: 3%;
+    margin-top: 12%;
     position: relative;
 }
 .footer-c > .spheres {
@@ -8,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 8%;
+    padding: 6% 0;
     justify-content: center;
     align-items: center;
 }
@@ -44,14 +43,6 @@
 }
 .footer-c > .spheres > .sphere-small:nth-of-type(2) {
     background-image: url('./instagram.webp');
-}
-.footer-c > .contact {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4% 0;
 }
 .footer-c > .spheres > a {
     position: relative;

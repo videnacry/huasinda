@@ -1,27 +1,29 @@
-.webinars-c{
+.webinars-c {
+    position: relative;
+}
+.webinars-c>.carrousel {
     position: relative;
     padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #363636;
     text-align: center;
     font-size: 12px;
 }
-.webinars-c>.btn-left, .webinars-c>.btn-right {
+.webinars-c>.carrousel>.btn-left, .webinars-c>.carrousel>.btn-right {
     display: none;
 }
-.webinars-c>.webinar{
+.webinars-c>.carrousel>.webinar{
     filter: brightness(100%);
 }
-.webinars-c>.webinar>.title{
+.webinars-c>.carrousel>.webinar>.title{
     color: whitesmoke;
     text-shadow: 1px 1px #363636, -1px -1px #363636;
 }
-.webinars-c>.webinar:hover{
+.webinars-c>.carrousel>.webinar:hover{
     filter: brightness(130%);
     transform: scale(1.3, 1.3);
 }
-.webinars-c>.webinar>.img{
+.webinars-c>.carrousel>.webinar>.img{
     width: 70px;
     height: 50px;
     margin: auto;
@@ -29,36 +31,36 @@
     background-size: cover;
 }
 @media screen and (max-aspect-ratio: 1/1) {
-    .webinars-c {
+    .webinars-c>.carrousel {
         font-size: 16px;
     }
-    .webinars-c>.webinar>.img {
+    .webinars-c>.carrousel>.webinar>.img {
         width: 70px;
         height: 70px;
     }
 }
 @media screen and (max-width: 600px) {
-    .webinars-c>.btn-left, .webinars-c>.btn-right {
+    .webinars-c>.carrousel>.btn-left, .webinars-c>.carrousel>.btn-right {
         display: block;
         height: fit-content;
         margin: auto 0;
     }
-    .webinars-c>.webinar:nth-of-type(7) {
+    .webinars-c>.carrousel>.webinar:nth-of-type(7) {
         display: none;
     }
 }
 @media screen and (max-width: 520px) {
-    .webinars-c>.webinar:nth-of-type(6) {
+    .webinars-c>.carrousel>.webinar:nth-of-type(6) {
         display: none;
     }
 }
 @media screen and (max-width: 440px) {
-    .webinars-c>.webinar:nth-of-type(5) {
+    .webinars-c>.carrousel>.webinar:nth-of-type(5) {
         display: none;
     }
 }
 @media screen and (max-width: 370px) {
-    .webinars-c>.webinar:nth-of-type(4) {
+    .webinars-c>.carrousel>.webinar:nth-of-type(4) {
         display: none;
     }
 }

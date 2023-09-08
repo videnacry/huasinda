@@ -19,6 +19,7 @@ const Webinars = () => {
                 <a onClick={() => context.goOffer()} className='title'><h1>Taller</h1></a>
                 <p className='pharagraph-right'>Conecta con la naturaleza...</p>
                 <div className='black-line'>
+                    <Box dark absolute fill style={{top:0}}/>
                     <div className='frame-center'>
                         <div className='white'/>
                     </div>

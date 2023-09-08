@@ -4,9 +4,10 @@ import { useState } from 'react'
 import { getPropsInstance, Carousel } from '../../unstyled/carousel'
 import './index.css'
 import Modal from './modal'
+import Box from '../box'
 
 const carouselProps = getPropsInstance()
-carouselProps.tag = {element:'nav', class:'webinars-c'}
+carouselProps.tag = {element:'nav', class:'carrousel'}
 carouselProps.arrowLeft = {class:'btn-left', content:<>&lsaquo;</>}
 carouselProps.arrowRight = {class:'btn-right', content:<>&rsaquo;</>}
 
@@ -24,7 +25,10 @@ const Webinars = (props) => {
 
     return(
         <>
-            <Carousel props={carouselProps}/>
+            <div className='webinars-c'>
+                <Box dark fill absolute style={{top:0}}/>
+              <Carousel props={carouselProps}/>
+            </div>
             {isModalVisible&&<Modal elements={props.modules} selectedIdx={selectedIdx} closeHandler={() => setModalVisible(false)}/>}
         </>
     )

@@ -5,7 +5,7 @@ import Proyects from './projects'
 import Webinars from './webinars'
 // import LeaveComment from '../../components/styled/leaveComment'
 import Links from '../../components/styled/links'
-import jumbotronImgSrc from './jumbotron.jpg'
+import jumbotronImgSrc from './jumbotron.webp'
 import Context from '../../context'
 
 const Home = () => {

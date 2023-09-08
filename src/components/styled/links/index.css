@@ -28,8 +28,10 @@
     border-radius: 5px;
     padding-bottom: 40px;
     display: inline-block;
-    background-color: #363636;
     box-shadow: 0 10px 3px rgb(0,0,0,40%);
+}
+.links-c>.links>li, .links-c>.links>li>.link {
+    position: relative;
 }
 .links-c>.links>li>.link>* {
     color: #e5e5e5;
@@ -40,7 +42,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 600;
-    font-size: 1em;
+    font-size: .9em;
 }
 .links-c>.links>li>.link>p {
     font-size: .8em;
