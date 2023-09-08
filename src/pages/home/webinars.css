@@ -339,11 +339,12 @@
             padding-top: 240px;    
         }
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 550px) {
         .webinars-s > p {
             padding: 12% 2%;
-            text-align: center;
         }
+    }
+    @media screen and (max-width: 450px) {
         .webinars-s > .article >.pharagraph-left, .webinars-s > .article >.pharagraph-right {
             margin-left: unset;
             margin-right: unset;
@@ -377,7 +378,7 @@
             max-width: unset;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            max-width: unset;
+            min-width: unset;
             min-height: 150px;
             width: 44%;
             padding: 10px;
@@ -415,7 +416,8 @@
             padding-left: 0;
         }
         .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-            min-width: 100px;
+            width: 45%;
+            min-height: 160px;
         }
     }
 }

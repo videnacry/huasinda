@@ -91,7 +91,6 @@ ol {
   padding-inline-start: 20px;
 }
 .App {
-  overflow: hidden;
   position: relative;
   background-color: #e3edff;
   -webkit-box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
@@ -100,6 +99,7 @@ ol {
 @media screen and (max-aspect-ratio: 1/1) {
   .App {
     border-radius: 20px;
+    padding-bottom: 60px;
   }
 }
 

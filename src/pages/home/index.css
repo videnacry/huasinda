@@ -1,4 +1,5 @@
 .home-c {
+    overflow: hidden;
     position: relative;
 }
 .post-img {
@@ -29,4 +30,9 @@
 .home-c>.space {
     width: 100%;
     height: 100px;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    .home-c {
+        border-radius: 20px 20px 0 0;
+    }
 }

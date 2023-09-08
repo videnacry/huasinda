@@ -103,7 +103,11 @@
         margin: 0 5px;
     }
     .footer-c > .spheres > a {
-        margin: 3% calc(50% - 45vw);
         line-height: 14vw;
+    }
+}
+@media screen and (max-width: 283px) {
+    .footer-c > .spheres > a {
+        margin: 3% calc(50% - 45vw);
     }
 }

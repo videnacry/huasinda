@@ -13,7 +13,7 @@ const Home = () => {
     const context = useContext(Context)
     useEffect(() => {
         window.scrollTo(0, 0)
-        context.setHeaderState({isFixed:true})
+        context.setHeaderState({isSticky:true})
     }, [])
 
     return(
