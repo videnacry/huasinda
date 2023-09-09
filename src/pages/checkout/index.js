@@ -18,7 +18,7 @@ const Checkout = () => {
             <h4 class='msg'>Manda un whattsap o llama al:</h4>
             <ul class='nums'>
                 <li><a href='tel:+593 96 138 5672'>TEL: +593 96 138 5672</a></li>
-                <li><a href='tel:09 61 38 5672'>TEL: 09 61 38 5672</a></li>
+                <li><a href='tel:+593 99 993 0538'>TEL: +593 99 993 0538</a></li>
             </ul>
         </div>
         `

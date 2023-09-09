@@ -44,8 +44,29 @@ const Webinar = () => {
     return(
         <div className='webinar-p'>
             <Webinars modules={modules}/>
-            <Greeting start='22/12/2020' end='28/12/2020' title='Creación de entornos BIO Regenerativos' msg=''/>
+            <Greeting start='Agenda' end='Servicios' title='Creación de entornos BIO Regenerativos' msg=''/>
             <Summary img={complete_outsie} boxes={boxes}/>
+            <div className='test'>
+                <h2>*📆Fechas* :</h2>
+                
+                    {['30 Septiembre – 1 Octubre',
+                    '7 Octubre – 8 Octubre',
+                    '14 Octubre – 15 Octubre',
+                    '21 Octubre – 22 Octubre',
+                    '28 Octubre – 29 Octubre ',
+                    '4 Noviembre - 5 Noviembre ',
+                    '11 Noviembre - 12 Noviembre ',
+                    '18 Noviembre - 19 Noviembre'].map(el => <span className='date'>{el}</span>)}
+                
+            </div>
+            <div className='test'>
+                <h2>
+                    *🕜Horario* 
+                </h2>
+                <p>
+                    09h00 – 13h00
+                </p>
+            </div>
             <Price modules={modules} goCheckout={() => context.goCheckout()}/>
         </div>
     )

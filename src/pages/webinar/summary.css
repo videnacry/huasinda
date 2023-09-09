@@ -34,7 +34,7 @@
     position: absolute;
     right: 40%;
     z-index: 2;
-    top: 40%;
+    top: 60%;
 }
 .summary-c > .frame > .line-dark {
     width: 100%;
@@ -195,20 +195,20 @@
             left: 2%;
         }
         .summary-c>.frame>.img {
-            width: 70%;
+            width: 74%;
             height: calc(400px + 4vmin);
-            margin-left: 10%;
+            margin-left: 1%;
             top: -60px;
         }
-    }
-    @media screen and (max-width:860px) {    
         .summary-c > .frame {
             margin-bottom: 280px;
         }
+    }
+    @media screen and (max-width:860px) {    
         .summary-c>.frame>.img {
+            width: 70%;
             height: unset;
             margin-bottom: 80px;
-            margin-left: 1%;
             padding-top: 46%;
         }    
         .summary-c > .frame > .box-dark {

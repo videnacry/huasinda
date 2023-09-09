@@ -17,3 +17,37 @@
     height: 20vw;
     width: 100%;
 }
+
+
+
+/*----------------------------------erasable----------------------------*/
+.webinar-p>.test{
+    margin-top: -4vw;
+    padding: 0 10vw 60px 10vw;
+    text-align: center;
+}
+.webinar-p>.test>h2{
+    padding: 30px 0;
+}
+.webinar-p>.test>.date{
+    min-width: 310px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+}
+.webinar-p>.test>p{
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 410px) {
+    .webinar-p>.test{
+        padding: 0 2vw 60px 2vw;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .webinar-p>.test>.date{
+        min-width: 92vw;
+        min-height: 3.6em;
+    }
+}

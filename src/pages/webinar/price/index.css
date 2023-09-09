@@ -39,27 +39,35 @@
 .price-c>.spheres>.mid .sphere-md * {
     color: #383838;
 }
-.price-c>.btn-buy, .price-c>.btn-modules {
+.price-c>.btn-buy {
     position: absolute;
     display: flex;
     align-items: center;
     background-color: white;
     color: #3A3A3A;
 }
-.price-c>.btn-buy>svg, .price-c>.btn-modules>svg {
+.price-c>.btn-buy>svg {
     margin-right: 0.6em;
 }
-.price-c>.btn-modules:hover,.price-c>.btn-buy:hover {
+.price-c>.btn-buy:hover {
     background-color: #363636;
     color: white;
 }
-.price-c>.btn-modules:hover>.svg,.price-c>.btn-buy:hover>.svg {
+.price-c>.btn-buy:hover>.svg {
     fill: white;
+}
+.price-c>.btn-modules {
+    position: absolute;
+}
+.price-c>.btn-modules .box-c {   
+    background-color: #fdffd2;
+}
+.price-c>.btn-modules * {
+    color: rgb(36 36 36);
 }
 .price-c>.space{
     width: 100%;
-    height: 200px;
-    margin-bottom: 150px;
+    height: 400px;
 }
 @media screen and (max-aspect-ratio: 10/7) {
     .price-c>.title>.background {
@@ -67,41 +75,41 @@
     }
     .price-c>.box-left {
         width: 10%;
-        height: 30%;
+        height: 90%;
         top: 4em;
         left: 0;
     }
     .price-c>.box-right {
         width: 50%;
-        height: 40%;
-        bottom: -7%;
+        height: 30%;
+        bottom: 6%;
         right: 0;
     }
     .price-c>.line-dark {
-        width: 50%;
-        bottom: -7%; 
+        width: 70%;
+        bottom: 17%; 
         right: 0;
     }
     .price-c>.spheres>.max{
-        top: -15%;
+        top: -10%;
         left: 20%;
     }
     .price-c>.spheres>.mid{
-        top: 30%;
+        top: 26%;
         right: 30%;
     }
     .price-c>.spheres>.min{
-        bottom: 20%;
+        bottom: 28%;
         left: 0%;
     }
     .price-c>.btn-buy {
-        bottom: -10%;
+        bottom: 14%;
         left: 50%;
         transform: translateX(-50%);
     }
     .price-c>.btn-modules {
-        top: 85%;
-        right: 10%;
+        top: 56%;
+        left: 46%;
     }
 }
 @media screen and (min-aspect-ratio: 10/7) {
@@ -109,20 +117,20 @@
         right: 30%;
     }
     .price-c>.box-left {
-        width: 20%;
-        height: 27%;
-        bottom: 10%;
+        width: 24%;
+        height: 40%;
+        bottom: 14%;
         left: 0;
     }
     .price-c>.box-right {
         width: 50%;
-        height: 70%;
-        top: 30%;
+        height: 44%;
+        top: 50%;
         right: 0;
     }
     .price-c>.line-dark {
         width: 100%;
-        bottom:19%;
+        bottom:20%;
         left: 0;
     }
     .price-c>.spheres{
@@ -130,36 +138,35 @@
         margin-left: 30%;
     }
     .price-c>.spheres>.img{
-        padding-top: 54%;
+        padding-top: 56%;
     }
     .price-c>.spheres>.max{
-        top: 5%;
-        left: -20%;
+        top: 4%;
+        left: -26%;
     }
     .price-c>.spheres>.mid{
-        bottom: 20%;
-        left: 50%;
+        top: 24%;
+        left: 80%;
     }
     .price-c>.spheres>.min{
-        top: 40%;
-        left: 85%;
+        bottom: 20%;
+        left: 40%;
     }
-    .price-c>.title>h1 {
+    .price-c>.title>h1{
         margin-bottom: 2%;
         padding: 1%;
     }
-    .price-c>.btn-buy {
-        bottom: 15%;
+    .price-c>.btn-buy{
+        bottom: 16%;
         left: 10%;
     }
-    .price-c>.btn-modules {
-        bottom: 33%;
-        left: 3%;
+    .price-c>.btn-modules{
+        bottom: 60%;
+        left: 20%;
     }
     .price-c>.space{
         width: 100%;
-        height: 200px;
-        margin-bottom: 0px;
+        height: 300px;
     }
 }
 @media screen and (max-width:860px) {    
@@ -177,22 +184,35 @@
     .price-c>.title>h1{
         margin-bottom: 28%;
     }    
+    .price-c>.box-left{
+        height: 74%;
+    }
+    .price-c>.box-right{
+        bottom: 4%;
+    }
     .price-c>.spheres>.img{
-        padding-top: 70%;
+        padding-top: 120%;
     }
     .price-c>.spheres>.max{
-        top: -40%;
         left: 16%;
-    }    
-    .price-c>.spheres>.mid{
-        right: 46%;
+        top: -13%;
     }
     .price-c>.spheres>.min{
-        top: 74%;
+        top: 46%;
         left: 4%;
     }
+    .price-c>.btn-modules{
+        top: 62%;
+    }
+    .price-c>.line-dark {
+        width: 80%;
+        bottom: 11%;
+    }
+    .price-c>.btn-buy{
+        bottom: 8%;
+    }
     .price-c>.space{
-        height: 220px;
+        height: 280px;
     }
 }
 @media screen and (max-width:370px) {
@@ -200,22 +220,28 @@
         margin-bottom: 40%;
         text-align: end;
     }
+    .price-c>.line-dark{
+        width: 100%;
+    }
     .price-c>.spheres>.img{
-        padding-top: 100%;
+        padding-top: 150%;
     }
     .price-c>.spheres>.max{
-        top: -40%;
+        top: -18%;
         left: 10%;
     }    
     .price-c>.spheres>.mid{
-        top: 50%;
+        top: 20%;
         right: 50%;
     }
     .price-c>.spheres>.min{
-        top: 88%;
-        left: -6%;
+        top: 52%;
+        left: -2%;
+    }
+    .price-c>.btn-modules{
+        top: 66%;
     }
     .price-c>.space{
-        height: 260px;
+        height: 200px;
     }
 }

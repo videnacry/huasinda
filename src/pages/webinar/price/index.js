@@ -14,9 +14,10 @@ const Price = (props) => {
     const [isVisibleModalModules, setIsVisibleModalModules] = useState(false)
     const toggleIsVisibleModalModules = () => setIsVisibleModalModules(prev => prev ? false : true)
 
-    const max = <div style={{margin:'0 30px'}}><h4>4 horas al día, por 4 findes!</h4></div>
-    const mid = <div style={{margin:'0 30px'}}><h4>Refrigerio incluido!</h4></div>
-    const min = <div style={{margin:'0 30px'}}><h4>Reserva por 30usd!</h4></div>
+    const max = <div style={{margin:'0 6px'}}><h4>8 horas por 4 fin de semana!</h4></div>
+    const mid = <div style={{margin:'0 6px'}}><h4>Alojamiento y material incluido!</h4></div>
+    const min = <div style={{margin:'0 6px'}}><h4>Clases de teoría y práctica!</h4></div>
+    const tin = <div style={{margin:'0 6px'}}><h4>Reserva por 30$!</h4></div>
 
     return(
         <section className='price-c'>
@@ -41,10 +42,8 @@ const Price = (props) => {
                 <div className='min'><Spheres isDark text={min}/></div>
                 <div className='img' style={{backgroundImage: 'url(' + img + ')'}}/>
             </div>
-            <a onClick={props.goCheckout} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Comprar</a>
-            <button className="btn-big btn-modules" onClick={toggleIsVisibleModalModules}>
-                <StackSvg className='svg' height='1.2em' width='1.2em'/>Módulos
-            </button>
+            <div className='btn-modules'><Spheres isDark text={tin}/></div>
+            <a onClick={props.goCheckout} className="btn-big btn-buy"><CartSvg className='svg' height='1.2em' width='1.2em'/>Reservar</a>
             <div className='space'></div>
             {isVisibleModalModules ? <ModalModules modules={props.modules} toggleIsVisible={toggleIsVisibleModalModules}/> : ''}
         </section>
