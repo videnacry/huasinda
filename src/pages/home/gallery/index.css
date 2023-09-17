@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     color: #363636;
-    padding-bottom: 8%;
 }
 .projects-s > p {
     padding: 8% 10%;
@@ -12,24 +11,26 @@
     position: relative;
     padding-top: 1px;
 }
+.projects-s > .frame-green,  .projects-s > div > a > .title, .projects-s > div >.pharagraph-left{
+    max-width: 330px;
+    width: 50%;
+}
 .projects-s > .frame-green {
     position: absolute;
-    width: 100%;
-    height: 76%;
+    height: 74%;
 }
 .projects-s > .frame-brown {
     position: absolute;
-    top: 52%;
+    top: 56%;
     width: 100%;
-    height: 10vh;
+    height: 9vh;
 }
 .projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right, .projects-s > div > .frame-right, .projects-s > div > .frame-left, .projects-s > div > a {
     position: relative;
     z-index: 1;
 }
 .projects-s > div > a > .title {
-    margin: 20px;
-    margin-bottom: 30px;
+    margin: 20px 0 0 0;
     text-align: center;
     font-weight: bold;
     color: #bb6d00;
@@ -43,9 +44,8 @@
     display: inline-block;
 }
 .projects-s > div >.pharagraph-left {
-    width: 45%;
     padding: 0 4% 2% 4%;
-    text-align: start;
+    text-align: center;
 }
 .projects-s > div >.pharagraph-right {
     width: 64%;
@@ -87,58 +87,73 @@
     text-align: center;
 }
 @media screen and (min-aspect-ratio: 1.3/1) {
+    .projects-s {
+        min-height: 580px;
+    }
+    .projects-s > div > a > .title, .projects-s > div >.pharagraph-left, .projects-s > div >.pharagraph-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .projects-s > .frame-green {
+        right: calc(50% - 165px);
         min-width: 330px;
         width: 30%;
-        height: 46%;
-    }
-    .projects-s > .frame-brown {
-        width: 42%;
-        top: 85.4%
-    }
-    .projects-s > div > a > .title {
-        margin-right: 8%;
+        height: 390px;
     }
     .projects-s > div >.pharagraph-left {
-        max-width: 310px;
+        display: block;
+        margin-top: 20px;
+    }
+    .projects-s > .frame-brown {
+        overflow: hidden;
+        width: 300px;
+        top: calc(16vw + 190px);
+        left: calc(50% - 150px);
+        height: 10px;
+    }
+    .projects-s > div > a > .title {
+        width: 100%;
     }
     .projects-s > div >.pharagraph-right {
-        width: 46%;
-        margin-left: 14%;
+        position: absolute;
+        top: 180px;
+        right: calc(50% - 165px);
+        width: 330px;
+        text-align: center;
+    }
+    .projects-s > div >  .frame-right, .projects-s > div > .frame-left {
+        width: 28%;
+        margin-top: -80px;
     }
     .projects-s > div >  .frame-right {
-        width: 34%;
         margin-right: 4%;
     }
     .projects-s > div > .frame-left {
-        width: 34%;
+        float: none;
         margin-left: 4%;
     }
-    .projects-s > div > .frame-right > .img-right {
-        margin-top: -20%;
+    .projects-s > div > .frame-right > .img-right, .projects-s > div > .frame-left > .img-left {
         padding-top: 84%;
     }
-    .projects-s > div > .frame-left > .img-left {
-        padding-top: 90%;
+    .projects-s > div > .link {
+        position: absolute;
+        top: 320px;
+        width: 100%;
     }
 }
-@media screen and (max-aspect-ratio: 1/1) {
+@media screen and (max-aspect-ratio: 1.3/1) {
     .projects-s > p {
-        padding: 8% 2%;
-    }
-    .projects-s > div {
-        padding-top: 3%;
+        padding: 12% 2%;
     }
     .projects-s > div >.pharagraph-left {
         margin-top: 5%;
     }
     .projects-s > div > .frame-right > .img-right {
-        margin-top: 50px;
         margin-bottom: 50px;
-        padding-top: 65%;
+        padding-top: 75%;
     } .projects-s > div > .frame-left > .img-left {
-        margin-top: 80px;
-        padding-top: 120%;
+        margin-top: 20px;
+        padding-top: 124%;
     }
     .projects-s > div > .link {
         margin-top: 5%;
@@ -151,9 +166,13 @@
     .projects-s > p {
         padding: 12% 2%;
     }
+    .projects-s > .frame-green {
+        height: 82%;
+    }
     .projects-s > div > a > .title {
-        margin-bottom: 10px;
-        text-align: end;
+        margin-bottom: 30px;
+        margin-left: 4%;
+        text-align: start;
     }
     .projects-s > div >.pharagraph-left {
         width: 100%;
@@ -175,7 +194,8 @@
     }
     .projects-s > div >.pharagraph-right {
         width: 56%;
-        margin-top: 70px;
+        margin-top: 40px;
+        margin-bottom: 10px;
         padding: 2% 4%;
         text-align: end;
     }

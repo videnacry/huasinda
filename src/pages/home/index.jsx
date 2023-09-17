@@ -1,8 +1,8 @@
 import React, {useContext, useEffect} from 'react'
 import './index.css'
 import Jumbotron from '../../components/styled/jumbotron'
-import Proyects from './projects'
-import Webinars from './webinars'
+import Gallery from './gallery'
+import Workshop from './workshop'
 // import LeaveComment from '../../components/styled/leaveComment'
 import Links from '../../components/styled/links'
 import jumbotronImgSrc from './jumbotron.webp'
@@ -19,8 +19,8 @@ const Home = () => {
     return(
         <div className='home-c'>
             <Jumbotron title="¿Te unes al camino verde?" imgSrc={jumbotronImgSrc}/>
-            <Webinars/>
-            <Proyects/>
+            <Workshop/>
+            <Gallery/>
             <div className='space'></div>
             {/* <LeaveComment/> */}
             <Links/>

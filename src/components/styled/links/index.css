@@ -2,6 +2,13 @@
     padding: 40px 0;
     position: relative;
 }
+.links-c>.box-green {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    width: 55%; 
+    height: 65%;
+}
 .links-c>h1 {
     margin: 0;
     margin-bottom: 50px;
@@ -79,6 +86,9 @@
     }
 }
 @media screen and (max-width: 736px) {
+    .links-c>.box-green {
+        width: 50%;
+    }
     .links-c>.links>li {
         width: 42%;
     }
@@ -87,6 +97,10 @@
     }
 }
 @media screen and (max-width: 497px) {
+    .links-c>.box-green {
+        width: 60%;
+        right: 0;
+    }
     .links-c>.links>li {
         width: 40%;
         font-size: 20px;

@@ -23,7 +23,9 @@ const Links = () => {
     carouselProps.elements = linksEl
     return(
         <div className="links-c">
-            <Box absolute style={{width: '55%', height: '65%', top: '2%', right: '10%'}}/>
+            <div className="box-green">
+                <Box absolute fill/>
+            </div>
             <h1>Enlaces Recomendados</h1>
             <Carousel props={carouselProps}/>
         </div>

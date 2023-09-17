@@ -1,14 +1,14 @@
 import { useContext } from 'react'
-import Box from '../../components/styled/box'
+import Box from '../../../components/styled/box'
 import projectFirstSrc from './project-1.webp'
 import projectSecondSrc from './project-2.webp'
 
-import './projects.css'
-import Context from '../../context'
+import './index.css'
+import Context from '../../../context'
 
-const Posts = () => {
+const Projects = () => {
     const context = useContext(Context)
-
+    
     return(
         <div className='projects-s'>
             <p>A favor de la reducción de la huella de carbono y la economía circular, construimos estructuras amigables con el medio ambiente.</p>
@@ -28,10 +28,10 @@ const Posts = () => {
                     <div style={{backgroundImage: `url(${projectSecondSrc})`}} className='img-left'/>
                 </div>
                 <p className='pharagraph-right'>...diversas funciones, desde viviendas hasta invernaderos</p>
-                <div className='link'><a onClick={() => context.goProjects()} className='btn-green'>más info</a></div>
+                <div className='link'><a onClick={() => context.goProjects()} className='btn-brown-big'>más info</a></div>
             </div>
         </div>
     )
 }
 
-export default Posts
+export default Projects

@@ -65,7 +65,7 @@ button {
 a:hover {
   text-decoration: underline;
 }
-a.btn-green, button.btn-green, button.btn-black, a.btn-black {
+a.btn-green, button.btn-green, button.btn-black, a.btn-black, a.btn-brown-big, button.btn-brown-big {
   border-radius: 5px;
   border: solid 1px rgba(255, 255, 255, 0.4);
   padding: 1vmin 4vmin;
@@ -74,6 +74,10 @@ a.btn-green, button.btn-green, button.btn-black, a.btn-black {
   -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25), inset 0 0 8px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25), inset 0 0 8px 3px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
+}
+a.btn-brown-big, button.btn-brown-big {
+  padding: 3vmin 7vmin;
+  background-color: #3a2b21;
 }
 button.btn-black, a.btn-black {
   background-color: #363636;
@@ -92,7 +96,7 @@ ol {
 }
 .App {
   position: relative;
-  background-color: #e3edff;
+  background-color: #C2F0FF;
   -webkit-box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
           box-shadow: 8px 10px 20px rgba(28, 28, 28, 0.808), -8px 10px 20px rgba(28, 28, 28, 0.808);
 }

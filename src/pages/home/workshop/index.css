@@ -1,62 +1,62 @@
-.webinars-s{
+.workshop-s{
     position: relative;
     width: 100%;
     height: fit-content;
     color: #363636;
 }
-.webinars-s > p {
-    padding: 8% 10%;
+.workshop-s > p {
+    padding: 10%;
     text-align: center;
 }
-.webinars-s>.article{
+.workshop-s>.article{
     width: 100%;
     padding: 20px 0;
     position: relative;
 }
-.webinars-s>.article>* {
+.workshop-s>.article>* {
     position: relative;
 }
-.webinars-s>.article>.frame-green{
+.workshop-s>.article>.frame-green{
     position: absolute;
     bottom: 0;
-    width: 50%;
     height: 100%;
+    min-width: 150px;
 }
-.webinars-s>.article>.title>h1 {
+.workshop-s>.article>.title>h1 {
     margin: 0 20px 30px 20px;
     font-weight: bold;
     color: #bb6d00;
     text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
-.webinars-s>.article>.title>h1:hover {
+.workshop-s>.article>.title>h1:hover {
     text-decoration: underline;
 }
-.webinars-s > .article >.pharagraph-left, .webinars-s > div >.pharagraph-right {
+.workshop-s > .article >.pharagraph-left, .workshop-s > div >.pharagraph-right {
     margin: 0;
     padding: 2% 4%;
 }
-.webinars-s > .article >.pharagraph-left {
+.workshop-s > .article >.pharagraph-left {
     text-align: start;
 }
-.webinars-s > .article >.pharagraph-right {
+.workshop-s > .article >.pharagraph-right {
     text-align: end;
 }
-.webinars-s > .article >  .black-line {
+.workshop-s > .article >  .black-line {
     width: 100%;
     min-height: 160px;
     max-height: 220px;
     height: 44vh;
     position: relative;
 }
-.webinars-s > .article >  .black-line > .frame-right, .webinars-s > .article > .black-line > .frame-left, .webinars-s > .article > .black-line > .frame-center {
+.workshop-s > .article >  .black-line > .frame-right, .workshop-s > .article > .black-line > .frame-left, .workshop-s > .article > .black-line > .frame-center {
     position: absolute;
 }
-.webinars-s > .article > .black-line > .frame-left {
+.workshop-s > .article > .black-line > .frame-left {
     width: 52%;
     top: -60px;
     left: 0;
 }
-.webinars-s > .article > .black-line > .frame-center {
+.workshop-s > .article > .black-line > .frame-center {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -73,15 +73,15 @@
     background-color: #e3edff;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.712);
 }
-.webinars-s > .article > .black-line > .frame-center > .text {
+.workshop-s > .article > .black-line > .frame-center > .text {
     text-align: center;
 }
-.webinars-s > .article >  .black-line > .frame-right {
+.workshop-s > .article >  .black-line > .frame-right {
     width: 45%;
     bottom: -65px;
     right: 0;
 }
-.webinars-s > .article > .black-line > .frame-right > .img-right, .webinars-s > .article > .black-line > .frame-left > .img-left {
+.workshop-s > .article > .black-line > .frame-right > .img-right, .workshop-s > .article > .black-line > .frame-left > .img-left {
     width: 100%;
     position: relative;
     top: 0;
@@ -89,7 +89,7 @@
     background-size: cover;
     background-position: center;
 }
-.webinars-s > .article > .black-line > .frame-right > .img-right {
+.workshop-s > .article > .black-line > .frame-right > .img-right {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-top: 50%;
@@ -97,7 +97,7 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
     animation: home_workshop-s_door 10s infinite alternate linear;
 }
-.webinars-s > .article > .black-line > .frame-left > .img-left {
+.workshop-s > .article > .black-line > .frame-left > .img-left {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-top: 46%;
@@ -133,146 +133,159 @@
         background-image: url('./webinar-4.webp');
     }
 }
-.webinars-s>.article>.link{
-    width: 50%;
-    margin-top: 5%;
-    margin-left: auto;
+.workshop-s>.article>.link{
     display: block;
+    width: 40%;
+    margin: -8% auto 6% 0;
     text-align: center;
 }
 @media screen and (min-aspect-ratio: 1.3/1) {
-    .webinars-s>.article {
+    .workshop-s>p{
+        padding: 8% 10%;
+    }
+    .workshop-s>.article {
         padding-top: 10px;
     }
-    .webinars-s>.article>.title>h1 {
+    .workshop-s>.article>.frame-green {
+        min-width: 340px;
+        width: 30%;
+    }
+    .workshop-s>.article>.title>h1 {
         text-align: left;
         margin: 0;
         padding-top: 10px;
         padding-left: 4%;
     }
-    .webinars-s > .article >.pharagraph-right, .webinars-s > .article >.pharagraph-left {
+    .workshop-s > .article >.pharagraph-right, .workshop-s > .article >.pharagraph-left {
         text-align: left;
     }
-    .webinars-s > .article > .black-line > .frame-left {
+    .workshop-s > .article > .black-line > .frame-left {
         top: 54%;
         left: 44%;
         max-width: 560px;
         width: 50%;
     }
-    .webinars-s > .article > .black-line > .frame-center {
+    .workshop-s > .article > .black-line > .frame-center {
         top: 50%;
         left: calc(4% + 400px);
     }
-    .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+    .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
         left: 4%;
     }
-    .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+    .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
         left: calc(4% + 200px);
     }
-    .webinars-s > .article >  .black-line > .frame-right {
+    .workshop-s > .article >  .black-line > .frame-right {
         bottom: 56%;
         left: 52%;
         max-width: 460px;
         width: 42%;
     }
-    .webinars-s > .article > .black-line > .frame-right > .img-right, .webinars-s > .article > .black-line > .frame-left > .img-left {
+    .workshop-s > .article > .black-line > .frame-right > .img-right, .workshop-s > .article > .black-line > .frame-left > .img-left {
         border-radius: 5px;
     }
-    .webinars-s>.article>.link{
+    .workshop-s>.article>.link{
         width: fit-content;
-        margin: auto;
-        margin-left: 4%;
+        margin: unset;
+        padding: 20px 4%;
     } 
     
     @media screen and (min-width: 1180px) {
-        .webinars-s > .article > .black-line > .frame-left, .webinars-s > .article >  .black-line > .frame-right {
+        .workshop-s > .article > .black-line > .frame-left, .workshop-s > .article >  .black-line > .frame-right {
             top: 50%;
             bottom: unset;
             left: 480px;
             transform: translateY(-50%);
             width: calc(((90vw - 480px) / 2) - 20px);
         }
-        .webinars-s > .article >  .black-line > .frame-right {
+        .workshop-s > .article >  .black-line > .frame-right {
             left: calc(((100vw - 480px) / 2) + 460px);
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left, .webinars-s > .article >  .black-line > .frame-right > .img-right {
+        .workshop-s > .article > .black-line > .frame-left > .img-left, .workshop-s > .article >  .black-line > .frame-right > .img-right {
             padding-top: 110%;
         }
     }
     @media screen and (max-width: 1000px) {
-        .webinars-s > .article > .black-line > .frame-center {
+        .workshop-s > .article > .black-line > .frame-center {
             left: 44%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             left: 4%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
             left: 24%;
         }
-        .webinars-s > .article > .black-line > .frame-left {
+        .workshop-s > .article > .black-line > .frame-left {
             left: 44%;
         }
-        .webinars-s>.article>.link {
+        .workshop-s>.article>.link {
             margin-top: 26px;
         }        
-        .webinars-s > .article > .black-line > .frame-right > .img-right {
+        .workshop-s > .article > .black-line > .frame-right > .img-right {
             padding-top: 52%;
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left {
+        .workshop-s > .article > .black-line > .frame-left > .img-left {
             padding-top: 56%;
         }
     }
     @media screen and (max-width: 810px) {
-        .webinars-s>p {
+        .workshop-s>p {
             padding: 4% 1%;
         }
-        .webinars-s>.article>.title>h1, .webinars-s > .article >.pharagraph-right, .webinars-s > .article >.pharagraph-left {
+        .workshop-s>.article>.title>h1, .workshop-s > .article >.pharagraph-right, .workshop-s > .article >.pharagraph-left {
             padding-left: 1%;
             margin-top: 14px;
             margin-bottom: 14px;
         }
-        .webinars-s > .article > .black-line > .frame-center {
+        .workshop-s > .article > .black-line > .frame-center {
             left: 48%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             left: 1%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
             left: 25%;
         }
-        .webinars-s > .article > .black-line > .frame-right, .webinars-s > .article > .black-line > .frame-left {
+        .workshop-s > .article > .black-line > .frame-right, .workshop-s > .article > .black-line > .frame-left {
             left: unset;
             right: 1%;
         }
-        .webinars-s > .article > .black-line > .frame-right > .img-right {
+        .workshop-s > .article > .black-line > .frame-right > .img-right {
             padding-top: 70%;
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left {
+        .workshop-s > .article > .black-line > .frame-left > .img-left {
             padding-top: 66%;
         }
     }
 }
 @media screen and (max-aspect-ratio: 1.3/1) {
-    .webinars-s>.article>.frame-green{
-        width: 100%;
+    .workshop-s>.article>.frame-green, .workshop-s > .article >.pharagraph-left, .workshop-s>.article>.title>h1{
+        max-width: 330px;
+        width: 50%;
+        right: 0;
     }
-    .webinars-s > .article >.pharagraph-left {
-        margin-top: 10%;
+    .workshop-s>.article>.title>h1 {
+        margin: 0 0 30px auto;
+        text-align: center;
     }
-    .webinars-s > .article >  .black-line {
+    .workshop-s > .article >.pharagraph-left {
+        margin: 20% 0 0 auto;
+        text-align: center;
+    }
+    .workshop-s > .article >  .black-line {
         margin-top: 100px;
         padding-top: 34%;
     }
-    .webinars-s > .article > .black-line > .frame-left {
+    .workshop-s > .article > .black-line > .frame-left {
         width: 52%;
-        top: -140px;
+        top: -180px;
     }
-    .webinars-s > .article > .black-line > .frame-center {
+    .workshop-s > .article > .black-line > .frame-center {
         width: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+    .workshop-s > .article > .black-line > .frame-center:nth-of-type(3), .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
         transform: unset;
         max-width: 180px;
         max-width: unset;
@@ -282,87 +295,87 @@
         padding: 6.4%;
         aspect-ratio: 2/1;
     }
-    .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+    .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
         top: unset;
         bottom: 64%;
         left: unset;
         right: 2%;
     }
-    .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
-        top: 68%;
+    .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        top: 60%;
         left: 2%;
     }
-    .webinars-s > .article > .black-line > .frame-right {
+    .workshop-s > .article > .black-line > .frame-right {
         width: 46%;
         bottom: -120px;
     }
-    .webinars-s > .article > .black-line > .frame-right > .img-right {
+    .workshop-s > .article > .black-line > .frame-right > .img-right {
         padding-top: 65%;
     }
-    .webinars-s > .article > .black-line > .frame-center > .white {
+    .workshop-s > .article > .black-line > .frame-center > .white {
         padding-top: 120%;
     }
-    .webinars-s > .article > .black-line > .frame-left > .img-left {
+    .workshop-s > .article > .black-line > .frame-left > .img-left {
         padding-top: 65%;
     }
     @media screen and (max-width: 678px) {  
-        .webinars-s>.article>.title>h1 {
+        .workshop-s>.article>.title>h1 {
             margin-bottom: 0;
         }
-        .webinars-s > .article >.pharagraph-right {
+        .workshop-s > .article >.pharagraph-right {
             margin-left: 50%;
         }
-        .webinars-s > .article >.pharagraph-left {
+        .workshop-s > .article >.pharagraph-left {
             margin-right: 50%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3), .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             aspect-ratio: 2/1;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             top: 56%;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
             bottom: 54%;
         }
-        .webinars-s > .article > .black-line > .frame-left {
+        .workshop-s > .article > .black-line > .frame-left {
             width: 58%;
         }
-        .webinars-s > .article > .black-line > .frame-right {
+        .workshop-s > .article > .black-line > .frame-right {
             top: 60%;
             width: 50%;
         }
-        .webinars-s > .article > .black-line > .frame-right > .img-right {
+        .workshop-s > .article > .black-line > .frame-right > .img-right {
             padding-top: 200px;
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left {
+        .workshop-s > .article > .black-line > .frame-left > .img-left {
             padding-top: 240px;    
         }
     }
     @media screen and (max-width: 550px) {
-        .webinars-s > p {
+        .workshop-s > p {
             padding: 12% 2%;
         }
     }
     @media screen and (max-width: 450px) {
-        .webinars-s > .article >.pharagraph-left, .webinars-s > .article >.pharagraph-right {
+        .workshop-s > .article >.pharagraph-left, .workshop-s > .article >.pharagraph-right {
             margin-left: unset;
             margin-right: unset;
             white-space: nowrap;
         }
-        .webinars-s > .article >.pharagraph-right {
+        .workshop-s > .article >.pharagraph-right {
             padding-bottom: 120px;
         }
-        .webinars-s > .article >.pharagraph-left {
+        .workshop-s > .article >.pharagraph-left {
             padding-bottom: 0;
         }
-        .webinars-s > .article >.pharagraph-left {
+        .workshop-s > .article >.pharagraph-left {
             padding-top: 140px;
         }
-        .webinars-s > .article > .black-line {
+        .workshop-s > .article > .black-line {
             margin: 80px 0;
             padding-top: 70%;
         }    
-        .webinars-s > .article > .black-line > .frame-left {
+        .workshop-s > .article > .black-line > .frame-left {
             width: 90%;
             height: 80%;
             top: unset;
@@ -370,30 +383,30 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(1) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(1) {
             width: unset;
             height: 30%;
             width: 96%;
             max-width: unset;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3), .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             min-width: unset;
             min-height: 150px;
             width: 44%;
             padding: 10px;
             aspect-ratio: 1.2/1;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3) {
             right: 4%;
             bottom: 50%;
             transform: translateY(50%);
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             top: 50%;
             transform: translateY(-50%);
             left: 4%
         }
-        .webinars-s > .article > .black-line > .frame-right {
+        .workshop-s > .article > .black-line > .frame-right {
             transform: translateX(50%);
             top: 90%;
             right: 50%;
@@ -401,20 +414,24 @@
             width: 90%;
             height: 90%;
         }
-        .webinars-s > .article > .black-line > .frame-right > .img-right {
+        .workshop-s > .article > .black-line > .frame-right > .img-right {
             padding-top: unset;
             height: 90%;
         }
-        .webinars-s > .article > .black-line > .frame-left > .img-left {
+        .workshop-s > .article > .black-line > .frame-left > .img-left {
             padding-top: unset;
             height: 100%;
         }
+        .workshop-s>.article>.link{
+            width: fit-content;
+            margin: 10% 4% 4% auto;
+        }
     }
     @media screen and (max-width: 310px) {
-        .webinars-s > .article >.pharagraph-right, .webinars-s > .article >.pharagraph-left {
+        .workshop-s > .article >.pharagraph-right, .workshop-s > .article >.pharagraph-left {
             padding-left: 0;
         }
-        .webinars-s > .article > .black-line > .frame-center:nth-of-type(3), .webinars-s > .article > .black-line > .frame-center:nth-of-type(2) {
+        .workshop-s > .article > .black-line > .frame-center:nth-of-type(3), .workshop-s > .article > .black-line > .frame-center:nth-of-type(2) {
             width: 45%;
             min-height: 160px;
         }

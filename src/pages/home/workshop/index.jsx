@@ -1,15 +1,15 @@
 
 import { useContext } from 'react'
 
-import Context from '../../context'
-import './webinars.css'
-import Box from '../../components/styled/box'
+import Context from '../../../context'
+import './index.css'
+import Box from '../../../components/styled/box'
 
-const Webinars = () => {
+const Workshop = () => {
     const context = useContext(Context)
 
     return(
-        <div className='webinars-s'>
+        <div className='workshop-s'>
             <p>Bioedifica se especializa en la formación de profesionales en el ámbito de la edificación responsable a base del bambú.</p>
             
             <div className='article'>
@@ -43,10 +43,10 @@ const Webinars = () => {
                     </div>
                 </div>
                 <p className='pharagraph-left'>...comparte con el mundo!!</p>
-                <div className='link'><a onClick={() => context.goOffer()} className='btn-green'>más info</a></div>
+                <div className='link'><a onClick={() => context.goOffer()} className='btn-brown-big'>más info</a></div>
             </div>
         </div>
     )
 }
 
-export default Webinars
+export default Workshop
