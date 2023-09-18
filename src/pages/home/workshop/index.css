@@ -93,7 +93,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-top: 50%;
-    background-image: url('./webinar-3.webp');
+    background-image: url('./img/webinar-3.webp');
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.712);
     animation: home_workshop-s_door 10s infinite alternate linear;
 }
@@ -101,36 +101,36 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-top: 46%;
-    background-image: url('./webinar-2.webp');
+    background-image: url('./img/webinar-2.webp');
     box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.644);
     animation: home_workshop-s_door-small 7s infinite alternate linear;
 }
 @keyframes home_workshop-s_door-small {
     0% {
-        background-image: url('./webinar-1.webp');
+        background-image: url('./img/webinar-1.webp');
     }
     40% {
-        background-image: url('./webinar-1.webp');
+        background-image: url('./img/webinar-1.webp');
     }
     60% {
-        background-image: url('./webinar-2.webp');
+        background-image: url('./img/webinar-2.webp');
     }
     100% {
-        background-image: url('./webinar-2.webp');
+        background-image: url('./img/webinar-2.webp');
     }
 }
 @keyframes home_workshop-s_door {
     0% {
-        background-image: url('./webinar-3.webp');
+        background-image: url('./img/webinar-3.webp');
     }
     40% {
-        background-image: url('./webinar-3.webp');
+        background-image: url('./img/webinar-3.webp');
     }
     80% {
-        background-image: url('./webinar-4.webp');
+        background-image: url('./img/webinar-4.webp');
     }
     100% {
-        background-image: url('./webinar-4.webp');
+        background-image: url('./img/webinar-4.webp');
     }
 }
 .workshop-s>.article>.link{
