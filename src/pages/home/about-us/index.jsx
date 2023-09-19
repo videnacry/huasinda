@@ -10,7 +10,9 @@ const AboutUs = () => {
             </div>
             <div className="img-vertical" />
             <div className="article">
-                <Box fill absolute/>
+                <div className="bg">
+                    <Box fill />
+                </div>
                 <h1 className="title">Sobre Nosotros</h1>
                 <p className="text">¿Te apetece saber quienes somos?</p>
                 <div className="img-horizontal" />
