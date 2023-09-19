@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import Box from '../../../components/styled/box'
 import './index.css'
+import Context from '../../../context'
 
 const AboutUs = () => {
+    const context = useContext(Context)
     
     return (
         <div className="aboutus-s">
@@ -13,13 +16,13 @@ const AboutUs = () => {
                 <div className="bg">
                     <Box fill />
                 </div>
-                <h1 className="title">Sobre Nosotros</h1>
+                <h1 onClick={() => context.goAboutUs()} className="title">Sobre Nosotros</h1>
                 <p className="text">¿Te apetece saber quienes somos?</p>
                 <div className="img-horizontal" />
                 <div className="text">¿Compartes nuestra filosofía con respecto a la naturaleza?</div>
             </div>
             <div className="link">
-                <a className="btn-brown-big">más info</a>
+                <a onClick={() => context.goAboutUs()} className="btn-brown-big">más info</a>
             </div>
         </div>
     )

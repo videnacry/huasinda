@@ -239,6 +239,7 @@
         padding: 12% 2%;
     }
     .projects-s > .frame-green {
+        max-height: 180vw;
         height: 82%;
     }
     .projects-s > div > a > .title {
