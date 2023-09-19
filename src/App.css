@@ -39,6 +39,7 @@
 body {
   word-spacing: 5px;
   font-size: 20px;
+  line-height: 1.3em;
 }
 p {
   margin: 0;
@@ -126,7 +127,7 @@ ol {
   opacity: 0.8;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(./leaf.png);
+  background-image: url(./img/leaf.png);
   -webkit-animation-name: satellite;
           animation-name: satellite;
   -webkit-animation-iteration-count: infinite;
@@ -161,7 +162,7 @@ ol {
 }
 
 
-@media screen and (min-aspect-ratio: 1.3/1) {
+@media screen and ((min-width: 1536px) or (min-height: 1536px)) {
   body {
     font-size: 24px;
   }
@@ -176,6 +177,23 @@ ol {
   }
   h4 {
     font-size: 26px;
+  }
+}
+@media screen and ((min-width: 1920px) or (min-height: 1920px)) {
+  body {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 30px;
   }
 }
 

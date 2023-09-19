@@ -1,0 +1,52 @@
+.aboutus-s {
+    position: relative;
+}
+.aboutus-s > .line {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+}
+.aboutus-s > .img-vertical, .aboutus-s > .article > .img-horizontal {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.aboutus-s > .img-vertical {
+    width: 44%;
+    height: 60vw;
+    float: left;
+    background-image: url("./img/vertical.jpg");
+}
+.aboutus-s > .article {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    width: 40%;
+    margin-right: 0;
+    margin-left: auto;
+}
+.aboutus-s > .article > .title, .aboutus-s > .article > .text {
+    min-width: 280px;
+}
+.aboutus-s > .article > .title, .aboutus-s > .article > .text, .aboutus-s > .article > .img-horizontal {
+    position: relative;
+    padding: 14% 6% 0 6%;
+    text-align: end;
+}
+.aboutus-s > .article > .text {
+    padding: 14% 6%;
+}
+.aboutus-s > .article > .img-horizontal {
+    width: 120%;
+    height: 30vw;
+    background-image: url("./img/horizontal.jpg");
+}
+.aboutus-s > .link {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 44%;
+}

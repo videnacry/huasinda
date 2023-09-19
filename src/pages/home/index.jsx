@@ -3,9 +3,10 @@ import './index.css'
 import Jumbotron from '../../components/styled/jumbotron'
 import Gallery from './gallery'
 import Workshop from './workshop'
+import AboutUs from './about-us'
 // import LeaveComment from '../../components/styled/leaveComment'
 import Links from '../../components/styled/links'
-import jumbotronImgSrc from './jumbotron.webp'
+import jumbotronImgSrc from './img/jumbotron.webp'
 import Context from '../../context'
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             <Jumbotron title="¿Te unes al camino verde?" imgSrc={jumbotronImgSrc}/>
             <Workshop/>
             <Gallery/>
+            <AboutUs/>
             <div className='space'></div>
             {/* <LeaveComment/> */}
             <Links/>

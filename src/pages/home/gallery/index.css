@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     color: #363636;
+    margin-bottom: 14vmax;
 }
 .projects-s > p {
     padding: 8% 10%;
@@ -162,6 +163,46 @@
         position: absolute;
         top: calc(20vw - 10px + 20px);
         right: 0;
+    }
+    @media (min-width: 1400px) {
+        .projects-s > div >  .frame-right {
+            margin-right: 5%;
+            width: 35%;
+        }
+        .projects-s > div > .frame-left {
+            max-width: 400px;
+            width: 23%;
+            margin-left: 5%;
+        }
+    }
+    @media (min-width: 1536px) {
+        .projects-s > .frame-green {
+            max-height: 410px;
+            height: 53%;
+        }
+        .projects-s > .frame-brown, .projects-s > div > a > .title, .projects-s > div >.pharagraph-right, .projects-s > div >.pharagraph-left {
+            width: 300px;
+            margin-top: 3vh;
+        }
+        .projects-s > .frame-brown {
+            top: calc(17.6vw + 4em + 120px);
+        }
+        .projects-s > div > .pharagraph-right {
+            top: 220px;
+        }
+        .projects-s > div >  .frame-right {
+            margin-top: calc(-140px - 8.4vh);
+        }
+        .projects-s > div > .frame-left {
+            margin-top: calc(-120px - 8.4vh);
+        }
+        .projects-s > div > .frame-left > .img-left {
+            max-height: 480px;
+            height: 27vw;
+        }
+        .projects-s > div > .link {
+            top: calc(20vw - 30px + 20px);
+        }
     }
     @media (max-width: 1100px) {
         .projects-s > div > .frame-left, .projects-s > div > .frame-right {
